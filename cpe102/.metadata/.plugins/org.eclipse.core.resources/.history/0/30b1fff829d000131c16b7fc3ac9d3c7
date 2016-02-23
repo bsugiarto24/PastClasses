@@ -1,0 +1,62 @@
+import java.awt.*;
+
+public class ConvexPolygon implements Shape {
+
+	private Point[]v;
+	private boolean fill;
+	private Color c;
+	
+
+	public ConvexPolygon(java.awt.Point[] vertices, 
+			java.awt.Color color, boolean filled){
+		v = vertices;
+		c = color;
+		fill = filled;
+	}
+	
+	public double getArea(){
+       return Math.PI;
+    }
+    public java.awt.Color getColor(){
+       return c;
+    }
+    public Point getVertex(int index){
+    	return v[index];
+    }
+    public void setVertex(int index, java.awt.Point vertex) {
+    	v[index] = vertex;
+    }
+    public void setColor(java.awt.Color color){  
+     	   if (color ==null)
+		  throw new IllegalArgumentException();
+      c = color;
+   } 
+   public boolean getFilled(){
+      return fill;
+   }   
+   public void setFilled(boolean filled){
+      fill = filled;
+   }
+   public java.awt.Point getPosition(){
+      return v[0];
+   }  
+   public void setPosition(java.awt.Point position){
+	   if (position ==null)
+			  throw new IllegalArgumentException();
+	   v[0]  = position;
+   }
+   public void move(java.awt.Point delta){
+      v[0].x+=delta.getX();
+      v[0].y+=delta.getY();
+   }
+   public boolean equals(Object o){
+      if(o!=null)
+    	  if(o.getClass()==this.getClass()&&
+          ((ConvexPolygon)o).v.equals(v)&&
+          ((ConvexPolygon)o).getColor().equals(c)&&
+          ((ConvexPolygon)o).getFilled()==fill)
+          			 return true;
+      return false;
+   }
+	 
+}

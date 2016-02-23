@@ -1,0 +1,81 @@
+/**
+  *Fraction
+  *@author Bryan Sugiarto
+  *@version Program1b
+  */
+  
+  
+public class Fraction{
+
+   private int den;
+   private int num;
+
+   public Fraction(){
+      den = 1;
+      num = 0;
+   }
+   
+   public Fraction(int numerator){
+      den = 1;
+      num = numerator;
+   }
+   
+   public Fraction(int numerator,
+      int denominator){
+      num = numerator;
+      den = denominator;   
+   }
+
+   public int getNumerator(){
+      return num;
+   }
+
+   public int getDenominator(){
+      return den;
+   }
+   
+   public double value(){
+      return (double)num/den;
+   }
+   
+   public java.lang.String toString(){
+      return num+"/"+den;
+   }
+   
+   public boolean equals(Fraction other){
+      if(Math.abs(this.value()-other.value())<.001)
+         return true;
+      return false;
+   }
+ 
+   public Fraction add(Fraction other){
+	  int d = lcd(den,other.getDenominator());
+      return new Fraction(num*d/den+
+    		  other.getNumerator()*d/other.getDenominator()/d);
+   }
+   
+   public Fraction sub(Fraction other){
+      return this.add(other.mul(new Fraction(-1)));
+   }
+   
+   public Fraction mul(Fraction other){
+      return new Fraction(this.getNumerator()*other.getNumerator()
+    		  ,this.getDenominator()*other.getDenominator());
+   }
+   
+   public Fraction div(Fraction other){
+	   return new Fraction(this.getNumerator()*other.getDenominator()
+	    		  ,this.getDenominator()*other.getNumerator());
+   }
+   
+   private int lcd(int a, int b){
+	   int i = 1;
+	   int l = 1;
+	   while(i<a && i<b){
+		   if(a%i==0 && b%i==0)
+			   l = i;
+	   }
+	   return l;
+   }
+   
+}

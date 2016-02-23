@@ -1,0 +1,68 @@
+import java.io.FileNotFoundException;
+import java.util.*;
+
+/*
+ *  Comparator test
+ *@author Bryan Sugiarto
+ *@version lab14
+ */
+public class ComparatorTest {
+
+
+	public static void main(String[] args) {
+		
+		ArrayList<Person> test= null;
+		try {
+			test = Person.readFile("randomPeople.txt");
+		} catch (FileNotFoundException e) {
+			System.out.println("File not Found");
+		}
+		
+		ArrayList<Person>list1 = new ArrayList<Person>(test);
+		ArrayList<Person>list2 = new ArrayList<Person>(test);
+		ArrayList<Person>list3 = new ArrayList<Person>(test);
+		ArrayList<Person>list4 = new ArrayList<Person>(test);
+		ArrayList<Person>list5 = new ArrayList<Person>(test);
+		ArrayList<Person>list6 = new ArrayList<Person>(test);
+		ArrayList<Person>list7 = new ArrayList<Person>(test);
+		ArrayList<Person>list8 = new ArrayList<Person>(test);
+		ArrayList<Person>list9 = new ArrayList<Person>(test);
+		
+		//Single Comparator
+		Comparator<Person> a = new OrderAge();
+        Collections.sort(list1, a);
+        Comparator<Person> b = new OrderFirst();
+        Collections.sort(list2, b);
+        Comparator<Person> c = new OrderLast();
+        Collections.sort(list3, c);
+        Comparator<Person> d = new OrderState();
+        Collections.sort(list4, d);
+        
+        //Simple Linked
+        Comparator<Person> f = new OrderFirst();    
+	    Comparator<Person> l = new OrderLast(f);
+	    Collections.sort(list5, l);
+	    
+	    
+        Comparator<Person> c4 = new OrderFirst();    // End of chain
+	    Comparator<Person> c3 = new OrderLast(c4);   // Link c4 to c3
+	    Comparator<Person> c2 = new OrderAge(c3);    // Link c3 to c2
+	    Comparator<Person> c1 = new OrderState(c2);  // Beginning of chain, link c2 to c1
+	    Collections.sort(list9, c1);
+	    
+	    try {
+			Person.writeFile("age.txt", list1);
+			Person.writeFile("first.txt", list2);
+			Person.writeFile("last.txt", list3);
+			Person.writeFile("state.txt", list4);
+			Person.writeFile("first-last.txt", list5);
+			Person.writeFile("last-first.txt", list6);
+			Person.writeFile("state-last.txt", list7);
+			Person.writeFile("age-state.txt", list8);
+			Person.writeFile("combined.txt", list9);
+		} catch (FileNotFoundException e) {
+			System.out.println("File not found");
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+import java.util.Comparator;
+
+ /*
+  * FirstName Comparator
+  *@author Bryan Sugiarto
+  *@version lab14
+  */
+public class OrderFirst implements Comparator <Person> {
+
+	public int compare(Person a, Person b) {
+		return a.getFirst().compareTo(b.getFirst());
+	}
+
+}

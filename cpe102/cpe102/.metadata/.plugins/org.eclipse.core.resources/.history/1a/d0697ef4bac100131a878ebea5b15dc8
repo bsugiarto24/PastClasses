@@ -1,0 +1,163 @@
+/**
+  *FractionTest-tests Fraction class
+  *@author Bryan Sugiarto
+  *@version Lab2
+  */
+ 
+public class FractionTest{
+   private static final double E = 0.000001;
+
+   public static void testAll()
+   {
+      testConstructors(); 
+      testNumerator(); 
+      testDenominator(); 
+      testAdd(); 
+      testSub();
+      testMul();
+      testDiv();
+      testValue();
+      testEquals();
+      testToString();
+   }
+   
+   /*
+   
+    Fraction(): 1 test
+    Fraction(int numerator): 2 tests
+    Fraction(int numerator, int denominator): 4 tests
+    getNumerator(): 2 tests
+    getDenominator(): 2 tests
+    add(Fraction other): 4 tests
+    sub(Fraction other): 4 tests
+    mul(Fraction other): 4 tests
+    div(Fraction other): 4 tests
+    value(): 2 tests
+    equals(): 2 tests
+    toString(): 3 tests
+ */
+   
+   public static void testConstructors()
+   {
+	   Fraction a = new Fraction();
+	   SUnit.assertEquals(a.getDenominator(), 1);
+	   SUnit.assertEquals(a.getNumerator(), 0);
+	   
+	   Fraction b = new Fraction(3);
+	   SUnit.assertEquals(b.getDenominator(), 1);
+	   SUnit.assertEquals(b.getNumerator(), 3);
+	   
+	   Fraction c = new Fraction(-4);
+	   SUnit.assertEquals(c.getDenominator(), 1);
+	   SUnit.assertEquals(c.getNumerator(), -4);
+      
+      Fraction d = new Fraction(1,2);
+	   SUnit.assertEquals(d.getDenominator(), 2);
+	   SUnit.assertEquals(d.getNumerator(), 1);
+	   
+	   Fraction e = new Fraction(-5,2);
+	   SUnit.assertEquals(e.getDenominator(), 2);
+	   SUnit.assertEquals(e.getNumerator(), -5);
+	   
+	   Fraction f = new Fraction(0,3);
+	   SUnit.assertEquals(f.getDenominator(), 3);
+	   SUnit.assertEquals(f.getNumerator(), 0);
+      
+      Fraction g = new Fraction(3,-7);
+	   SUnit.assertEquals(g.getDenominator(), -7);
+	   SUnit.assertEquals(g.getNumerator(), -3);
+   }
+   
+   public static void testNumerator()
+   {
+	   Fraction a = new Fraction();
+	   SUnit.assertEquals(a.getNumerator(), 0);
+	   
+	   Fraction b = new Fraction(3);
+	   SUnit.assertEquals(b.getNumerator(), 3);
+   }
+   
+   public static void testDenominator()
+   {
+	   Fraction a = new Fraction();
+	   SUnit.assertEquals(a.getDenominator(), 1);
+
+	   Fraction b = new Fraction(3);
+	   SUnit.assertEquals(b.getDenominator(), 1);
+   }
+   
+   public static void testAdd()
+   {
+	   Fraction a = new Fraction();
+	   Fraction b = new Fraction(3);
+      Fraction c = a.add(b);
+      SUnit.assertEquals(c.getNumerator(), 3);
+	   SUnit.assertEquals(c.getDenominator(), 1);
+      
+      Fraction a2 = new Fraction();
+	   Fraction b2 = new Fraction(3);
+      Fraction c2 = a2.add(b2);
+      SUnit.assertEquals(c2.getNumerator(), 3);
+	   SUnit.assertEquals(c2.getDenominator(), 1);
+   }
+   
+   public static void testSub()
+   {
+	   Fraction a = new Fraction();
+	   Fraction b = new Fraction(3);
+      Fraction c = a.sub(b);
+      SUnit.assertEquals(c.getNumerator(), 3);
+	   SUnit.assertEquals(c.getDenominator(), 1);
+      
+      Fraction a2 = new Fraction();
+	   Fraction b2 = new Fraction(3);
+      Fraction c2 = a2.sub(b2);
+      SUnit.assertEquals(c2.getNumerator(), 3);
+	   SUnit.assertEquals(c2.getDenominator(), 1);
+   }
+          
+   public static void testMul()
+   {
+	   Fraction a = new Fraction();
+	   Fraction b = new Fraction(3);
+      Fraction c = a.mul(b);
+      SUnit.assertEquals(c.getNumerator(), 3);
+	   SUnit.assertEquals(c.getDenominator(), 1);
+      
+      Fraction a2 = new Fraction();
+	   Fraction b2 = new Fraction(3);
+      Fraction c2 = a2.mul(b2);
+      SUnit.assertEquals(c2.getNumerator(), 3);
+	   SUnit.assertEquals(c2.getDenominator(), 1);
+   }       
+   
+   public static void testDiv()
+   {
+	   Fraction a = new Fraction();
+	   Fraction b = new Fraction(3);
+      Fraction c = a.div(b);
+      SUnit.assertEquals(c.getNumerator(), 3);
+	   SUnit.assertEquals(c.getDenominator(), 1);
+      
+      Fraction a2 = new Fraction();
+	   Fraction b2 = new Fraction(3);
+      Fraction c2 = a2.div(b2);
+      SUnit.assertEquals(c2.getNumerator(), 3);
+	   SUnit.assertEquals(c2.getDenominator(), 1);
+   }    
+   
+   
+   
+   
+          
+   public static void main(String args[]){
+        
+      // Run all the tests...
+      testAll();
+
+      // Display number of tests run and how many failed...
+      System.out.println("SUnit: "
+                       + SUnit.testsRun() + " tests run, "
+                       + SUnit.testsFailed() + " tests failed");
+  }  
+}

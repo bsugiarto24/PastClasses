@@ -1,0 +1,40 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintStream;
+
+/*
+ * Print class
+ * @author Bryan Sugiarto
+ * @version lab9
+ */
+
+public class Print{
+	
+	public static void main(String[] args) {
+		File f = new File("out.txt");
+		PrintStream o = null;
+		try { 
+			o = new PrintStream(f);
+			o.write(("My candle burns at both ends;").getBytes());
+			o.write(("It will not last the night;").getBytes());
+			o.write(("But ah, my foes, and oh, my friends -").getBytes());
+			o.write(("It gives a lovely light.").getBytes());
+		} catch (FileNotFoundException e) {
+			System.out.println("File not Found");
+		}catch (IOException e) {
+			System.out.println("IO Exception");
+		}finally{
+			try{
+				o.close();
+			}catch(Exception e){
+				System.out.println("Could not close");
+			}
+		}
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+import java.util.Comparator;
+
+ /*
+  * LastName Comparator
+  *@author Bryan Sugiarto
+  *@version lab14
+  */
+public class OrderLast implements Comparator <Person> {
+
+	public OrderLast(Comparator<Person> c4) {
+		
+	}
+	public OrderLast() {}
+
+	public int compare(Person a, Person b) {
+		return a.getLast().compareTo(b.getLast());
+	}
+
+}

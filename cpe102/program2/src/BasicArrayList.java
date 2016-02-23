@@ -1,0 +1,125 @@
+import java.util.NoSuchElementException;
+
+/**
+  *BasicArrayList
+  *@author Bryan Sugiarto
+  *@version Program2a
+  */
+
+public class BasicArrayList implements BasicList {
+	public static final int DEFAULT_CAPACITY = 10;
+	private Object[] obj;
+	private int size;
+	
+	public BasicArrayList(int capacity){
+		obj = new Object[capacity];
+		size = 0;
+	}
+	public BasicArrayList(){
+		obj = new Object[DEFAULT_CAPACITY];
+		size = 0;
+	}
+	
+	public void add(int index, java.lang.Object element){
+		if(size>=obj.length){
+			increaseArr();
+		}
+		if(index<0||index>size)
+			throw new IndexOutOfBoundsException();
+		for(int i = size; i>index; i--){
+			obj[i] = obj[i-1];
+		}
+		obj[index] = element;
+		size++;
+	}
+	public void add(java.lang.Object element){
+		if(size>=obj.length){
+			increaseArr();
+		}
+		obj[size] = element;
+		size++;
+	}
+	private void increaseArr(){
+		Object[]a = new Object[size*2];
+		for(int i =0; i<size; i++){
+			a[i] = obj[i];
+		}
+		obj = a;
+	}
+	private void decreaseArr(){
+		Object[]a = new Object[obj.length/2];
+		for(int i =0; i<size; i++){
+			a[i] = obj[i];
+		}
+		obj = a;
+	}
+	public void clear(){
+		for(int i = 0; i<obj.length; i++){
+			obj[i] = null;
+		}
+		size =0;
+	}
+	public boolean contains(java.lang.Object element){
+		for(int i = 0; i<size; i++){
+			if(obj[i].equals(element))
+				return true;
+		}
+		return false;
+	}
+	public java.lang.Object get(int index){
+      if(index<0||index>size-1)
+         throw new IndexOutOfBoundsException();
+		return obj[index];
+	}
+	public int indexOf(java.lang.Object element){
+		int i =0;
+		for(i = 0; i<size; i++){
+			if(obj[i].equals(element))
+				return i;
+		}
+		throw new NoSuchElementException();
+	}
+	public java.lang.Object remove(int index){
+		if(index<0||index>=size)
+			throw new IndexOutOfBoundsException();
+		Object o = obj[index];
+		for(int i = index; i<size-1; i++){
+			obj[i] = obj[i+1];
+		}
+		size--;
+      //if(size < obj.length/2)
+		//	decreaseArr();
+		return o;
+	}
+	public java.lang.Object set(int index, java.lang.Object element){
+		if(index<0||index>=size)
+			throw new IndexOutOfBoundsException();
+		Object o = obj[index];
+		obj[index] = element;
+		return o;
+	}
+	public int size(){
+		return size;
+	}
+	public int capacity(){
+		return obj.length;
+	}
+	public void trimToSize(){
+      if(size==obj.length||obj.length==DEFAULT_CAPACITY)
+         return;
+      else if(size<DEFAULT_CAPACITY){
+    	  Object[] a = new Object[DEFAULT_CAPACITY];     
+    	  for(int i = 0; i<size; i++){
+    		  a[i] = obj[i];
+    	  }
+    	  obj = a;
+      }else{
+    	  Object[] a = new Object[size];     
+    	  for(int i = 0; i<size; i++){
+    		  a[i] = obj[i];
+    	  }
+    	  obj = a;
+      }
+	}
+
+}

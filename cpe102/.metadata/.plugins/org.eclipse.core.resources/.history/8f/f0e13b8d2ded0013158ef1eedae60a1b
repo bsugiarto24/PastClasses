@@ -1,0 +1,24 @@
+/**
+ *Snake
+ *@author Bryan Sugiarto
+ *@version lab15
+ */
+public class Snake {
+	private TotemPole r;
+	
+	public Snake(TotemPole rest){
+		r = rest;
+	}
+	public int power() {
+		return r.power()+3;
+	}
+
+	public int height() {
+		return r.height()+1;
+	}
+
+	public boolean chiefPole(int bearCount) {
+		return r.chiefPole(0);
+	}
+	
+}

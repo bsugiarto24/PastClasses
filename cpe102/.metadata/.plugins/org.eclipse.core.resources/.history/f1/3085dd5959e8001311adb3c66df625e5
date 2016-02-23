@@ -1,0 +1,82 @@
+/**
+ *SodaMachineFrame
+ *@author Bryan Sugiarto
+ *@version Lab12
+ */
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class SodaMachineFrame extends JFrame{
+	private JPanel coinPanel,sodaPanel,displayPanel;
+	private JButton nickel, quarter, dime, halfdollar;
+	private int money;
+	
+	public SodaMachineFrame(SodaMachine m){
+		coinPanel = new JPanel();
+		sodaPanel = new JPanel();
+		displayPanel = new JPanel();
+		coinPanel.setPreferredSize(new Dimension(300,300));
+		getContentPane().add(sodaPanel, BorderLayout.WEST);
+		getContentPane().add(displayPanel, BorderLayout.CENTER);
+		getContentPane().add(coinPanel, BorderLayout.EAST);
+		createCoinPanel();
+		setSampleColor();
+		pack();
+	}
+
+	public void createCoinPanel(){
+		class NickelListener implements ActionListener{
+			public void actionPerformed(ActionEvent arg0) {
+				money+=5;
+			}
+		}
+		class DimeListener implements ActionListener{
+			public void actionPerformed(ActionEvent arg0) {
+				money+=10;
+			}
+		}
+		class QuarterListener implements ActionListener{
+			public void actionPerformed(ActionEvent arg0) {
+				money+=25;
+			}
+		}
+		class HalfListener implements ActionListener{
+			public void actionPerformed(ActionEvent arg0) {
+				money+=50;
+			}
+		}
+		
+		NickelListener n = new NickelListener();
+		DimeListener d = new DimeListener();
+		QuarterListener q = new QuarterListener();
+		HalfListener h = new HalfListener();
+		
+		nickel = new JButton("Nickel");
+		nickel.addActionListener(n);
+		dime = new JButton("Dime");
+		dime.addActionListener(d);
+		quarter = new JButton("Quarter");
+		quarter.addActionListener(q);
+		halfdollar = new JButton("Half Dollar");
+		halfdollar.addActionListener(h);
+		
+		JPanel controlPanel = new JPanel();
+		controlPanel.setLayout(new GridLayout(4,1));
+		
+		controlPanel.add(nickel);
+		controlPanel.add(dime);
+		controlPanel.add(quarter);
+		controlPanel.add(halfdollar);
+		
+		getContentPane().add(controlPanel,BorderLayout.EAST);	
+	}
+	
+	public void setSampleColor(){
+
+	}
+}

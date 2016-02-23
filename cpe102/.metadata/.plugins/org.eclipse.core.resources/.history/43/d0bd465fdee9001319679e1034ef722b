@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.io.*;
+
+/**
+ *binary file reader
+ *@author Bryan Sugiarto
+ *@version Lab13
+ */
+public class BinaryFileEditor {
+
+
+	public static void main(String[] args) {
+		ArrayList <Object> arr = read("file.bin");
+		for(Object o: arr){
+			System.out.println(o);
+		}
+	}
+	
+	public static ArrayList<Object> read(String fileName){
+		File f = new File(fileName);
+		ArrayList <Object> arr = new ArrayList<Object>();
+		DataInputStream in = null;
+		try{
+			in = new DataInputStream(new FileInputStream(f));
+			while(true){
+				Integer i = null;
+				try{
+				i = in.readInt();
+				}catch(IOException e){
+					break;
+				}
+				arr.add(i);
+				for(int j = 0; j<i; j++){
+					arr.add(in.readDouble());
+				}
+			}
+		}catch(IOException e){
+			System.out.println("File not found");
+		}finally{
+			try {
+				in.close();
+			} catch (IOException e) {
+				System.out.println("Could not close");
+			}
+		}
+		return arr;
+	}
+
+}

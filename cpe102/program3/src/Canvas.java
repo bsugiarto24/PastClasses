@@ -1,0 +1,90 @@
+import java.util.ArrayList;
+import java.awt.*;
+
+
+public class Canvas {
+
+	private ArrayList<Shape> list;
+	
+	public Canvas(){
+		list = new ArrayList<Shape>();
+	}
+	
+	public void add(Shape shape){
+		if(shape==null)
+			throw new IllegalArgumentException();
+		list.add(shape);
+	}
+
+	public Shape remove(int index){
+		if(index<0||index>=list.size())
+			return null;
+		else{
+			Shape o = list.get(index);
+			list.remove(index);
+			return o;
+		}
+	}
+	
+	public Shape get(int index){
+		return list.get(index);
+	}
+	
+	public int size(){
+		return list.size();
+	}
+	
+	public ArrayList<Circle> getCircles(){
+		ArrayList<Circle> c = new ArrayList<Circle>();
+		for(Shape s: list){
+			if(s instanceof Circle)
+				c.add((Circle)s);
+		}
+		return c;
+	}
+	
+	public ArrayList<Rectangle> getRectangles(){
+		ArrayList<Rectangle> c = new ArrayList<Rectangle>();
+		for(Shape s: list){
+			if(s instanceof Rectangle)
+				c.add((Rectangle)s);
+		}
+		return c;
+	}
+	
+	public ArrayList<Triangle> getTriangles(){
+		ArrayList<Triangle> c = new ArrayList<Triangle>();
+		for(Shape s: list){
+			if(s instanceof Triangle)
+				c.add((Triangle)s);
+		}
+		return c;
+	}
+	
+	public ArrayList<ConvexPolygon> getConvexPolygons(){
+		ArrayList<ConvexPolygon> c = new ArrayList<ConvexPolygon>();
+		for(Shape s: list){
+			if(s instanceof ConvexPolygon)
+				c.add((ConvexPolygon)s);
+		}
+		return c;
+	}
+	
+	public ArrayList<Shape> getShapesByColor(Color color){
+		ArrayList<Shape> c = new ArrayList<Shape>();
+		for(Shape s: list){
+			if(s.getColor().equals(color))
+				c.add(s);
+		}
+		return c;
+	}
+	
+	public double getAreaOfAllShapes(){
+		double sum = 0;
+		for(Shape s: list){
+			sum+=s.getArea();
+		}
+		return sum;
+	}
+	
+}

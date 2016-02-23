@@ -1,0 +1,47 @@
+/**
+  *BasicArrayList
+  *@author Bryan Sugiarto
+  *@version Program2a
+  */
+
+public class BasicArrayList implements BasicList {
+	public static final int DEFAULT_CAPACITY = 5;
+	private Object[] obj  = new Object[3];
+	private int size = 3;
+	
+	public BasicArrayList(int capacity){
+		
+	}
+	public BasicArrayList(){
+		
+	}
+	
+	public void add(int index, java.lang.Object element){}
+	public void add(java.lang.Object element){}
+	public void clear(){}
+	public boolean contains(java.lang.Object element){
+		return true;
+	}
+	public java.lang.Object get(int index){
+		return null;
+	}
+	public int indexOf(java.lang.Object element){
+		return 0;
+	}
+	public java.lang.Object remove(int index){
+		return null;
+	}
+	public java.lang.Object set(int index, java.lang.Object element){
+		return null;
+	}
+	public int size(){
+		return 0;
+	}
+	public int capacity(){
+		return 0;
+	}
+	public void trimToSize(){
+		
+	}
+
+}

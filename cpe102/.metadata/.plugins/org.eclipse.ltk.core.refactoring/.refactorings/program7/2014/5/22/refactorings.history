@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 5 elements to &apos;program7/src&apos;&#x0D;&#x0A;- Original project: &apos;program7&apos;&#x0D;&#x0A;- Destination element: &apos;program7/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     SodaMachineDriver.java&#x0D;&#x0A;     OutOfSodasException.java&#x0D;&#x0A;     Soda.java&#x0D;&#x0A;     SodaMachine.java&#x0D;&#x0A;     InsufficientFundsException.java&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="/src" element1="SodaMachineDriver.java" element2="OutOfSodasException.java" element3="Soda.java" element4="SodaMachine.java" element5="InsufficientFundsException.java" files="5" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1401250442358" units="0" version="1.0"/>
+</session>

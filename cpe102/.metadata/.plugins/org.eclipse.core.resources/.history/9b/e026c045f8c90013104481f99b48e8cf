@@ -1,0 +1,35 @@
+/**
+  *BasicArrayListTest
+  *@author Bryan Sugiarto
+  *@version Program2a
+  */
+public class BasicArrayListTest {
+	
+	 public static void testAll(){
+		 
+		 
+	 }
+	 
+	 
+	 public void testSet(){
+		 
+		 
+	 }
+	 public void testtrimToSize(){
+		 BasicArrayList list = new BasicArrayList();
+		 list.add("D");
+		 list.add("asdf");
+		 list.add("sdf");
+		 list.trimToSize();	 
+	 }
+
+
+	public static void main(String[] args) {
+		testAll();
+		System.out.println("SUnit: "
+                + SUnit.testsRun() + " tests run, "
+                + SUnit.testsFailed() + " tests failed");
+
+	}
+
+}

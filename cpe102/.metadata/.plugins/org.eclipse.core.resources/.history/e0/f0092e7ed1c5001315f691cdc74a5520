@@ -1,0 +1,22 @@
+/**
+  * BasicList
+  * @author Bryan Sugiarto
+  * @version lab4
+  */
+
+
+import java.util.*;
+
+public class BasicList {
+
+	private ArrayList<String> string = new ArrayList<String>();
+	private ArrayList<Integer> integer = new ArrayList<Integer>();
+	private ArrayList<Boolean> bool = new ArrayList<Boolean>();
+	private ArrayList<Double> dble = new ArrayList<Double>();
+	
+	public static void main(String[] args) {
+		System.out.println("hi");
+
+	}
+
+}

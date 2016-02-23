@@ -1,0 +1,71 @@
+import java.awt.Color;
+import java.awt.Point;
+
+
+import java.awt.*;
+
+public class Rectangle implements Shape{
+
+	private int w, h;
+	private Point p;
+	private Color c;
+	private boolean fill;
+	
+	public Rectangle(int width, int height, java.awt.Point position, 
+			java.awt.Color color, boolean filled){
+		w = width;
+		h = height;
+		p = position;
+		c = color;
+		fill = filled;
+	}
+	
+	public double getArea() {
+		return w*h;
+	}
+
+	public Color getColor() {
+		return c;
+	}
+
+	public void setColor(Color color) {
+		c = color;		
+	}
+
+	public boolean getFilled() {
+		return fill;
+	}
+
+	public void setFilled(boolean filled) {
+		fill =filled;
+	}
+
+	public Point getPosition() {
+		return p;
+	}
+
+	public void setPosition(Point position) {
+		p = position;
+		
+	}
+
+	public void move(Point delta) {
+	    p.x+=delta.getX();
+	    p.y+=delta.getY();
+	}
+	
+	public int getWidth() {
+		return w;
+	}
+	void setWidth(int width) {
+		w = width;
+	}
+	int getHeight(){
+		return h;
+	}
+	void setHeight(int height){
+		h = height;
+	}
+
+
+}

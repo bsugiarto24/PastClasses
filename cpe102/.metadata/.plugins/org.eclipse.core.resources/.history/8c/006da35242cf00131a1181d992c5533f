@@ -1,0 +1,47 @@
+import java.awt.Point;
+
+
+public class Triangle implements Shape {
+	private double radius;
+    private Point p;
+	private boolean fill;
+	private java.awt.Color c;
+	
+	public double getArea(){
+       return Math.PI*radius*radius;
+    }
+    public java.awt.Color getColor(){
+       return c;
+    }
+    public void setColor(java.awt.Color color){
+ 	  if (color ==null)
+ 		  throw new IllegalArgumentException();
+       c = color;
+    } 
+    public boolean getFilled(){
+       return fill;
+    }   
+    public void setFilled(boolean filled){
+       fill = filled;
+    }
+    public java.awt.Point getPosition(){
+       return p;
+    }  
+    public void setPosition(java.awt.Point position){
+ 	   if (position ==null) 
+ 		   throw new IllegalArgumentException();
+	    p  = position;
+    }
+    public void move(java.awt.Point delta){
+       p.x+=delta.getX();
+       p.y+=delta.getY();
+    }
+    public boolean equals(Object o){
+       if(o!=null)
+          if(o.getClass()==this.getClass())
+             if(((Circle)o).getRadius()==radius)
+                return true;
+       return false;
+    }
+	 
+}

@@ -1,0 +1,30 @@
+/**
+ *TEST
+ *@author Bryan Sugiarto
+ *@version Lab6
+ */
+
+public class Test {
+
+	public static void main(String[] args) {
+		D d;
+		B b;
+		A a;
+		C c;
+		E e;
+		
+		d .methodD((D)b);
+		//d = a; DNC
+		b = new E();
+		//b = (D)c; DNC
+		//b.methodD(d); DNC
+		((D)b).methodD(d);
+		a = c;
+		b.methodB();
+		//b = new B(); DNC
+		e.methodB();
+
+
+	}
+
+}

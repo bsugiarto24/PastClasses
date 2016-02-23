@@ -1,0 +1,44 @@
+java.lang.Throwable: Error: Expected true, found false
+	at SUnit.assertTrue(SUnit.java:25)
+	at SUnitTester.testAssertTrue(SUnitTester.java:92)
+	at SUnitTester.main(SUnitTester.java:50)
+java.lang.Throwable: Error: Expected false, found true
+	at SUnit.assertFalse(SUnit.java:35)
+	at SUnitTester.testAssertFalse(SUnitTester.java:103)
+	at SUnitTester.main(SUnitTester.java:51)
+java.lang.Throwable: Error: Expected 9876543210, found 9876543211
+	at SUnit.assertEquals(SUnit.java:47)
+	at SUnitTester.testAssertEqualsLong(SUnitTester.java:114)
+	at SUnitTester.main(SUnitTester.java:52)
+java.lang.Throwable: Error: Expected 0.123456 +/-1.0E-6, found 0.1234571
+	at SUnit.assertEquals(SUnit.java:60)
+	at SUnitTester.testAssertEqualsDouble(SUnitTester.java:129)
+	at SUnitTester.main(SUnitTester.java:53)
+java.lang.Throwable: Error: Expected -100.0 +/-10.0, found -110.1
+	at SUnit.assertEquals(SUnit.java:60)
+	at SUnitTester.testAssertEqualsDouble(SUnitTester.java:141)
+	at SUnitTester.main(SUnitTester.java:53)
+java.lang.Throwable: Error: Expected object equality, found inequality
+	at SUnit.assertEqualsObject(SUnit.java:73)
+	at SUnitTester.testAssertEqualsObject(SUnitTester.java:156)
+	at SUnitTester.main(SUnitTester.java:54)
+java.lang.Throwable: Error: Expected object equality, found inequality
+	at SUnit.assertEqualsObject(SUnit.java:73)
+	at SUnitTester.testAssertEqualsObject(SUnitTester.java:160)
+	at SUnitTester.main(SUnitTester.java:54)
+java.lang.Throwable: Error: Expected reference equality, found inequality
+	at SUnit.assertEqualsReference(SUnit.java:85)
+	at SUnitTester.testAssertEqualsReference(SUnitTester.java:179)
+	at SUnitTester.main(SUnitTester.java:55)
+java.lang.Throwable: Error: Expected null, found non-null
+	at SUnit.assertNull(SUnit.java:96)
+	at SUnitTester.testAssertNull(SUnitTester.java:194)
+	at SUnitTester.main(SUnitTester.java:56)
+java.lang.Throwable: Error: Expected non-null, found null
+	at SUnit.assertNotNull(SUnit.java:106)
+	at SUnitTester.testAssertNotNull(SUnitTester.java:209)
+	at SUnitTester.main(SUnitTester.java:57)
+java.lang.Throwable: Error: Explicit failure
+	at SUnit.fail(SUnit.java:114)
+	at SUnitTester.testFail(SUnitTester.java:216)
+	at SUnitTester.main(SUnitTester.java:58)

@@ -1,0 +1,113 @@
+import java.util.ArrayList;
+import java.io.*;
+
+/**
+ *binary file reader
+ *@author Bryan Sugiarto
+ *@version Lab13
+ */
+public class BinaryFileEditor {
+
+
+	public static void main(String[] args) {
+		ArrayList <Object> arr = null;
+		try{
+			arr = read("file.bin");
+		}catch(EOFException e){
+			System.out.println("error reading");
+		}
+		System.out.println("File.bin");
+		for(Object o: arr){
+			System.out.println(o);
+		}
+		
+		write("file2.bin",arr);
+		
+		ArrayList <Object> arr2 = null;
+		try{
+			arr2 = read("file2.bin");
+		}catch(EOFException e){
+			System.out.println("error reading");
+		}
+		System.out.println("File2.bin");
+		for(Object o: arr2){
+			System.out.println(o);
+		}
+		/*
+		ArrayList <Object> arr3 = null;
+		try{
+			arr3 = read("file2.bin");
+		}catch(EOFException e){
+			System.out.println("error reading");
+		}
+		System.out.println("File2.bin");
+		for(Object o: arr3){
+			System.out.println(o);
+		}*/
+	}
+	
+	public static ArrayList<Object> read(String fileName) throws EOFException{
+		File f = new File(fileName);
+		ArrayList <Object> arr = new ArrayList<Object>();
+		DataInputStream in = null;
+		try{
+			in = new DataInputStream(new FileInputStream(f));
+			while(true){
+				Integer i = null;
+				try{
+				i = in.readInt();
+				}catch(EOFException e){
+					//no more ints to read
+					break;
+				}
+				arr.add(i);
+				for(int j = 0; j<i; j++){
+					arr.add(in.readDouble());
+				}
+			}
+		}catch(EOFException e){
+			System.out.println("closing file");
+			throw new EOFException();
+		}catch(IOException e){
+			System.out.println("File not found");
+		}finally{
+			try {
+				in.close();
+			} catch (IOException e) {
+				System.out.println("Could not close");
+			}
+		}
+		return arr;
+	}
+	
+	 public static void write(String fileName, ArrayList<Object> list){
+		File f = new File(fileName);
+		DataOutputStream out = null;
+		int count = 0;
+		try{
+			out = new DataOutputStream(new FileOutputStream(f));
+			for(Object o: list){
+				if(o instanceof Integer && count ==0){
+					out.writeInt((int)o);
+					count = (Integer)o;
+				}else if(o instanceof Double){
+					out.writeDouble((Double)o);
+					count--;
+				}else{
+					throw new IllegalArgumentException();
+				}		
+				//test to create error
+				//out.writeDouble(4.3);
+			}
+		}catch(IOException e){
+			System.out.println("File not found");
+		}finally{
+			try{
+				out.close();
+			}catch (IOException e) {
+				System.out.println("Could not close");
+			}
+		}
+	}
+
+}

@@ -1,0 +1,121 @@
+/**
+ *SodaMachineFrame
+ *@author Bryan Sugiarto
+ *@version Lab12
+ */
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class SodaMachineFrame extends JFrame{
+	private JPanel coinPanel,sodaPanel,displayPanel;
+	private JButton nickel, quarter, dime, 
+				dollar, halfdollar,change;
+	private JTextField t, returned;
+	private int money;
+	
+	public SodaMachineFrame(SodaMachine m){
+		coinPanel = new JPanel();
+		sodaPanel = new JPanel();
+		displayPanel = new JPanel();
+		coinPanel.setPreferredSize(new Dimension(300,300));
+		getContentPane().add(sodaPanel, BorderLayout.WEST);
+		getContentPane().add(displayPanel, BorderLayout.CENTER);
+		getContentPane().add(coinPanel, BorderLayout.EAST);
+		createCoinPanel();
+		createDisplayPanel();
+		pack();
+		setVisible(true);
+	}
+
+	public void createDisplayPanel(){
+		class ReturnListener implements ActionListener{
+			public void actionPerformed(ActionEvent arg0) {
+				if(money!=0){
+					updateReturn(money);
+					money = 0;
+					update();
+				}
+			}
+		}
+		//top Panel
+		JPanel top = new JPanel();
+		ReturnListener r = new ReturnListener();
+		JLabel d = new JLabel("Amount Deposited");
+		t = new JTextField("$"+money/100+"."+money%100);
+		t.setEditable(false);
+		change = new JButton("Coin Returned");
+		change.addActionListener(r);
+		top.add(d);
+		top.add(t);
+		top.add(change);
+		
+		//Center panel
+		JPanel center = new JPanel();
+		JLabel ret = new JLabel("Amount Deposited");
+		returned = new JTextField("$"+money/100+"."+money%100);
+		t.setEditable(false);
+		center.add(ret);
+		center.add(returned);
+		
+		
+		JPanel controlPanel = new JPanel();
+		top.setLayout(new GridLayout(3,1));
+		controlPanel.setLayout(new GridLayout(4,1));
+		controlPanel.add(top,BorderLayout.NORTH);
+		controlPanel.add(center,BorderLayout.CENTER);
+		getContentPane().add(controlPanel,BorderLayout.CENTER);	
+	}
+	
+	
+	public void createCoinPanel(){
+		class Coin implements ActionListener{
+			private int amount;
+			public Coin(int amount){
+				this.amount = amount;
+			}
+			public void actionPerformed(ActionEvent arg0) {
+				money+=amount;
+				update();
+			}
+		}
+		
+		Coin n = new Coin(5);
+		Coin d = new Coin(10);
+		Coin q = new Coin(25);
+		Coin h = new Coin(50);
+		Coin dl = new Coin(100);
+		
+		nickel = new JButton("Nickel");
+		nickel.addActionListener(n);
+		dime = new JButton("Dime");
+		dime.addActionListener(d);
+		quarter = new JButton("Quarter");
+		quarter.addActionListener(q);
+		halfdollar = new JButton("Half Dollar");
+		halfdollar.addActionListener(h);
+		dollar = new JButton("Dollar");
+		dollar.addActionListener(dl);
+		
+		JPanel controlPanel = new JPanel();
+		controlPanel.setLayout(new GridLayout(5,1));
+		
+		controlPanel.add(nickel);
+		controlPanel.add(dime);
+		controlPanel.add(quarter);
+		controlPanel.add(halfdollar);
+		controlPanel.add(dollar);
+		getContentPane().add(controlPanel,BorderLayout.EAST);	
+	}
+	
+	public void update(){
+		t.setText("$"+money/100+"."+money%100);
+	}
+	public void updateReturn(int money){
+		returned.setText("$"+money/100+"."+money%100);
+	}
+}

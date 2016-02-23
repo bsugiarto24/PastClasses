@@ -1,0 +1,16 @@
+import java.util.Comparator;
+
+ /*
+  * TotemPole
+  *@author Bryan Sugiarto
+  *@version lab15
+  */
+public class FirstNameComparator implements Comparator <Person> {
+
+
+	public int compare(Person a, Person b) {
+		
+		return 0;
+	}
+
+}

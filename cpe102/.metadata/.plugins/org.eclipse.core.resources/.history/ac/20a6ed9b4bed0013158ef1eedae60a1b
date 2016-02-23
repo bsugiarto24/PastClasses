@@ -1,0 +1,36 @@
+import java.io.FileNotFoundException;
+import java.util.*;
+
+/*
+ *  Comparator test
+ *@author Bryan Sugiarto
+ *@version lab14
+ */
+public class ComparatorTest {
+
+
+	public static void main(String[] args) {
+		
+		ArrayList<Person> list= null;
+		try {
+			list = Person.readFile("randomPeople.txt");
+		} catch (FileNotFoundException e) {
+			System.out.println("File not Found");
+		}
+		Comparator<Person> c = new OrderLast();
+        Collections.sort(list, c);
+		
+        Comparator<Person> c4 = new OrderFirst();    // End of chain
+	    Comparator<Person> c3 = new OrderLast(c4);   // Link c4 to c3
+	    Comparator<Person> c2 = new OrderAge(c3);    // Link c3 to c2
+	    Comparator<Person> c1 = new OrderState(c2);  // Beginning of chain, link c2 to c1
+	    Collections.sort(list, c1);
+	    
+	    try {
+			Person.writeFile("sorted.txt", list);
+		} catch (FileNotFoundException e) {
+			System.out.println("File not found");
+		}
+	}
+
+}
