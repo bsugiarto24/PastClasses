@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>
+2.6  Student Management
+</title>
+</head>
+<body bgcolor = white>
+<a name="User Interface Overview">
+<h3>
+2.6.1  Adding/Deleting Students
+</h3>
+</a>
+<p>
+When the user initially invokes the Test Tool, and clicks on the left menu the screen will be shown in Figure 1. 
+
+<br>
+	
+<a name="Figure Expanded menus tab">
+<a name="Expanded menus tab">
+<p align=center>
+<img src="images/initial-screen-2.png">
+</p>
+</a>
+<p align=center> Figure 1:  Initial screen.  </p>
+<hr>
+</a>
+<br>
+<br>
+The <tt>Teacher</tt> button (3rd button from the top) opens up the teacher section which is shown in Figure 2 below. To view the entry code for the course, the user must click on any course. 
+The <tt>minus</tt> button will delete the section. The <tt>More Details</tt> button will go to the Students view of the section.
+
+<br>
+	
+<a name="Course View">
+<a name="Course View">
+<p align=center>
+<img width = "800px" src="images/courses.png">
+</p>
+</a>
+<p align=center> Figure 2:  Courses Screen </p>
+<hr>
+</a>
+<br>
+<br>
+
+To add a section, the user would click on the <tt>Add Course</tt> button on the bottom of the screen. There will be two text field inputs to get the course name and the course code. Once the fields have sucessfully been inputted, the user can hit enter to save the new course. These actions are shown in Figure 3 below.
+
+<p>
+<p>
+
+<a name="Add Course">
+<a name="Add Course">
+<p align=center>
+<img width = "800px" src="images/add-courses.png">
+</p>
+</a>
+<p align=center> Figure 3:  Add Course View.  </p>
+<hr>
+</a>
+<br>
+
+
+<br>
+<br>
+The <tt>More Details</tt> button the left button on the section row opens up the Student view. To delete a student, the user would hit the <tt>minus</tt> button. To add a student, the user would hit the <tt>plus</tt> button on the left. The <tt>More Details</tt> button is represented by the three dots and when clicked, will show the test result details.
+
+<p>
+<p>
+
+<a name="Display Students">
+<a name="Display Studetns">
+<p align=center>
+<img width = "800px" src="images/view-students.jpg">
+</p>
+</a>
+<p align=center> Figure 4:  Student View.  </p>
+<hr>
+</a>
+<br>
+
+When the user hits the <tt>plus</tt> button to add a student, the interface prompts the user to add a name to the new student. To save the student, the user must use the <tt>enter</tt> button.
+
+<p>
+
+<a name="Adding Students">
+<a name="Adding Studetns">
+<p align=center>
+<img width = "800px" src="images/add-student.jpg">
+</p>
+</a>
+<p align=center> Figure 5:  Adding a Student.  </p>
+<hr>
+</a>
+
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="view-student-tests.html">View Students</a>
+ | <font color=black> Up: </font><a href="teach-func.html">Teacher Functions</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

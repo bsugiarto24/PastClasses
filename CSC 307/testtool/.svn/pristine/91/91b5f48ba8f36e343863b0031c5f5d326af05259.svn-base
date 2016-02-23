@@ -1,0 +1,326 @@
+
+<html>
+<head>
+<title>
+1.5.7.  Feature Comparison Matrix
+</title>
+</head>
+<body bgcolor = white>
+<a name="Feature Comparison Matrix">
+<h4>
+1.5.7.  Feature Comparison Matrix
+</h4>
+</a>
+<p>
+<font size=-2>
+<table align=center border=1 cellpadding=4>
+  <tr>
+    <td valign=top>
+<br>
+<strong>Features:</strong>
+    <td valign=top>
+<p align=center>
+<a href="http://www.classmarker.com/">
+<strong>Class Marker
+<br>
+Outlook</strong></a>
+</p>
+    <td valign=top>
+<p align=center>
+<a href="https://quizegg.com/features">
+<strong>Quiz Egg
+<br>
+Calendar</strong></a>
+</p>
+    <td valign=top>
+<p align=center>
+<a href="https://www.goconqr.com/en-US">
+<strong>Go Conquer
+<br>
+Calendar</strong></a>
+</p>
+    <td valign=top>
+<p align=center>
+<a href="http://web.uvic.ca/hrd/hotpot/">
+<strong>Hot Potatoes</a>
+</p>
+    <td valign=top>
+<p align=center>
+<a href="https://www.quizmeonline.net">
+    <strong>Quiz Me Online</a>
+</p>
+</p>
+    <td valign=top>
+<p align=center>
+<a href="http://www.quizrevolution.com/">
+    <strong>Quiz Revolution</a>
+</p>
+<p aligh=center>
+<a href="">
+  <tr>
+    <td valign=top>File Commands:
+    <td valign=top>&nbsp;
+    <td valign=top>&nbsp;
+    <td valign=top>&nbsp;
+    <td valign=top>&nbsp;
+    <td valign=top>&nbsp;
+    <td valign=top>&nbsp;
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Load Previous Tests</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Save/Open as Text</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Importing</font>
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>no
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Exporting</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Printing</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>Edit Commands:
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Undo/Redo</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Cut/Copy/Paste:</font>
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+size=-1>Text</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+size=-1>Change Text Font/Color</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Search</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>Questions:
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Multiple Choice/<br>True,False/Free Response</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Select All Button</font>
+    <td valign=top>no
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Tries Allowed</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Matching and Ordering</font>
+    <td valign=top>no
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>
+    Question Time Limit</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>
+    Randomize Questions</font>
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Other Kinds of
+Items</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+  <tr>
+    <td valign=top>Statistics:
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Immediate Feedback after Test</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Immediate Feedback <br>after each Question</font>
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Hints for each Question</font>
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>yes
+    <td valign=top>no
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Question Type/Subject</font>
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>yes
+  <tr>
+  <tr>
+    <td valign=top>Administration:
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Users</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Groups</font>
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>yes
+  <tr>
+    <td valign=top>Other Features:
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Multi-User
+Support</font>
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Wide Variety of
+Options</font>
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>no
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Good Help:</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>UI Characteristics:
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Multiple Windows Well
+Supported</font>
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+    <td valign=top>no
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Convenient Question Input with choices
+Formats</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+  <tr>
+    <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1>Nice Style Overall
+</font>
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes
+    <td valign=top>yes  
+    <td valign=top>yes
+</table>
+</font>
+
+<pre>
+
+</pre> 
+</body>
+</html>

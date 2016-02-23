@@ -1,0 +1,242 @@
+package TestTool.Model.TestCreation;
+
+import TestTool.Model.QuestionCreation.*;
+import TestTool.Model.Resource.Course;
+import TestTool.Model.Resource.CourseCollection;
+import TestTool.Model.Resource.Subject;
+import TestTool.Model.Resource.SubjectCollection;
+import TestTool.Model.TestGrading.QuestionScore;
+
+import java.io.Serializable;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+/**
+* A test is a collection of questions and contains basic test
+* information such as test difficulty, name, course, subject, number of questions, and time.
+ *
+ *  Created by Brandon Vo (brvo@calpoly.edu) on 11/20/15.
+*/
+public class Test implements Serializable{
+
+    /*The list of questions for the test*/
+    private ArrayList<Question> questions;
+
+    /*The name of the test*/
+    private String name;
+
+    /*The course the test falls under*/
+    private Course course;
+
+    /*The subjects the test covers*/
+    private ArrayList<Subject> subject;
+
+    /*The number of questions on the test*/
+    private int numQuestions;
+
+    /*The difficulty of the test*/
+    private int difficulty;
+
+    /*The time limit of the test in minutes*/
+    private int timeLimit;
+
+    /**
+     *
+     *
+     *
+     pre:
+     questions != null && questions.size > 0 &&
+     difficulty > 0 &&
+     timeLimit > 0 &&
+     subject != null && !subject.isEmpty() &&
+     name != null && !name.isEmpty() &&
+     course != null && !course.isEmpty();
+
+     post:
+     return != null &&
+     return.getDifficulty() == difficulty &&
+     return.getTimeLimit() == timeLimit &&
+     return.getNumQuestions() == questions.size() &&
+     return.getCourse().getName().equals(course) &&
+     return.getSubject().get(0).getName().equals(subject) && return.getSubject().size() == 1 &&
+     return.getName().equals(name);
+     */
+    public Test(ArrayList<Question> questions, int difficulty, int timeLimit, String subject, String name, String course) {
+        this.questions = getNewQuestions(questions);
+        this.numQuestions = questions.size();
+        this.difficulty = difficulty;
+        this.timeLimit = timeLimit;
+        ArrayList<Subject> subjects = new ArrayList<>();
+        subjects.add(SubjectCollection.getInstance().findSubject(subject));
+        this.subject = subjects;
+        this.course = CourseCollection.getInstance().findCourse(course);
+        this.name = name;
+    }
+
+    /**
+     *
+     *
+     *
+     pre:
+         questions != null && questions.size > 0 &&
+         difficulty > 0 &&
+         timeLimit > 0 &&
+         subject != null && !subject.size() > 0 &&
+         name != null && !name.isEmpty() &&
+         course != null && !course.isEmpty();
+
+     post:
+         return != null &&
+         return.getDifficulty() == difficulty &&
+         return.getTimeLimit() == timeLimit &&
+         return.getNumQuestions() == questions.size() &&
+         return.getCourse().getName().equals(course) &&
+         return.getSubject().size() == subject.size() &&
+         return.getName().equals(name);
+     */
+    public Test(ArrayList<Question> questions, int difficulty, int timeLimit, ArrayList<String> subject, String name, String course) {
+        this.questions = getNewQuestions(questions);
+        this.numQuestions = questions.size();
+        this.difficulty = difficulty;
+        this.timeLimit = timeLimit;
+        this.course = CourseCollection.getInstance().findCourse(course);
+        this.name = name;
+        ArrayList<Subject> subjects = new ArrayList<>();
+        for(String subjectName : subject){
+            subjects.add(SubjectCollection.getInstance().findSubject(subjectName));
+        }
+        this.subject = subjects;
+
+    }
+
+
+    public ArrayList<Question> getQuestions() {
+        return questions;
+    }
+
+    public int getDifficulty() {
+        return difficulty;
+    }
+
+    public int getTimeLimit() {
+        return timeLimit;
+    }
+
+    public int getNumQuestions() {
+        return numQuestions;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Subject> getSubject() {
+        return subject;
+    }
+
+    public ArrayList<String> getSubjectNames(){
+        ArrayList<String> names = new ArrayList<>();
+        for(Subject sub : subject){
+            names.add(sub.getName());
+        }
+        return names;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+
+    public ArrayList<Question> getNewQuestions(ArrayList<Question> questions) {
+        ArrayList<Question> newQuestions = new ArrayList<>();
+        for (Question question : questions) {
+           if (question instanceof Coding) {
+                Coding quest = new Coding();
+                quest.setType(question.getType());
+                quest.setQuestion(question.getQuestion());
+                quest.setPoints(question.getPoints());
+                quest.setSubject(question.getSubject());
+                quest.setCourse(question.getCourse());
+                quest.setDifficulty(question.getDifficulty());
+                quest.setDate(question.getDate());
+                quest.setCreator(question.getCreator());
+                quest.setScore(new QuestionScore());
+                quest.setAnswer(((Coding) question).getAnswer());
+                quest.setFlags(((Coding) question).getFlags());
+                newQuestions.add(quest);
+
+            } else if (question instanceof FillInTheBlank) {
+                FillInTheBlank quest = new FillInTheBlank();
+                quest.setType(question.getType());
+                quest.setQuestion(question.getQuestion());
+                quest.setPoints(question.getPoints());
+                quest.setSubject(question.getSubject());
+                quest.setCourse(question.getCourse());
+                quest.setDifficulty(question.getDifficulty());
+                quest.setDate(question.getDate());
+                quest.setCreator(question.getCreator());
+                quest.setScore(new QuestionScore());
+                quest.setAnswer(((FillInTheBlank) question).getAnswer());
+                newQuestions.add(quest);
+
+            } else if (question instanceof FreeResponse) {
+                FreeResponse quest = new FreeResponse();
+                quest.setType(question.getType());
+                quest.setQuestion(question.getQuestion());
+                quest.setPoints(question.getPoints());
+                quest.setSubject(question.getSubject());
+                quest.setCourse(question.getCourse());
+                quest.setDifficulty(question.getDifficulty());
+                quest.setDate(question.getDate());
+                quest.setCreator(question.getCreator());
+                quest.setScore(new QuestionScore());
+                quest.setAnswer(((FreeResponse) question).getAnswer());
+                quest.setFlags(((FreeResponse) question).getFlags());
+                newQuestions.add(quest);
+
+            } else if (question instanceof MultipleChoice) {
+                MultipleChoice quest = new MultipleChoice();
+                quest.setType(question.getType());
+                quest.setQuestion(question.getQuestion());
+                quest.setPoints(question.getPoints());
+                quest.setSubject(question.getSubject());
+                quest.setCourse(question.getCourse());
+                quest.setDifficulty(question.getDifficulty());
+                quest.setDate(question.getDate());
+                quest.setCreator(question.getCreator());
+                quest.setScore(new QuestionScore());
+                quest.setAnswer(((MultipleChoice) question).getAnswer());
+                quest.setOption(((MultipleChoice) question).getOptions());
+                newQuestions.add(quest);
+
+            } else if (question instanceof TrueFalse) {
+                TrueFalse quest = new TrueFalse();
+                quest.setType(question.getType());
+                quest.setQuestion(question.getQuestion());
+                quest.setPoints(question.getPoints());
+                quest.setSubject(question.getSubject());
+                quest.setCourse(question.getCourse());
+                quest.setDifficulty(question.getDifficulty());
+                quest.setDate(question.getDate());
+                quest.setScore(new QuestionScore());
+                quest.setCreator(question.getCreator());
+                quest.setAnswer(((TrueFalse) question).getAnswer());
+                newQuestions.add(quest);
+            }
+        }
+        return newQuestions;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public void setTimeLimit(final int timeLimit) {
+        this.timeLimit = timeLimit;
+    }
+
+    public void setDifficulty(final int difficulty) {
+        this.difficulty = difficulty;
+    }
+}
+

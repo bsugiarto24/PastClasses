@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>
+2.4.  Question Settings
+</title>
+</head>
+<body bgcolor = white>
+<a name="Question Settings">
+<h3>
+2.4.  Question Settings
+</h3>
+</a>
+<p>
+When the user initially invokes the Test Generation, the screen appears as shown
+in Figure 1.
+
+<br>
+<br>
+<hr>
+<a name="Figure Initial screen">
+<a name="Initial screen">
+<p align=center>
+<img src="images/question-settings1.jpg" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 1:  Initial screen.  </p>
+<hr>
+</a>
+<br>
+
+The initial display will consists a list of variables a teacher can be used to generate
+a test. It will contain at the minmum: For Class (which class this test is for), Test Name,
+Difficulty, Question Types, and much more.
+
+<p>
+Figure 2 shows how to edit.
+
+<br>
+<br>
+<hr>
+<a name="Figure Expanded menus tab">
+<a name="Expanded menus tab">
+<p align=center>
+<img src="images/question-settings2.jpg" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 2:  Expanded Menus Tab.  </p>
+<hr>
+</a>
+<br>
+
+<p> Click on the drop down menu of a setting. Choose a desired level for that 
+	specific setting.
+
+<p> At the end, click "Create" to create the test.
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="edit-existing-question.html">edit exisiting questions</a>
+ | <font color=black> Next: </font><a href="statistics.html">statistics</a>
+ | <font color=black> Up: </font><a href="functional.html">functional</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

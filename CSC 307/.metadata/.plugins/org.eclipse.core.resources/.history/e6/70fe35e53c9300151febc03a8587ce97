@@ -1,0 +1,56 @@
+package TestTool.Model.AdministrativeDetails;
+
+import java.util.ArrayList;
+
+import TestTool.Model.Resource.Course;
+
+
+/**
+ * This class represents the view of courses.
+ * @author bsugiarto
+ *
+ */
+public abstract class CourseView extends ListView{
+
+	/**
+	 * ArrayList of courses
+	 */
+	private ArrayList<Course> list;
+	
+	/**
+	 * This function adds an object to the list.
+	 * @param obj Object to add to the list.
+     * Pre: obj != null;
+     * post:
+		   // entry of options at choice is equals to text and others are not touched
+		   forall(int i; i < options.size() && i != choice;
+		      options.get(i) == options'.get(i))
+		   &&
+		   options'.get(choice) == text;  
+	 */
+	public abstract void add(Course obj);
+	
+	/**
+	 * This function sends the teacher to the test results of the course selected
+	 * @param index Index to get more details.
+     * Pre: index >=0 && index < list.size()
+	 */
+	public abstract void moreDetails(int index);
+	
+	   * pre:
+		   // options does not point to null and choice is within the boundary of the options collection
+		   * choice != null && choice < options.size(); 
+		   * post:
+		   // entry of options at choice is equals to text and others are not touched
+		   forall(int i; i < options.size() && i != choice;
+		      options.get(i) == options'.get(i))
+		   &&
+		   options'.get(choice) == text;    
+	
+	/**
+	 * This function expands the selected row to show Entry Code.
+	 * @param index Index to expand row for Entry Code.
+	 * Pre: index >=0 && index < list.size()
+     */
+	public abstract void expand(int index);
+}

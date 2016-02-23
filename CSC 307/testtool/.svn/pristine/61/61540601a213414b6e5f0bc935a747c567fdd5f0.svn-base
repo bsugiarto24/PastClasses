@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>
+2.2.1.  Generate a Random Test From Question Bank
+</title>
+</head>
+<body bgcolor = white>
+<a name="Generate a Random Test From Question Bank">
+<h4>
+2.2.1.  Generate a Random Test From Question Bank
+</h4>
+</a>
+
+<p> The User will come to this empty page when clicking <tt> 'Generate Random Test From Question Bank' </tt> from the previous page as shown in <tt> Figure 2-2</tt>.
+<br>
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/gen-test-ques-bank1.png">
+</p>
+<p align=center>Figure 2-2</p>
+<hr>
+</a>
+<br>
+
+
+To create a random test the user will use the <tt>Test Length Drop Down Box</tt> and click on the units of time they want as shown in <tt> Figure 2-3</tt>.
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/gen-test-ques-bank2.png">
+</p>
+<p align=center>Figure 2-3</p>
+<hr>
+</a>
+<br>
+
+The User will then Click on the <tt> Subject Drop Down Box</tt> and select the type of Subject they want in the test as shown in <tt> Figure 2-4</tt>.
+
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/gen-test-ques-bank3.png">
+</p>
+<p align=center>Figure 2-4</p>
+<hr>
+</a>
+<br>
+
+After Selecting the Subject, the User will proceed to select the <tt> Course Drop Down Box </tt> of the course they want the questions from as shown in <tt>Figure 2-5</tt>.
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/gen-test-ques-bank4.png">
+</p>
+<p align=center>Figure 2-5</p>
+<hr>
+</a>
+<br>
+
+Finally, the User will fill in:
+<br>
+1. <tt> Number of Questions Text Box</tt> which will specify the number of questions in the test.
+<br>
+2. <tt> Test Length Text Box</tt> which will generate the test to match the test length based on the avg. time a question will take.
+<br>
+3. <tt> Average Difficulty</tt> which will choose questions to match the overall average difficulty of questions.
+<br>
+4. <tt> Range</tt> to specify what range of difficulty so that higher difficulty questions or lower difficulty questions won't be chosen.
+<br>
+5. And the user will Select a <tt>Checkbox</tt> which will specify the types of questions the user wants to include in the test.
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/gen-test-ques-bank5.png">
+</p>
+<p align=center>Figure 2-6</p>
+<hr>
+</a>
+<br>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="gen-test-new-questions.html"> Create a test with new questions</a>
+ | <font color=black> Up: </font><a href="browsing.html">browsing</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>
+

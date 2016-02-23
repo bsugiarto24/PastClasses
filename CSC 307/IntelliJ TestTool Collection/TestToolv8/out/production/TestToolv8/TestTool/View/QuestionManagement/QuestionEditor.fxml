@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.QuestionManagement.QuestionEditorTopController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type:" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <MenuButton layoutX="133.0" layoutY="20.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="180.0" text="-Choose Type-" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="20.0">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#handleSelectTrueFalseType" text="True/False" />
+            <MenuItem mnemonicParsing="false" onAction="#handleSelectMultipleChoiceType" text="Multiple Choice" />
+            <MenuItem fx:id="freeResponse" mnemonicParsing="false" onAction="#handleSelectFreeResponseType" text="Free-Response" />
+            <MenuItem mnemonicParsing="false" onAction="#handleSelectCodingType" text="Coding" />
+          <MenuItem mnemonicParsing="false" onAction="#handleSelectFillInTheBlankType" text="Fill-In-The-Blank" />
+        </items>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </MenuButton>
+      <AnchorPane layoutX="474.0" layoutY="11.0" prefHeight="57.0" prefWidth="326.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="11.0">
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="268.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="40.0">
+              <buttons>
+                  <Button mnemonicParsing="false" onAction="#handleDelete" text="Delete" textFill="#f80000">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleSave" text="Save" textFill="#00aaff">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleClear" text="Clear">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

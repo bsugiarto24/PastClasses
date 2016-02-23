@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+1.4.  Impacts
+</title>
+</head>
+<body bgcolor = white>
+<a name="Impacts">
+<h3>
+1.4.  Impacts
+</h3>
+</a>
+<p>
+The positive potential impacts of the Testing Tool as a functioning system are increased convenience and efficiency in creating, managing, and distributing generated tests. The positive impacts of the Testing Tool are:
+<ol type="a">
+	<li> the automated generation of tests based on a pool of user-defined questions <p></p>
+	</li>
+	<li> a database of reusable questions with various user-defined factors (difficulty, approximate time, etc.) <p></p>
+	</li>
+	<li> full control over the types, lengths, and order (different per test vs uniform) of questions to be used on the test <p></p>
+	</li>
+	<li> the production and organization of reports to be used by either the professor (to view class progress) or the student (to view individual progress) <p></p>
+	</li>
+</ol>
+Potential negative impacts include those common to any user-oriented software system. Viz., if the system is poorly designed and implemented, it can be inconvenient to use and decrease rather than increase user productivity. More specific negative impacts relate to issues of privacy, reliability, and data integrity. If the system implementation is flawed, it may reveal private information that users do not wish to be revealed. If an organization of users relies on a flawed implementation of the system to produce tests, and such questions are improperly or incompletely formatted, the organization may suffer significant disruption of its operations. Significant disruption may also occur if the system loses or corrupts test questions and result data.
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="setting.html">setting</a>
+ | <font color=black> Next: </font><a href="related.html">related</a>
+ | <font color=black> Up: </font><a href="intro.html">intro</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

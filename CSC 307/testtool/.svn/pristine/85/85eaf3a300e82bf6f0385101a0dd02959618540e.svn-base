@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>
+2.3.  Question Management
+</title>
+</head>
+<body bgcolor = white>
+<a name="Question Management">
+<h3>
+2.3. Question Management
+</h3>
+</a>
+
+<p>
+This introductory scenario shows an individual user creating and editing questions.
+Question management is one of the key functionalities of the Test Tool. This section
+deals with the management of questions within tests. To see how the user gets here, refer to
+<a href="test-creation.html">
+Section 2.2
+</a>
+
+<p>
+When the user adds a new question and chooses <tt>New Question</tt>, the following screen will 
+appear.
+
+<br>
+<hr>
+<a name="Adding a New Question">
+<p align=center>
+<img src="images/add-new-question.png">
+</p>
+<p align=center> Figure 3-1: Adding a New Question </p>
+<hr>
+</a>
+<br>
+
+<p>
+To the right of every question, there is a red button with a white minus button on it. The user
+clicks this button to delete the question.
+<p>
+The user first chooses the desired question type using the drop-down menu as shown in 
+Figure 3-2.
+
+<br>
+<hr>
+<a name="Question Type Selection">
+<p align=center>
+<img src="images/question-type-selection.png">
+</p>
+<p align=center> Figure 3-2: Question Type Selection </p>
+<hr>
+</a>
+<br>
+
+<p>
+Once the user chooses a question type, the system will adjust the screen accordingly to 
+display the different sections needed to create a question of that type. These different 
+question types are shown in this section's subsections.
+
+<p>
+Once a question type is selected, a blue/yellow save button will also appear next to the red delete button. 
+Clicking this will allow the user to the save the question to the Question Bank. The save button is shown in Figure 3-3.
+
+<br>
+<hr>
+<a name="Question Type Selection">
+<p align=center>
+<img src="images/save.png">
+</p>
+<p align=center> Figure 3-3: Save Button </p>
+<hr>
+</a>
+<br>
+
+<p>
+The common sections found across multiple question types are <tt>Question</tt>, <tt>Points</tt>, 
+<tt>Subject</tt>, and <tt>Difficulty</tt>.
+
+<p> 
+<tt>Question</tt> and <tt>Points</tt> require the user to type in information using the keyboard.
+There are show in Figure 3-4 and 3-5, respectively.
+<br>*note* The <tt>Points</tt> section only accepts numbers. 
+
+<br>
+<hr>
+<a name="Question Type Selection">
+<p align=center>
+<img src="images/question.png">
+</p>
+<p align=center> Figure 3-4: Question Box </p>
+<hr>
+</a>
+<br>
+
+<br>
+<hr>
+<a name="Question Type Selection">
+<p align=center>
+<img src="images/points.png">
+</p>
+<p align=center> Figure 3-5: Points Box </p>
+<hr>
+</a>
+<br>
+
+<p> 
+<tt>Subject</tt>, <tt>Difficulty</tt>, and <tt>Course</tt> acquire info through drop-down menus similar to the 
+<tt>Type</tt> section. <tt>Subject</tt> is chosen from a list of subjects that the user creates. The user can click <tt>Add</tt> 
+to add a new subject to the list. <tt>Difficulty</tt> is chosen from a list ranging from 1 - 10. And <tt>Course</tt> is chosen 
+from a list of courses that the user creates. The user can click <tt>Add</tt> to add a new course to the list. These are shown in Figures 3-6, 
+3-7, and 3-8 respectively.
+
+<br>
+<hr>
+<a name="Question Type Selection">
+<p align=center>
+<img src="images/question.png">
+</p>
+<p align=center> Figure 3-6: Question Box </p>
+<hr>
+</a>
+<br>
+
+<br>
+<hr>
+<a name="Question Type Selection">
+<p align=center>
+<img src="images/points.png">
+</p>
+<p align=center> Figure 3-7: Points Box </p>
+<hr>
+</a>
+<br>
+
+<br>
+<hr>
+<a name="Question Type Selection">
+<p align=center>
+<img src="images/course.png">
+</p>
+<p align=center> Figure 3-8: Course Box </p>
+<hr>
+</a>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="test-creation.html">Test Creation</a>
+ | <font color=black> Next: </font><a href="test-settings.html">Question Settings</a>
+ | <font color=black> Up: </font><a href="functional.html">Functional</a>
+ | <font color=black> Top: </font><a href="index.html">Index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

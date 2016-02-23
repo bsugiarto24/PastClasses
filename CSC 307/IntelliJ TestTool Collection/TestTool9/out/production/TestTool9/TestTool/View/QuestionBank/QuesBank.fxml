@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.QuestionBank.QuesBankController">
+   <children>
+      <Text layoutX="305.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Bank">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="back" layoutX="28.0" layoutY="31.0" mnemonicParsing="false" onAction="#backButQuesBank" text="Back" />
+      <Pane layoutX="597.0" layoutY="68.0" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+         <opaqueInsets>
+            <Insets top="1.0" />
+         </opaqueInsets>
+         <children>
+            <TextField fx:id="searchBar" layoutX="17.0" layoutY="32.0" onAction="#updateBank" onKeyReleased="#updateBank" text="Search" />
+            <TextField fx:id="diffLevel" layoutX="77.0" layoutY="69.0" onAction="#updateBank" onKeyReleased="#updateBank" prefHeight="27.0" prefWidth="61.0" />
+            <Text layoutX="14.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty:" />
+            <Text layoutX="13.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:" />
+            <Text layoutX="14.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:" />
+            <Text layoutX="17.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type Of Question:" />
+            <ComboBox fx:id="subject" layoutX="75.0" layoutY="150.0" onAction="#updateBank" onMouseDragReleased="#updateBank" prefHeight="27.0" prefWidth="112.0" promptText="None">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="None" />
+                  </FXCollections>
+               </items>
+               <value>
+                  <String fx:value="None" />
+               </value>
+            </ComboBox>
+            <ComboBox fx:id="course" layoutX="77.0" layoutY="109.0" onAction="#updateBank" onMouseDragReleased="#updateBank" prefHeight="27.0" prefWidth="91.0" promptText="None">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="None" />
+                  </FXCollections>
+               </items>
+               <value>
+                  <String fx:value="None" />
+               </value>
+            </ComboBox>
+            <ComboBox fx:id="quesType" layoutX="19.0" layoutY="223.0" onAction="#updateBank" onMouseDragReleased="#updateBank" prefHeight="27.0" prefWidth="148.0" promptText="None">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="None" />
+                     <String fx:value="True/False" />
+                     <String fx:value="Multiple Choice" />
+                     <String fx:value="Free-Response" />
+                     <String fx:value="Coding" />
+                     <String fx:value="Fill-In-The-Blank" />
+                  </FXCollections>
+               </items>
+               <value>
+                  <String fx:value="None" />
+               </value>
+            </ComboBox>
+            <Text layoutX="17.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date:" />
+            <DatePicker fx:id="startDa" layoutX="18.0" layoutY="289.0" onAction="#updateBank" onInputMethodTextChanged="#updateBank" onKeyReleased="#updateBank" onMouseDragReleased="#updateBank" onMousePressed="#updateBank" onMouseReleased="#updateBank" prefHeight="27.0" prefWidth="148.0" />
+            <Text layoutX="20.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date:" />
+            <DatePicker fx:id="endDa" layoutX="18.0" layoutY="371.0" onAction="#updateBank" onInputMethodTextChanged="#updateBank" onKeyReleased="#updateBank" onMouseDragReleased="#updateBank" onMousePressed="#updateBank" onMouseReleased="#updateBank" prefHeight="27.0" prefWidth="148.0" />
+            <Button fx:id="endDateClear" layoutX="114.0" layoutY="403.0" mnemonicParsing="false" onAction="#clearEnd" text="Clear" />
+            <Button fx:id="stDateClear" layoutX="114.0" layoutY="322.0" mnemonicParsing="false" onAction="#clearStart" text="Clear" />
+            <Button fx:id="clearBut" layoutX="19.0" layoutY="456.0" mnemonicParsing="false" onAction="#clearAll" text="Clear All Options" />
+            <Text layoutX="12.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Bar:" />
+         </children>
+      </Pane>
+      <TableView fx:id="quesTable" layoutX="4.0" layoutY="68.0" prefHeight="500.0" prefWidth="590.0">
+         <columns>
+            <TableColumn fx:id="questionCol" prefWidth="133.0" text="Question" />
+            <TableColumn fx:id="diffCol" prefWidth="69.0" text="Difficulty" />
+            <TableColumn fx:id="subjCol" prefWidth="88.0" text="Subject" />
+            <TableColumn fx:id="courseCol" text="Course" />
+            <TableColumn fx:id="typeCol" prefWidth="73.0" text="Type" />
+            <TableColumn fx:id="pointsCol" prefWidth="77.0" text="Points" />
+            <TableColumn fx:id="dateCol" prefWidth="69.0" text="Date" />
+         </columns>
+      </TableView>
+      <Button fx:id="add" layoutX="39.0" layoutY="570.0" mnemonicParsing="false" onAction="#addQues" text="Add" />
+      <Button fx:id="delete" layoutX="101.0" layoutY="570.0" mnemonicParsing="false" onAction="#deleteQues" text="Delete" />
+      <Button fx:id="edit1" layoutX="175.0" layoutY="570.0" mnemonicParsing="false" onAction="#editQues" text="Edit" />
+   </children>
+</AnchorPane>

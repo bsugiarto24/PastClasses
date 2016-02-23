@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestResults.StatisticsController">
+   <children>
+      <TabPane layoutX="38.0" layoutY="42.0" prefHeight="516.0" prefWidth="725.0" style="-fx-background-color: #969696;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab id="testTab" text="Test">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <HBox layoutX="23.0" layoutY="28.0" prefHeight="350.0" prefWidth="680.0" style="-fx-border-color: black; -fx-border-width: 3;">
+                           <children>
+                              <ImageView id="testChart" fitHeight="344.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <Button id="selectTestButton" layoutX="147.0" layoutY="407.0" mnemonicParsing="false" onAction="#onTestBankSelect" text="Select from Test Bank" />
+                        <Button id="exportButton" layoutX="420.0" layoutY="407.0" mnemonicParsing="false" onAction="#onExportScore" text="Export Scores" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab id="questionTab" text="Question">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <HBox layoutX="23.0" layoutY="28.0" prefHeight="350.0" prefWidth="680.0" style="-fx-border-color: black; -fx-border-width: 3;">
+                           <children>
+                              <ImageView id="questionChart" fitHeight="344.0" fitWidth="672.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <Button id="selectQuestionButton" layoutX="147.0" layoutY="407.0" mnemonicParsing="false" onAction="#onQuestionBankSelect" text="Select from Question Bank" />
+                        <Button id="editQuestionButton" layoutX="455.0" layoutY="407.0" mnemonicParsing="false" onAction="#onEditQuestion" text="Edit Question" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

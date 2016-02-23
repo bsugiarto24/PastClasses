@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestCreation.BasicGenController">
+   <children>
+      <GridPane alignment="center" hgap="10" vgap="10">
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+      <Button id="back_Button" fx:id="backButton" layoutX="70.0" layoutY="38.0" mnemonicParsing="false" onAction="#backToRanMain" text="Back" />
+      <Text layoutX="176.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Randomize Test Options" textOrigin="CENTER" wrappingWidth="448.21875">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="numQuesTF" layoutX="239.0" layoutY="204.0" prefHeight="27.0" prefWidth="36.0" />
+      <Text layoutX="108.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Questions: " />
+      <TextField fx:id="testLengthTF" layoutX="565.0" layoutY="144.0" prefHeight="27.0" prefWidth="36.0" />
+      <TextField fx:id="minRangeTF" layoutX="169.0" layoutY="328.0" prefHeight="27.0" prefWidth="36.0" />
+      <Text layoutX="478.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Length:" />
+      <TextField fx:id="maxRangeTF" layoutX="257.0" layoutY="329.0" prefHeight="27.0" prefWidth="36.0" />
+      <Text layoutX="225.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to" />
+      <TextField fx:id="avgDiffTF" layoutX="239.0" layoutY="266.0" prefHeight="27.0" prefWidth="36.0" />
+      <Text layoutX="107.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Difficulty:" />
+      <Text layoutX="106.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Range:" />
+      <Text layoutX="481.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:" />
+      <Text layoutX="481.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:" />
+      <ComboBox fx:id="testLengthCB" layoutX="609.0" layoutY="144.0" prefWidth="150.0" promptText="-----------">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Seconds" />
+               <String fx:value="Minutes" />
+               <String fx:value="Hours" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <ComboBox fx:id="subjectCB" layoutX="543.0" layoutY="209.0" prefWidth="150.0" promptText="-----------">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Computer Science" />
+               <String fx:value="Biology" />
+               <String fx:value="Chemistry" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <ComboBox fx:id="courseCB" layoutX="543.0" layoutY="274.0" prefHeight="27.0" prefWidth="104.0" promptText="------">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="CPE 101" />
+               <String fx:value="CPE 102" />
+               <String fx:value="CPE 103" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <CheckBox fx:id="multChoiceCB" layoutX="316.0" layoutY="386.0" mnemonicParsing="false" text="Multiple Choice" />
+      <CheckBox fx:id="freeResponseCB" layoutX="316.0" layoutY="424.0" mnemonicParsing="false" text="Free Response" />
+      <CheckBox fx:id="trueFalseCB" layoutX="316.0" layoutY="464.0" mnemonicParsing="false" text="True/False" />
+      <CheckBox fx:id="codingCB" layoutX="474.0" layoutY="424.0" mnemonicParsing="false" text="Coding" />
+      <CheckBox fx:id="fillBlankCB" layoutX="474.0" layoutY="386.0" mnemonicParsing="false" text="Fill In The Blank" />
+      <Text layoutX="108.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Types of Questions to Include: " />
+      <Button fx:id="generate" layoutX="555.0" layoutY="517.0" mnemonicParsing="false" onAction="#basicHandleGen" prefHeight="44.0" prefWidth="204.0" text="Generate" />
+      <Text layoutX="106.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Name:" />
+      <TextField fx:id="testNameTF" layoutX="187.0" layoutY="144.0" />
+   </children>
+</AnchorPane>

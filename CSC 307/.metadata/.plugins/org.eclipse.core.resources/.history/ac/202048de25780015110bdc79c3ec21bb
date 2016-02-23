@@ -1,0 +1,31 @@
+
+
+package administrativeDetails;
+
+
+/**
+ * 
+ * @author bsugiarto
+ *
+ */
+public abstract class Course {
+
+	
+	/**
+	 * Returns the course name
+	 * @return
+	 */
+	public abstract String getCourse();
+	
+	/**
+	 * Function to return entry code
+	 * @return the course entry code
+	 */
+	public abstract String getEntryCode();
+	
+	/**
+	 * gets course Id
+	 * @return
+	 */
+	public abstract int getId();
+}

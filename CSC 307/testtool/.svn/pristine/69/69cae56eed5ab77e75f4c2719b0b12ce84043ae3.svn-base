@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>
+2.3.4.  Fill-in-the-Blank Type Questions
+</title>
+</head>
+<body bgcolor = white>
+<a name="Creating Fill-in-the-Blank Type Questions">
+<h4>
+2.3.2.  Creating Fill-in-the-Blank Type Questions
+</h4>
+</a>
+<p>
+After the adding a question and choosing the desired type (as covered in 
+<a href="question-management.html">Section 2.3</a>), the screen will change accordingly 
+depending on the chosen question type.
+
+<p> 
+This section covers Fill-in-the-Blank Questions. 
+
+<p>
+<tt> This text is filler. COMING SOON!</tt>
+
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="coding.html">Coding</a>
+ | <font color=black> Next: </font><a href="Section2.3.5.html">Editing Existing Question</a>
+ | <font color=black> Up: </font><a href="question-management.html">Question Management</a>
+ | <font color=black> Top: </font><a href="index.html">Index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>
+South East Asia Questions
+</title>
+</head>
+<body bgcolor=white>
+<p align=center>
+<font size=+2>
+<strong>South East Asia Questions</strong>
+</font>
+</p>
+
+<p>
+	1. Should testool automatically generate class result and can be downloaded by teacher? What format(s) would you want us to support? 
+	   (PDF, excel, word processor)
+
+	</br>
+	</br>
+	2. Do you want the questions to have a subject so that when students review the test, they know what topics that they need to review?
+
+	</br>
+	</br>
+	3. Would you like to support multi-user collaboration with the TestTool? (setting up access permissions for specific users to edit/view)
+
+	</br>
+	</br>
+	4. Should we save tests that were previously generated? For how long?
+
+	</br>
+	</br>
+	5. What file creation/edit commands should we implement? (exporting)
+
+	</br>
+	</br>
+	6. What is the ideal workflow for test creation? (steps in creation of a test)
+
+	</br>
+	</br>
+	7. What are the main question types you want supported?
+
+	</br>
+	</br>
+	8. Do you want the TestTool to display multiple questions at a time or a single question at a time?
+
+	</br>
+	</br>
+	9. What features do you want supported included with the test suite? (generating test, delivering test to students, generating random questions with set difficulty, etc.)
+
+	</br>
+	</br>
+	10. What is the most intuitive layout for the question bank?
+
+	</br>
+	</br>
+	11. Do you want different categories of questions? (test questions vs. practice questions).
+
+	</br>
+	</br>
+	12. Do you want the students to receive immediate feedback when completing (practice) tests?
+
+
+	</br>
+	</br>
+
+
+</p>
+
+
+</html>

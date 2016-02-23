@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestGrading.GradingController">
+   <children>
+      <Button layoutX="44.0" layoutY="35.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <TabPane layoutX="20.0" layoutY="83.0" prefHeight="450.0" prefWidth="760.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Auto-Graded">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Pane prefHeight="740.0" prefWidth="743.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+          <Tab text="Partially-Graded/Ungraded">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Pane prefHeight="740.0" prefWidth="743.0">
+                                 <children>
+                                    <Label layoutX="45.0" layoutY="509.0" text="hi sean" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="235.0" layoutY="30.0" text="Midterm 1 - John Smith">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ProgressBar layoutX="616.0" layoutY="44.0" prefHeight="20.0" prefWidth="170.0" progress="0.33" />
+      <Label layoutX="672.0" layoutY="27.0" text="Progress:" />
+      <Button layoutX="19.0" layoutY="552.0" mnemonicParsing="false" onAction="#markCorrect" text="Mark Correct" />
+      <Button layoutX="135.0" layoutY="552.0" mnemonicParsing="false" onAction="#markIncorrect" text="Mark Incorrect" />
+      <Button layoutX="261.0" layoutY="552.0" mnemonicParsing="false" onAction="#save" text="Save" />
+   </children>
+</AnchorPane>

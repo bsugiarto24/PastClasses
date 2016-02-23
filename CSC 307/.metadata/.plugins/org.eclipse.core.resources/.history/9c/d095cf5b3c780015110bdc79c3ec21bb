@@ -1,0 +1,40 @@
+
+package administrativeDetails;
+
+/**
+ * This is class which represents a list of students
+ * @author bsugiarto
+ *
+ */
+public abstract class StudentView extends ListView{
+	/**
+	 * deletes a student from the list
+	 * @param index - index of the student
+	 */
+	public abstract void delete(int index);
+	
+	/**
+	 * Adds student to the list
+	 * @param student TestTaker to add to list of students.
+	 */
+	public abstract void add(TestTaker student);
+	
+	/**
+	 * Gets student from list
+	 * @param index
+	 */
+	public abstract TestTaker get(int index);
+	
+	/**
+	 * Gets more details from row
+	 * @param index Index of row to get more details.
+	 */
+	public abstract void details(int index);
+	
+	/**
+	 * Shows entry code by expanding row through id
+	 * @param index Index of row to expand.
+	 */
+	public abstract void expand(int index);
+	
+}

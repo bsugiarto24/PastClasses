@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>
+2.6  Teacher Functions
+</title>
+</head>
+<body bgcolor = white>
+<a name="Teacher Functions">
+<h2>
+2.6  Teacher Functions
+</h2>
+</a>
+<p>
+This section goes over the functions that the teacher has:
+<br>
+<tt>'adding or deleting a user'</tt>
+<br>
+<tt>'viewing a student's tests'</tt>
+<br>
+<tt>'toggling tests'</tt>
+<br>
+
+<a name="Teacher Function Menu">
+<p align=left>
+<img src="images/teach-func.png">
+</p>
+<p align=left> Figure 6-1:  Teacher Function Menu.  </p>
+<hr>
+</a>
+
+
+<p>
+Details of system use are presented in the following scenarios:
+<ul>
+<li>
+<a href="student-management.html">
+Adding/Deleting a User
+</a>
+<li>
+<a href="student-management.html">
+View a certain student's previous tests
+</a>
+<li>
+<a href="test-toggles.html">
+Test Toggles (on/off)
+</a>
+<br>
+
+These scenarios cover all teacher functions for the system.
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="intro.html">intro</a>
+ | <font color=black> Next: </font>[none]
+ | <font color=black> Up: </font><a href="index.html">index</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>
+

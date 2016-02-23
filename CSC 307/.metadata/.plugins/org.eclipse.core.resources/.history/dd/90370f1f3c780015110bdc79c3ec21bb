@@ -1,0 +1,43 @@
+
+package administrativeDetails;
+
+
+/**
+ * This is class which represents a list of courses
+ * @author bsugiarto
+ *
+ */
+public abstract class CourseView extends ListView{
+
+	/**
+	 * deletes a course from the list
+	 * @param index - index of the course
+	 */
+	public abstract void delete(int index);
+	
+	/**
+	 * Adds course to the list
+	 * @param name
+	 * @param entryCode
+	 */
+	public abstract void add(Course course);
+	
+	/**
+	 * Gets course from list
+	 * @param index Index to get Course
+	 */
+	public abstract Course get(int index);
+	
+	/**
+	 * Gets more details from row
+	 * @param index
+	 */
+	public abstract void details(int index);
+	
+	/**
+	 * Shows entry code by expanding row through id
+	 * @param index
+	 */
+	public abstract void expand(int index);
+	
+}

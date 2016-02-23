@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestTaking.StudentLoginController">
+   <children>
+      <GridPane alignment="center" hgap="10" vgap="10">
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;">
+               <children>
+                  <Text layoutX="138.0" layoutY="84.0" rotate="-0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged in as: John Smith" textAlignment="CENTER" wrappingWidth="499.21876525878906">
+                     <font>
+                        <Font name="Arial Bold" size="38.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="87.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assigned Tests" wrappingWidth="193.8854522705078">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="163.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPE 101 Test 1                                             30Min Limit" wrappingWidth="468.55206298828125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="164.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPE 102 Test 2                                            30Min Limit" wrappingWidth="467.21875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="164.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHYS 132 Test 1                                          30Min Limit" wrappingWidth="459.21875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button id="button1" fx:id="attemp1" layoutX="641.0" layoutY="234.0" mnemonicParsing="false" text="Attempt" />
+                  <Button id="button2" fx:id="attemp2" layoutX="643.0" layoutY="304.0" mnemonicParsing="false" text="Attempt" />
+                  <Button id="button3" fx:id="attemp3" layoutX="644.0" layoutY="372.0" mnemonicParsing="false" text="Attempt" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;">
+         <children>
+            <Text layoutX="138.0" layoutY="84.0" rotate="-0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged in as: John Smith" textAlignment="CENTER" wrappingWidth="499.21876525878906">
+               <font>
+                  <Font name="Arial Bold" size="38.0" />
+               </font>
+            </Text>
+            <Text layoutX="87.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assigned Tests" wrappingWidth="193.8854522705078">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="163.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPE 101 Test 1                                             30Min Limit" wrappingWidth="468.55206298828125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="164.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPE 102 Test 2                                            30Min Limit" wrappingWidth="467.21875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="164.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHYS 132 Test 1                                          30Min Limit" wrappingWidth="459.21875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button id="button1" fx:id="attemp1" layoutX="641.0" layoutY="234.0" mnemonicParsing="false" text="Attempt" />
+            <Button id="button2" fx:id="attemp2" layoutX="643.0" layoutY="304.0" mnemonicParsing="false" text="Attempt" />
+            <Button id="button3" fx:id="attemp3" layoutX="644.0" layoutY="372.0" mnemonicParsing="false" text="Attempt" />
+         </children>
+      </Pane>
+      <Text layoutX="138.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged in as: John Smith" textAlignment="CENTER" wrappingWidth="499.21876525878906">
+         <font>
+            <Font name="Arial Bold" size="38.0" />
+         </font>
+      </Text>
+      <Text layoutX="87.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assigned Tests" wrappingWidth="193.8854522705078">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="163.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPE 101 Test 1                                             30Min Limit" wrappingWidth="468.55206298828125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="164.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPE 102 Test 2                                            30Min Limit" wrappingWidth="467.21875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="164.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHYS 132 Test 1                                          30Min Limit" wrappingWidth="459.21875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button id="button1" fx:id="attemp1" layoutX="641.0" layoutY="234.0" mnemonicParsing="false" onAction="#onTestAttempt" text="Attempt" />
+      <Button id="button2" fx:id="attemp2" layoutX="642.0" layoutY="304.0" mnemonicParsing="false" onAction="#onTest2Attempt" text="Attempt" />
+      <Button id="button3" fx:id="attemp3" layoutX="642.0" layoutY="372.0" mnemonicParsing="false" onAction="#onTest3Attempt" text="Attempt" />
+   </children>
+</AnchorPane>

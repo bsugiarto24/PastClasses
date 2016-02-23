@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestCreation.TestEditController">
+   <children>
+      <Button layoutX="14.0" layoutY="56.0" mnemonicParsing="false" onAction="#backToTestMain" text="Back" />
+      <TableView fx:id="questionTable" layoutX="11.0" layoutY="103.0" prefHeight="407.0" prefWidth="778.0">
+         <columns>
+            <TableColumn fx:id="questionColumn" prefWidth="261.0" text="Question" />
+            <TableColumn fx:id="difficultyColumn" prefWidth="69.0" resizable="false" text="Difficulty" />
+            <TableColumn fx:id="courseColumn" prefWidth="96.0" text="Course" />
+            <TableColumn fx:id="subjectColumn" prefWidth="92.0" text="Subject" />
+            <TableColumn fx:id="typeColumn" prefWidth="102.0" text="Type" />
+            <TableColumn fx:id="pointsColumn" prefWidth="83.0" text="Points" />
+            <TableColumn fx:id="dateColumn" prefWidth="73.0" text="Date" />
+         </columns></TableView>
+      <Text layoutX="200.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Name:" />
+      <TextField fx:id="testNameField" layoutX="272.0" layoutY="65.0" prefHeight="27.0" prefWidth="335.0" />
+      <Text layoutX="356.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty:" />
+      <Button layoutX="613.0" layoutY="539.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="119.0" text="Save Test">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Text layoutX="307.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Editing">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="286.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Limit (Minutes):" />
+      <TextField fx:id="minutesField" layoutX="419.0" layoutY="529.0" prefHeight="27.0" prefWidth="59.0" />
+      <Button layoutX="187.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleRemove" prefHeight="27.0" prefWidth="70.0" text="Remove" />
+      <Button layoutX="99.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="27.0" prefWidth="70.0" text="Edit" />
+      <Button layoutX="11.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="27.0" prefWidth="70.0" text="Add" />
+      <Text layoutX="11.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question controls:" />
+      <ComboBox fx:id="difficultyDropdown" layoutX="418.0" layoutY="561.0" prefHeight="27.0" prefWidth="59.0" />
+   </children>
+</AnchorPane>

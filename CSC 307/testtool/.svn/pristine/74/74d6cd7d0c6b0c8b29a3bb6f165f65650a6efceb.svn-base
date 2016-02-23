@@ -1,0 +1,39 @@
+
+<html>
+<head>
+<title>
+1.3.  Operational Setting
+</title>
+</head>
+<body bgcolor = white>
+<a name="Operational Setting">
+<h3>
+1.3.  Operational Setting
+</h3>
+</a>
+<p>
+The operational setting of the Test tool is to help teachers design tests and make it easier for them to keep track of different questions that were on past tests.
+<p>
+The Test tool is intended to be general public domain software. But is intended for use of the Computer Science Department at Cal Poly. The setting is suited for a school or any person that wants to create a test. Teachers should collaborate with each other to create questions.
+<p>
+As noted in the preceding section on system personnel, the primary customer for the Test Tool is the Computer Science Deparment at Cal poly. As such, the tool's requirements will reflect the point of view of the customer base, including their work setting. Given the intent to develop a general purpose product, the customer has made a conscience effort to exclue setting-specific features from the Test Tool requirements.
+<p>
+The Test Tool has been designed to fit the curriculum used by Gene Fisher in undergraduate software engineering courses at Cal Poly University. The course is one quarter long that cover standard aspects of software engineering, with enphasis on the practical application of formal methods. Other instructors may find the Test Tool and its development useful as course examples.
+
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="personnel.html">personnel</a>
+ | <font color=black> Next: </font><a href="impacts.html">impacts</a>
+ | <font color=black> Up: </font><a href="intro.html">intro</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

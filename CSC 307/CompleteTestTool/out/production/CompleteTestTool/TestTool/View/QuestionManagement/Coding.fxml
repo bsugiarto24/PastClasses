@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.QuestionManagement.CodingHandler">
+   <children>
+      <Text layoutX="69.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <MenuButton accessibleRole="COMBO_BOX" layoutX="143.0" layoutY="29.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="180.0" text="Coding" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="20.0">
+         <items>
+            <MenuItem fx:id="truefalse" mnemonicParsing="false" onAction="#handleSelectTrueFalseType" text="True/False" />
+            <MenuItem fx:id="multipleChoice" mnemonicParsing="false" onAction="#handleSelectMultipleChoiceType" text="Multiple Choice" />
+            <MenuItem fx:id="freeResponse" mnemonicParsing="false" onAction="#handleSelectFreeResponseType" text="Free-Response" />
+            <MenuItem fx:id="coding" mnemonicParsing="false" onAction="#handleSelectCodingType" text="Coding" />
+            <MenuItem fx:id="fillInTheBlank" mnemonicParsing="false" onAction="#handleSelectFillInTheBlankType" text="Fill-In-The-Blank" />
+         </items>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </MenuButton>
+      <AnchorPane layoutX="484.0" layoutY="21.0" prefHeight="57.0" prefWidth="326.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="11.0">
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="268.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="40.0">
+               <buttons>
+                  <Button mnemonicParsing="false" onAction="#handleDelete" text="Delete" textFill="#f80000">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleSave" text="Save" textFill="#00aaff">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleClear" text="Clear">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </buttons>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+      <Text layoutX="70.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="62.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ChoiceBox layoutX="160.0" layoutY="67.0" prefWidth="150.0" />
+      <Text layoutX="70.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question:" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="103.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="70.0" layoutY="139.0" prefHeight="176.0" prefWidth="532.0" />
+      <Text layoutX="70.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:" AnchorPane.leftAnchor="70.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="70.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Points" AnchorPane.leftAnchor="70.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ComboBox layoutX="160.0" layoutY="327.0" prefWidth="150.0" />
+      <TextArea layoutX="147.0" layoutY="362.0" prefHeight="30.0" prefWidth="68.0" />
+      <Text layoutX="376.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ComboBox layoutX="487.0" layoutY="327.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

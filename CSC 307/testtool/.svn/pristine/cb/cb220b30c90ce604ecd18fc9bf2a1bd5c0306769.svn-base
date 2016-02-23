@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>
+2.2.4 Manual Editing
+</title>
+</head>
+<body bgcolor = white>
+<a name="Manual Editing">
+<h4>
+2.2.4 Manual Editing
+</h4>
+</a>
+<p>
+The testtool implements many features for manually editing tests after basic or advanced random generation of a test is complete. Features include creating new questions, adding existing questions, removing/reordering questions, and specifying test options. There are certain functionalities of manually editing tests that requires features implemented in different sections, such as the question bank and test bank. These external documents will be referenced throughout this overview as needed. As in every screen, the user can also select the tab to show all the options as shown in <a href="ui-overview.html">Section 2.1</a>.
+</p>
+<a name="Selecting Test Options">
+<h4>
+2.2.4.1 Selecting Test Options
+</h4>
+</a>
+
+<p>
+To see the full window as displayed in Figure 2-4-1, the user selects Edit Test from the Test Bank as shown in <a href="test-bank.html">Section 2.2.3</a>. The user can select <tt>Save</tt> to save the test, or <tt>Back</tt> to return to the home screen.
+</p>
+<p>
+Figure 2-4-1 displays various test options for the user to specify, including:
+<ul>
+<li><tt>Test Name</tt> (literal)
+<li><tt>Subject</tt> (dropdown item)
+<li><tt>Class</tt> (dropdown item)
+<li><tt>Time Limit</tt> (hh:mm:ss)
+<li><tt>Date</tt> (dd/mm/yy or calendar select)
+<li><tt>Difficulty</tt> (1-10)
+<li><tt>Grade Cutoffs</tt> (numeric values)
+</ul>
+</p>
+<hr>
+<a name="Edit Test Prompt">
+<p align=center>
+<img src="images/gen-test-empty-edit.png" style="height:100%">
+</p>
+<p align=center> Figure 2-4-1: Edit Test Prompt </p>
+</a>
+<hr>
+<br>
+<p>
+To make changes to the test, the user selects <tt>Edit</tt> as shown in Figure 2-4-1. The user can then fill out the available sections as specified earlier. The <tt>Subject</tt> and <tt>Class</tt> dropdowns require more work than typing in literals. Below is a full walkthrough of how the user creates a new <tt>Subject</tt>. The same principle is applied for the <tt>Class</tt> dropdown.
+</p>
+<p>
+To begin the process, the user selects the <tt>Subject</tt> dropdown. Figure 2-4-2 shows the <tt>Subject</tt> dropdown which does not currently contain any subjects.
+</p>
+<hr>
+<a name="Select Subject">
+<p align=center>
+<img src="images/gen-test-select-subject-new.png" style="height:35%">
+</p>
+<p align=center> Figure 2-4-2: Select Subject </p>
+</a>
+<hr>
+<p>
+To edit the list, the user selects <tt>Edit List --&gt;</tt> as shown in Figure 2-4-2. This forwards the user to the dialogue in Figure 2-4-3.
+</p>
+<hr>
+<a name="Select Subject Create">
+<p align=center>
+<img src="images/gen-test-select-subject-create.png" style="height:35%">
+</p>
+<p align=center> Figure 2-4-3: Select Subject Create </p>
+</a>
+<hr>
+<p>
+To create a new <tt>Subject</tt>, the user types a literal in the &lt;Enter New Name&gt; field as shown in Figure 2-4-3. The user can press enter between literals to add multiple <tt>Subjects</tt>. When finished, the user selects <tt>Save</tt>, which forwards the user to the dialogue in Figure 2-4-4.
+</p>
+<hr>
+<a name="Select Subject Save">
+<p align=center>
+<img src="images/gen-test-select-subject-save.png" style="height:35%">
+</p>
+<p align=center> Figure 2-4-4: Select Subject Save </p>
+</a>
+<hr>
+<p>
+At this point, the user can then select a <tt>Subject</tt>. However, to delete existing <tt>Subject</tt>s, the user selects <tt>Edit List --&gt;</tt> as shown in Figure 2-4-4, which will forward the user to the dialogue in Figure 2-4-5. To remove a <tt>Subject</tt> the user selects the minus button. The user selects <tt>Save</tt> to finish editing.
+</p>
+<hr>
+<a name="Select Subject Filled">
+<p align=center>
+<img src="images/gen-test-select-create-filled.png" style="height:35%">
+</p>
+<p align=center> Figure 2-4-5: Select Subject Filled </p>
+</a>
+<hr>
+<p>
+Another more complicated action is specifying the <tt>Date</tt> of the test. To specify the <tt>Date</tt>, the user can use the (mm/dd/yy) format or use the calendar. To use the calendar, the user selects the calendar icon. The popover in Figure 2-4-6 will appear, allowing the user to specify an exact date using the calendar.
+</p>
+<hr>
+<a name="Select Date">
+<p align=center>
+<img src="images/gen-test-choose-date.png" style="height:35%">
+</p>
+<p align=center> Figure 2-4-6: Select Date </p>
+</a>
+<hr>
+<p>
+When all of the options are specified the user selects <tt>Save</tt> to save all changes. Then the user is left with a filled in test as shown in a full window in Figure 2-4-7. 
+</p>
+<hr>
+<a name="Filled Test">
+<p align=center>
+<img src="images/gen-test-filled.png" style="height:100%">
+</p>
+<p align=center> Figure 2-4-7: Filled Test </p>
+</a>
+<hr>
+
+<a name="Adding and Editing Questions">
+<h4>
+2.2.4.2  Adding and Editing Questions
+</h4>
+</a>
+<p>
+To add a new question to the test, the user selects <tt>Edit</tt> as shown in Figure 2-4-7. The user then selects <tt>Click to Add New Question</tt> as shown in Figure 2-4-8. 
+</p>
+<hr>
+<a name="Filled Test Mid Edit">
+<p align=center>
+<img src="images/gen-test-filled-edit.png" style="height:100%">
+</p>
+<p align=center> Figure 2-4-8: Filled Test Mid Edit</p>
+</a>
+<hr>
+<p>
+The user is then confronted with a dialogue that prompts them to select either <tt>New Question</tt> or <tt>Choose From Bank</tt>, as shown in Figure 2-4-2. The user selects <tt>New Question</tt> to create a new question, which will follow into the workflow as defined in <a href="QUESTION-GENERATION-HTML-HERE.html">Section 2.3</a>. Alternatively, the user selects <tt>Choose From Bank</tt> to follow the workflow as defined in <a href="QUESTION-BANK-HTML-HERE.html">Section 2.4</a> to choose an already existing question from the question bank.
+</p>
+<hr>
+<a name="New Question or Test Bank">
+<p align=center>
+<img src="images/gen-test-question-options.png" style="height:10%">
+</p>
+<p align=center> Figure 2-4-9: New Question or Choose From Bank </p>
+</a>
+<hr>
+<p>
+To edit or remove a question, the user selects ellipses <tt>...</tt> as shown in Figure 2-7, and then <tt>Edit</tt> or <tt>Remove</tt> as shown in Figure 2-4-10.
+</p>
+<hr>
+<a name="Edit or Remove">
+<p align=center>
+<img src="images/gen-test-edit-remove.png" style="height:15%">
+</p>
+<p align=center> Figure 2-4-10: Edit or Remove</p>
+</a>
+<hr>
+<p>
+If the user selects <tt>Back</tt> before saving the test, a dialogue will pop up as shown in Figure 2-4-11, prompting the user to save before exiting. The available options are <tt>Don't Save</tt>, <tt>Cancel</tt>, or <tt>Save</tt>.
+</p>
+<hr>
+<a name="Exit Without Saving?">
+<p align=center>
+<img src="images/gen-test-exit-warning.png" style="height:30%">
+</p>
+<p align=center> Figure 2-4-11: Exit Without Saving?</p>
+</a>
+<hr>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="gen-test-ques-bank2.html">generate from question bank</a>
+ | <font color=black> Next: [none]
+ | <font color=black> Up: </font><a href="gen-test-ques-bank.html">test creation</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+
+</body>
+</html>

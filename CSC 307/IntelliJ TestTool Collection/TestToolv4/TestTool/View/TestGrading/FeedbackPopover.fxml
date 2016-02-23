@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="311.0" prefWidth="137.0" />
+      <TextArea layoutX="163.0" layoutY="14.0" prefHeight="311.0" prefWidth="369.0" wrapText="true" />
+      <Text layoutX="538.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Possible Points:" />
+      <StackPane layoutX="564.0" layoutY="99.0" prefHeight="27.0" prefWidth="44.0" />
+      <Text layoutX="544.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Points Earned:" />
+      <TextField layoutX="564.0" layoutY="194.0" prefHeight="27.0" prefWidth="44.0" />
+      <Button layoutX="53.0" layoutY="349.0" mnemonicParsing="false" text="Button" />
+      <Text layoutX="163.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expected keywords:" />
+      <Text layoutX="182.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Found keywords:" />
+   </children>
+</AnchorPane>

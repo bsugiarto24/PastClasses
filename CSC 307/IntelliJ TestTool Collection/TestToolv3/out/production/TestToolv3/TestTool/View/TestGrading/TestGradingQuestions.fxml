@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestGrading.TestGradingQuestionController">
+   <children>
+      <Button layoutX="44.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+      <TabPane layoutX="20.0" layoutY="83.0" prefHeight="450.0" prefWidth="760.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="AGtab" text="Auto-Graded">
+               <content>
+                  <TableView fx:id="AGtableView" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="AGpromptColumn" prefWidth="325.0" text="Prompt" />
+                      <TableColumn fx:id="AGoptionsColumn" minWidth="0.0" prefWidth="175.0" text="Options (w/ Correct)" />
+                        <TableColumn fx:id="AGanswerColumn" minWidth="0.0" prefWidth="175.0" text="Student Answer" />
+                        <TableColumn fx:id="AGpointsColumn" prefWidth="85.0" text="Points" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+          <Tab fx:id="PGUtab" text="Partially-Graded/Ungraded">
+               <content>
+                  <TableView fx:id="PGUtableView" prefHeight="200.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn fx:id="PGUpromptColumn" prefWidth="325.0" text="Prompt" />
+                        <TableColumn fx:id="PGUanswerColumn" minWidth="0.0" prefWidth="325.0" text="Student Answer" />
+                        <TableColumn fx:id="PGUpointsColumn" prefWidth="85.0" text="Points" />
+                        <TableColumn fx:id="PGUgradedColumn" prefWidth="25.0" />
+                     </columns>
+                  </TableView>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <StackPane fx:id="titleStackPane" layoutX="99.0" layoutY="32.0" prefHeight="45.0" prefWidth="510.0" />
+      <ProgressBar fx:id="progressBar" layoutX="616.0" layoutY="44.0" prefHeight="20.0" prefWidth="170.0" progress="0.0" />
+      <Label layoutX="672.0" layoutY="27.0" text="Progress:" />
+      <Button layoutX="19.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleMarkCorrect" text="Mark Correct" />
+      <Button layoutX="135.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleMarkIncorrect" text="Mark Incorrect" />
+      <Button layoutX="260.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleFeedback" text="Expand Question / Add Feedback" />
+   </children>
+</AnchorPane>

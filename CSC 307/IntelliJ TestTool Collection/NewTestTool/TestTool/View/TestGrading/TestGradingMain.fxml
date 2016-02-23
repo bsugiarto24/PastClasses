@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestGrading.GradingController">
+   <children>
+      <Button layoutX="44.0" layoutY="35.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Label layoutX="308.0" layoutY="30.0" text="Test Grading">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="19.0" layoutY="552.0" mnemonicParsing="false" onAction="#markCorrect" text="Select" />
+      <SplitPane dividerPositions="0.6846965699208444" layoutX="19.0" layoutY="83.0" prefHeight="449.0" prefWidth="760.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ScrollPane prefHeight="447.0" prefWidth="515.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="553.0" prefWidth="495.0">
+                           <children>
+                              <CheckBox layoutX="21.0" layoutY="69.0" mnemonicParsing="false" />
+                              <CheckBox layoutX="21.0" layoutY="166.0" mnemonicParsing="false" />
+                              <TextArea layoutX="50.0" layoutY="21.0" prefHeight="95.0" prefWidth="430.0" text="Name: Midterm 1&#10;Course: CPE 101&#10;Subject: Fundamentals&#10;Number of Questions: 12&#10;Difficulty: 5" />
+                              <TextArea layoutX="50.0" layoutY="127.0" prefHeight="95.0" prefWidth="430.0" text="Name: Midterm 1&#10;Course: CPE 101&#10;Subject: Fundamentals&#10;Number of Questions: 12&#10;Difficulty: 5" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField layoutX="18.0" layoutY="14.0" prefHeight="27.0" prefWidth="200.0" promptText="search" />
+                  <Text layoutX="18.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Name:" />
+                  <TextField layoutX="18.0" layoutY="81.0" prefHeight="27.0" prefWidth="200.0" promptText="Enter Test Name" />
+                  <Text layoutX="18.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:" />
+                  <Text layoutX="18.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:" />
+                  <DatePicker layoutX="18.0" layoutY="278.0" prefHeight="27.0" prefWidth="200.0" promptText="Enter Date" />
+                  <Text layoutX="21.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" />
+                  <Text layoutX="18.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+                  <Button layoutX="93.0" layoutY="392.0" mnemonicParsing="false" text="Filter" />
+                  <ComboBox layoutX="16.0" layoutY="140.0" prefHeight="27.0" prefWidth="200.0" promptText="-----" />
+                  <ComboBox layoutX="18.0" layoutY="210.0" prefHeight="27.0" prefWidth="200.0" promptText="-----" />
+                  <ComboBox layoutX="16.0" layoutY="342.0" prefHeight="27.0" prefWidth="200.0" promptText="------" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

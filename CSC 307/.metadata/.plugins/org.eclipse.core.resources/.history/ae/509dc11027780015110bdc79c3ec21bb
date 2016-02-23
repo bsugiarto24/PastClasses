@@ -1,0 +1,13 @@
+
+package administrativeDetails;
+
+
+/**
+ * 
+ * This will be imported from pierson's package
+ * @author bsugiarto
+ *
+ */
+public abstract class TestTaker {
+	
+}

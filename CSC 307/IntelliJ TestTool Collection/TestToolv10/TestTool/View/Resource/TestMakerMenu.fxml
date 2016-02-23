@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="627.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.Resource.MenuTabController">
+   <top>
+      <MenuButton mnemonicParsing="false" text="Menu" BorderPane.alignment="TOP_LEFT">
+        <items>
+            <MenuItem fx:id="questionCreation" mnemonicParsing="false" onAction="#handleSelectQuestionCreation" text="Question Creation" />
+          <MenuItem fx:id="testCreation" mnemonicParsing="false" onAction="#handleSelectTestCreation" text="Test Creation" />
+          <MenuItem fx:id="testBank" mnemonicParsing="false" onAction="#handleSelectTestBank" text="Test Bank" />
+            <MenuItem fx:id="questionBank" mnemonicParsing="false" onAction="#handleSelectQuestionBank" text="Question Bank" />
+            <MenuItem fx:id="teacherFunctions" mnemonicParsing="false" onAction="#handleSelectTeacherFunctions" text="Admin" />
+            <MenuItem fx:id="statistics" mnemonicParsing="false" onAction="#handleSelectStatistics" text="Statistics" />
+            <MenuItem fx:id="login" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+            <MenuItem fx:id="testTaking" mnemonicParsing="false" onAction="#handleSelectTestTaking" text="Test Taking" />
+            <MenuItem fx:id="testGrading" mnemonicParsing="false" onAction="#handleSelectTestGrading" text="Test Grading" />
+        </items>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </MenuButton>
+   </top>
+</BorderPane>

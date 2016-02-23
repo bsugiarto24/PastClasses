@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>
+2.  Test Creation
+</title>
+</head>
+<body bgcolor = white>
+<a name="Test Creation">
+<h2>
+2.  Test Creation
+</h2>
+</a>
+<p>
+This section goes over how to create questions for different tests and how the randomize button works. One can generate a test from the question bank, create a test with new questions, revise questions that have become outdated, and change different settings such as time for a test. 
+<br>
+<br>
+The figure below is the main page: 
+<br>
+<br>
+<hr>
+<a name="Main Test Creation Menu">
+<p align=left>
+<img src="images/2.2-1.jpg">
+</p>
+<p align=left> Figure 2.2.1:  Main Test Creation Menu.  </p>
+<hr>
+</a>
+<br>
+
+
+<p>
+Details of system use are presented in the following scenarios:
+<ul>
+<li>
+<a href="Section2.2.1.html">
+Generate a test from question bank
+</a>
+<li>
+<a href="browsing.html">
+Create a test with new questions
+</a>
+<li>
+<a href="more-scheduling.html">
+Revising Tests
+</a>
+<li>
+<a href="group-meeting-scheduling.html">
+Test settings (time limit, difficulty, type, passing score cutoff, etc)
+</a>
+<br>
+These scenarios cover all test creation functions for the system.
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="intro.html">intro</a>
+ | <font color=black> Next: </font>[none]
+ | <font color=black> Up: </font><a href="index.html">index</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>
+

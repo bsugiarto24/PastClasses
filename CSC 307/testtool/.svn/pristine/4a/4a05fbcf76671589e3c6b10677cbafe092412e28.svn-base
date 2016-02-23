@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+2.2.1.  Generate a Random Test From Question Bank
+</title>
+</head>
+<body bgcolor = white>
+<a name="Generate a Random Test From Question Bank">
+<h4>
+2.2.1.  Generate a Random Test From Question Bank
+</h4>
+</a>
+
+<p> The User will come to this empty page when clicking as shown in <tt> Figure 2-2</tt>. The User will now click on:
+<br>
+<br>
+<tt>'Basic Test Generation'</tt> which will bring the user to the <a href='gen-test-ques-bank1.html'>basic test generation</a> page.
+<br>
+or
+<br>
+<tt>'Advance Test Generation'</tt> which will bring the user to <a href='gen-test-ques-bank2.html'>advanced test generation</a> page.
+
+
+
+<br>
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/gen-test-ques-bank1.png">
+</p>
+<p align=center>Figure 2-2</p>
+<hr>
+</a>
+<br>
+
+
+
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="gen-test-new-questions.html"> Create a test with new questions</a>
+ | <font color=black> Up: </font><a href="browsing.html">browsing</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

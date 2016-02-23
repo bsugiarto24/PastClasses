@@ -1,0 +1,73 @@
+
+<html>
+<head>
+<title>
+1.5.1.  ClassMarker
+</title>
+</head>
+<body bgcolor = white>
+<a name="QuizEgg">
+<h4>
+1.5.1. ClassMarker
+</h4>
+</a>
+<p>
+ClassMarker is an online quiz maker used by both bussiness and schools. It is 
+very intuitive and easy to use as quiz creation can be done quickly. ClassMarker 
+makes it easy to customize quizes to specific clientele by allowing uses to 
+import images, videos, and external webpages to questions. It also has api's that 
+can be added so that tests can be taking on different websites.
+
+<p>
+ClassMarker seems to be an industy leader because of its easy of use. The test 
+creation workflow is very intuitive and can be used by those that may not be very tech savvy.
+<p>
+<strong>Good Features:</strong>
+   <ul>
+      <li> Allows importing of images and videos for each question</li>
+      <li> Makes test creation very easy and straightforward.</li>
+      <li> Has test settings page where a test creater can choose settings such as:</li>
+         <ul>
+            <li>Tries Allowed</li>
+            <li>Time Limit</li>
+            <li>Randomize order of questions and answers</li>
+            <li>What's included on the results page</li>
+            <li>What is the score cutoff for a passing score</li>
+         </ul>
+      <li> Automates grading and allows immidiate feedback</li>
+      <li> Grades can be easily exported to an excel spreadsheet</li>
+      <li> Tests can be integrated into customers websites through the use of apis</li>
+      <li> Allows tailored messages for each question which can either say what the test taker did right if he/she got the quesiton correct or more details as to why they got the question wrong.</li>
+   </ul>
+<p>
+<strong>Bad Features:</strong>
+<ul>
+   <li> A subscription based service there is a free tier, but question creation and the number of tests given per month are limited.</li>
+</ul>
+<p>
+<strong>Missing Features:</strong>
+<ul>
+   <li>Does not allow the user to save questions to form a test bank</li>
+   <li> Does not allow a code-based question type</li>
+   <li>There are not time limits on specific questions just a time limit for the whole test</li>
+</ul>
+
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font> [None]
+ | <font color=black> Next: </font><a href="quizegg-review.html">QuizEgg Review</a>
+ | <font color=black> Up: </font><a href="related.html">Related</a>
+ | <font color=black> Top: </font><a href="index.html">Index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

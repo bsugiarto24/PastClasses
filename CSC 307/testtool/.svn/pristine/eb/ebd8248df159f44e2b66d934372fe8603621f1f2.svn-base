@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>
+2.3.  Question Management
+</title>
+</head>
+<body bgcolor = white>
+<a name="Question Management">
+<h3>
+2.3. Question Management
+</h3>
+</a>
+
+<p>
+This introductory scenario shows an individual user creating and editing questions.
+Question management is one of the key functionalities of the Test Tool. This section
+deals with the management of questions within tests; for test management, see 
+<a href="teacher-functions.html">
+Section 2.6
+</a>
+
+<p>
+To start creating a new test, the user selects the <tt>Create New Test</tt> in the
+<tt>Editor</tt> page, whereupon the system changes to the the screen shown in
+Figure 3-1.
+
+<br>
+<br>
+<hr>
+<a name="Initial Test Creation Screen">
+<p align=center>
+<img src="images/editor-screen.png">
+</p>
+<p align=center> Figure 3-1: Initial Test Creation Screen  </p>
+<hr>
+</a>
+<br>
+
+<p>
+The user clicks the green plus button to a new question, and the blue/yellow folder 
+button to load a question from the question bank. 
+
+
+<p>
+When the user adds a new question using the green button, the system prompts the user 
+for the type of question they want, as shown in Figure 3-2. Each question will have a red minus
+button that deletes the question.
+
+<br>
+<hr>
+<a name="Adding a New Question">
+<p align=center>
+<img src="images/add-new-question.png">
+</p>
+<p align=center> Figure 3-2: Adding a New Question </p>
+<hr>
+</a>
+<br>
+
+<p>
+The user chooses the desired question type using the drop-down menu as shown in 
+Figure 3-3.
+
+<br>
+<hr>
+<a name="Question Type Selection">
+<p align=center>
+<img src="images/question-type-selection.png">
+</p>
+<p align=center> Figure 3-3: Question Type Selection </p>
+<hr>
+</a>
+<br>
+
+<p>
+Once the user chooses a question type, the system will adjust the screen accordingly to 
+display the different sections needed to create a question of that type. These different 
+question types are shown in this section's subsections.
+
+<p>
+The common sections found across multiple question types are <tt>Question</tt>, <tt>Points</tt>, 
+<tt>Subject</tt>, and <tt>Difficulty</tt>.
+
+<p> 
+<tt>Question</tt> and <tt>Points</tt> require the user to type in information using the keyboard.
+<br>*note* The <tt>Points</tt> section only accepts numbers.
+
+<p> 
+<tt>Subject</tt> and <tt>Difficulty</tt> acquire info through drop-down menus similar to the 
+<tt>Type</tt> section. <tt>Subject</tt> is chosen from a list of subjects that the user creates;
+<tt>Difficulty</tt> is chosen from a list ranging from 1 - 10.
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="test-creation.html">Test Creation</a>
+ | <font color=black> Next: </font><a href="question-settings.html">Question Settings</a>
+ | <font color=black> Up: </font><a href="functional.html">Functional</a>
+ | <font color=black> Top: </font><a href="index.html">Index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

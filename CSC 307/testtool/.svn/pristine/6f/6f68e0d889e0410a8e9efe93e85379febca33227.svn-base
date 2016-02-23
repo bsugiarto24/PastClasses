@@ -1,0 +1,70 @@
+
+<html>
+<head>
+<title>
+2.5.2. Question Statistics
+</title>
+</head>
+<body bgcolor = white>
+<a name="Question Statistics">
+<h4>
+2.5.2. Question Statistics
+</h4>
+</a>
+<p>
+the user selects <tt>Statistics</tt> in the <tt>Menu</tt> tab and the <tt>Question</tt> tab, the system
+displays the dialog shown in Figure 2.5.2.
+
+<br>
+<br>
+<hr>
+<a name="Figure Question Statistic dialog">
+<p align=center>
+<img src="images/QuestionStatBlank.png">
+</p>
+<p align=center> Figure 2.5.2:  Question Statistic dialog.  </p>
+<hr>
+</a>
+</br>
+<p>
+   The <tt> Select from Question Bank</tt> button opens up the Quesiton Bank Dialog.
+</p>
+</br>
+<hr>
+<a name="Question Bank">
+<p align=center>
+<img src="images/ques-bank.png">
+</p>
+<p align=center> Figure 2.0 Question Bank  </p>
+<hr>
+</br>
+   <p>
+      The user selects one or more questions and clicks <tt>add</tt>. This transitions back to the Question Statistics Dialog.
+   </p>
+</br>
+<hr>
+<a name="Filled Figure Question Statistic dialog">
+<p align=center>
+<img src="images/QuestionStatPopulated.png">
+</p>
+<p align=center> Figure 2.5.2:  Question Statistic dialog with chart.  </p>
+<hr>
+</br>
+   <p>
+
+   </p>
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="test-stats.html">Test Statistics</a>
+ | <font color=black> Next: </font><a href="test-export.html">Export Test Statistics</a>
+ | <font color=black> Up: </font><a href="statistics.html">Statistics</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

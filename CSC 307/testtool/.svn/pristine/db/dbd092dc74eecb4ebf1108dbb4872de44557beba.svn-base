@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>
+2.2.1.  Generate a Random Test From Question Bank
+</title>
+</head>
+<body bgcolor = white>
+<a name="Generate a Random Test From Question Bank">
+<h4>
+2.2.1.  Generate a Random Test From Question Bank
+</h4>
+</a>
+<p>
+To create a random test from a question bank, the User will:
+<br>
+&nbsp	1. Specify a number of questions.
+<br>
+&nbsp	2. Specify a test length and press the dropdown bar to specify (seconds, minutes, hours)
+<br>
+&nbsp	3. Specify an average difficulty number and a range to include harder problems or not.
+<br>
+&nbsp	4. Specify which specific subject field they want in the questions.
+<br>
+&nbsp	5. Check off what types of questions they want to include on the test.
+<br>
+Once filling in all these fields, the user will click <tt>'Generate'</tt> which will bring the user to the <a href="gen-test-revise.html"> revising test page</a> to view or edit the randomly generated test.
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/gen-test-ques-bank.png">
+</p>
+<p align=center>Figure 2-2</p>
+<hr>
+</a>
+<br>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="gen-test-new-questions.html"> Create a test with new questions</a>
+ | <font color=black> Up: </font><a href="browsing.html">browsing</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>
+

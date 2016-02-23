@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>
+2.6.1 Manual Grading
+</title>
+</head>
+<body bgcolor = white>
+<a name="Manual Grading">
+<h4>
+2.6.1 Manual Grading
+</h4>
+</a>
+
+<p>
+This is a temporary placeholder for all of the manual grading features. Screens are finished and will be placed here with no accompanying descriptions.
+</p>
+
+<a name="Filtering Tests">
+<h4>
+2.6.1.1 Filtering Tests
+</h4>
+</a>
+
+<a name="Grading Types">
+<h4>
+2.6.1.2 Grading Types
+</h4>
+</a>
+
+<hr>
+<a name="Test Grading">
+<p align=center>
+<img src="images/test-grading-start.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-1: Test Grading </p>
+</a>
+<hr>
+
+<hr>
+<a name="Status">
+<p align=center>
+<img src="images/test-grading-status.png" style="height:30%">
+</p>
+<p align=center> Figure 6-1-2: Status </p>
+</a>
+<hr>
+
+<hr>
+<a name="Calendar">
+<p align=center>
+<img src="images/gen-test-choose-date.png" style="height:50%">
+</p>
+<p align=center> Figure 6-1-3: Calendar </p>
+</a>
+<hr>
+
+<hr>
+<a name="Filtered Tests">
+<p align=center>
+<img src="images/test-grading-filter.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-4: Filtered Tests </p>
+</a>
+<hr>
+
+<hr>
+<a name="Selected Test">
+<p align=center>
+<img src="images/test-grading-select.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-5: Selected Test </p>
+</a>
+<hr>
+
+<hr>
+<a name="Students (In Progress)">
+<p align=center>
+<img src="images/test-grading-choose-student-progress.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-6: Students (In Progress) </p>
+</a>
+<hr>
+
+<hr>
+<a name="Students (In Progress) Filled">
+<p align=center>
+<img src="images/test-grading-choose-student-progress-filled.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-7: Students (In Progress) Filled </p>
+</a>
+<hr>
+
+<hr>
+<a name="Auto Graded">
+<p align=center>
+<img src="images/test-grading-auto-graded.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-8: Auto Graded </p>
+</a>
+<hr>
+
+<hr>
+<a name="Partially Graded">
+<p align=center>
+<img src="images/test-grading-partially-graded.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-9: Partially Graded </p>
+</a>
+<hr>
+
+<hr>
+<a name="Partially Graded Popover">
+<p align=center>
+<img src="images/test-grading-partially-graded-popover.png" style="height:50%">
+</p>
+<p align=center> Figure 6-1-10: Partially Graded Popover </p>
+</a>
+<hr>
+
+<hr>
+<a name="Partially Graded Result">
+<p align=center>
+<img src="images/test-grading-partially-graded-result.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-11: Partially Graded Result </p>
+</a>
+<hr>
+
+<hr>
+<a name="Student Progress Filled Complete">
+<p align=center>
+<img src="images/test-grading-choose-student-progress-filled-complete.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-12: Student Progress Filled Complete </p>
+</a>
+<hr>
+
+<hr>
+<a name="Student Complete">
+<p align=center>
+<img src="images/test-grading-choose-student-complete.png" style="height:100%">
+</p>
+<p align=center> Figure 6-1-13: Student Complete </p>
+</a>
+<hr>
+
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="test-grading.html">Test Grading</a>
+ | <font color=black> Next: </font><a href="test-grading-adding-feedback.html">Adding Feedback</a>
+ | <font color=black> Up: </font><a href="test-grading.html">Test Grading</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+
+</body>
+</html>

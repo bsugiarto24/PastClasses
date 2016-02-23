@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>
+2.  Functional Requirements
+</title>
+</head>
+<body bgcolor = white>
+<a name="Functional Requirements">
+<h2>
+2.  Functional Requirements
+</h2>
+</a>
+<p>
+The primary functionality of the Testtool is to make it easier for professors at Cal Poly, specifically the professors at the Computer Science Department, to make tests. The professors have functionality to add or drop students and to create different types of questions for the tests. Finally, they can open up or close tests which will give students a certain time frame to take the test. 
+</p><p>
+Following an
+<a href="ui-overview.html">
+overview of the Testtool user interface,
+</a>
+details of system use are presented in the following scenarios:
+<ul>
+
+<li>
+<a href="test-creation.html">
+Test Creation
+</a>
+<li>
+<a href="question-management.html">
+Question Management
+</a>
+<li>
+<a href="question-settings.html">
+Question Settings
+</a>
+<li>
+<a href="statistics.html">
+Statistics
+</a>
+<li>
+<a href="teach-func.html">
+Teacher Functions
+</a>
+<li>
+<a href="test-taking.html">
+Test Taking
+</a>
+</ul>
+
+
+</ul>
+These scenarios cover all functional requirements for the system.
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="intro.html">intro</a>
+ | <font color=black> Next: </font>[none]
+ | <font color=black> Up: </font><a href="index.html">index</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

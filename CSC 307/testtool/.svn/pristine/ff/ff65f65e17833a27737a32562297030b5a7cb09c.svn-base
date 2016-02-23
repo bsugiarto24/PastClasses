@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>
+1.5.  Related Systems
+</title>
+</head>
+<body bgcolor = white>
+<a name="Related Systems">
+<h3>
+1.5.  Related Systems
+</h3>
+</a>
+<p>
+Widely used commercial systems that provide functionality comparable to the
+Test Tool include
+<ul>
+<a href="http://www.classmarker.com/">
+<li>
+Class Marker
+</a>
+<li>
+<a href="http://www.quizegg.com">
+QuizEgg
+</a>
+<li>
+<a href="https://www.goconqr.com/en-US">
+GoConqr
+</a>
+<li>
+<a href="http://web.uvic.ca/hrd/hotpot/">
+Hot Potatoes
+</a>
+<li>
+<a href="https://www.quizmeonline.net">
+Quiz Me Online
+</a>
+<li>
+<a href="https://www.quizrevolution.com/">
+Quiz Revolution
+</a>
+</ul>
+<p>
+Each of these systems provides a wide variety of test generating
+functionality.  In terms of such functionality, the goal for the Test Tool
+is to provide the important core features found in these tools, not the full
+range of features found in all of them.  The Test Tool provides functional improvements 
+in one area, when compared to most commercially available tools.  These improvements are:
+<ul type=a>
+<p> <li>
+Better Question Customization
+<ul>
+<li> more question types
+<li> different point values assignment to questions
+<li> difficulty ranking assignment to questions
+<li> subject/topic assignment to questions 
+
+</ul>
+
+</ul>
+<p>
+The goal for the Test Tool relating to random test generation with questions 
+from a question bank is not met by any of the above commercial systems.
+<p>
+A detailed review of each related tool follows in these subsections:
+<ul>
+<li>
+<a href="classmarker-review.html">
+Class Marker
+</a>
+<li>
+<a href="quizegg-review.html">
+Quiz Egg
+</a>
+<li>
+<a href="goconqr-review.html">
+GoConqr
+</a>
+<li>
+<a href="hotpot-review.html">
+Hot Potatoes
+</a>
+<li>
+<a href="quizmeonline-review.html">
+Quiz Me Online
+</a>
+<li>
+<a href="quizrevolution-review.html">
+Quiz Revolution
+</a>
+</ul>
+Following these reviews, a summary of the features is provided in a
+<a href="feature-comparison.html">
+feature comparison matrix.
+</a>
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="impacts.html">Impacts</a>
+ | <font color=black> Next: </font>[none]
+ | <font color=black> Up: </font><a href="intro.html">Intro</a>
+ | <font color=black> Top: </font><a href="index.html">Index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

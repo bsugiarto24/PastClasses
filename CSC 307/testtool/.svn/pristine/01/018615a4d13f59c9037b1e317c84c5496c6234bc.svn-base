@@ -1,0 +1,71 @@
+
+<html>
+<head>
+<title>
+2.5.1. Test Statistics
+</title>
+</head>
+<body bgcolor = white>
+<a name="Test Statistics">
+<h4>
+2.5.1. Test Statistics
+</h4>
+</a>
+<p>
+When the user selects <tt>Statistics</tt> in the <tt>Menu</tt> tab and the <tt>Test</tt> tab, the system
+displays the dialog shown in Figure 2.5.1.
+<br>
+<br>
+<hr>
+<a name="Figure Test Statistic dialog">
+<p align=center>
+<img src="images/TestStatBlank.png">
+</p>
+<p align=center> Figure 2.5.1:  Test Statistic dialog.  </p>
+<hr>
+</a>
+<br>
+<p>
+The top half of the dialog is initially an empty rectangluar box.</br>
+The <tt>Select from Test Bank</tt> button opens up the Test Bank Dialog. </br>
+The <tt>Export Score</tt> button exports student scores to an Excel file for the selected test ot tests. </p>
+<br>
+<hr>
+<a name="The Bank dialog">
+<p align=center>
+<img src="images/TestBankPopulated.png">
+</p>
+<p align=center> Figure 2.5.2:  Test Bank dialog.  </p>
+<hr>
+
+</br>
+   <p>
+      In figure 2.5.2 the user selects one or more questions and clicks <tt>add</tt>. This transitions back to the Test Statistics Dialog.
+   </p>
+</br>
+<hr>
+<a name="Filled Test Statistic dialog">
+<p align=center>
+<img src="images/TestStatPopulated.png">
+</p>
+<p align=center> Figure 2.5.3:  Test Statistic dialog with chart.  </p>
+<hr>
+<h4>
+2.5.3. Exporting Test Scores
+</h4>
+   <p>
+      After the senario outlined in Section 2.5.1 the user clicks the <tt>Export Score</tt> button which adds the chart to a pdf file and opens it in Adobe Acrobat. 
+   </p>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="question-stats.html">Question Statistics</a>
+ | <font color=black> Up: </font><a href="statistics.html">Statistics</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

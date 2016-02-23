@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestTaking.StudentLoginController">
+   <children>
+      <GridPane alignment="center" hgap="10" vgap="10">
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;">
+               <children>
+                  <Text layoutX="138.0" layoutY="84.0" rotate="-0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged in as: John Smith" textAlignment="CENTER" wrappingWidth="499.21876525878906">
+                     <font>
+                        <Font name="Arial Bold" size="38.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;">
+         <children>
+            <Text layoutX="155.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged in as:" textAlignment="CENTER" wrappingWidth="251.21876525878906">
+               <font>
+                  <Font name="Arial Bold" size="38.0" />
+               </font>
+            </Text>
+            <Text fx:id="loggedInName" layoutX="423.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="John Smith" textAlignment="CENTER" wrappingWidth="251.21876525878906">
+               <font>
+                  <Font name="Arial Bold" size="38.0" />
+               </font>
+            </Text>
+            <TableView fx:id="testTable" layoutX="59.0" layoutY="131.0" prefHeight="403.0" prefWidth="695.0">
+              <columns>
+                <TableColumn fx:id="testColumn" prefWidth="523.0" text="Assigned Tests" />
+                  <TableColumn fx:id="timeColumn" prefWidth="169.0" text="Time Limit in mins" />
+              </columns>
+            </TableView>
+            <Button layoutX="615.0" layoutY="543.0" mnemonicParsing="false" onAction="#onTestAttempt" text="Attempt" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>
+2.8.2 Student Portal (Course Management)
+</title>
+</head>
+<body bgcolor = white>
+<a name="User Interface Overview">
+<h3>
+2.8.2 Admininstrative Actions For Students 
+</h3>
+<br>
+
+This view is shown when a student is logged in. To view details of a course, the student should click on the <tt>More Details</tt> button in the row. This way, the student will be linked to the statistics portion of the application which will show their test scores. To delete a course, the student will click on the <tt>Minus</tt> button.
+
+<p>
+<hr>
+<a name="Show Student Courses">
+<a name="Show Student Courses">
+<p align=center>
+<img width = "800px" src="images/mycourses.png">
+</p>
+</a>
+<p align=center> Figure 7: Viewing Students' Courses  </p>
+<hr>
+</a>
+
+<br>
+
+To add a course, the user should select the <tt>Add Course</tt> button in the bottom row. By clicking the row, a form will pop up to take in a Course ID or Entry Code. To add a course, the user must input a proper Course ID. If an incorrect Id is entered, a pop up shown in Figure 9 will be displayed.
+<br><br>
+
+<p>
+<hr>
+<a name="Add Course">
+<a name="Add Course">
+<p align=center>
+<img width = "800px" src="images/add-course.png">
+</p>
+</a>
+<p align=center> Figure 8: Adding a Course  </p>
+<hr>
+
+<hr>
+<a name="Invalid Input">
+<a name="Invalid Input">
+<p align=center>
+<img width = "400px" src="images/invalid-input.png">
+</p>
+</a>
+<p align=center> Figure 9: Invalid Input  </p>
+<hr>
+
+
+
+
+
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="student-management.html">Administration for Teachers</a>
+| <font color=black> Next: </font>[none]
+ | <font color=black> Up: </font><a href="admin-details.html">Administration Details</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

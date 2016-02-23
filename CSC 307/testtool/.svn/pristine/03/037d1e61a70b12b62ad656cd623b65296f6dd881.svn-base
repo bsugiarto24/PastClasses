@@ -1,0 +1,57 @@
+
+<html>
+<head>
+<title>
+2.5.3. Export Test Statistics
+</title>
+</head>
+<body bgcolor = white>
+<a name="Test Statistics">
+<h4>
+2.5.3. Export Test Statistics
+</h4>
+</a>
+<p>
+When the user selects the <tt> Export Score</tt> in <tt>Test</tt> tab, the system
+displays the dialog shown in Figure 2.5.1. The imformation that is exported includes student test scores as well as statistics such as the mean, median, and mode of the test scores.
+
+<br>
+<br>
+<hr>
+<a name="Figure Test Statistic dialog">
+<p align=center>
+<img src="images/test-stats.jpg" height="400" width="350">
+</p>
+<p align=center> Figure 2.5.1:  Test Statistic dialog.  </p>
+<hr>
+</a>
+<br>
+<br>
+<p>A test will be reprensented in the form of a row.</p>
+<ul>
+   <li>The <tt>Checkbox</tt> column will allow the user to select one test.
+   <li>The <tt>Test Name</tt> column is the name of the tests in the test bank.
+   <li>The <tt>Class</tt> column is the name of the class that the test was for.
+   <li>The <tt>Date Given</tt> column is the date when the test was given last.
+
+</ul>
+<p>The <tt>View Statistics</tt> button will create a graph for the selected test that is shown in the bottom half of the dialog. This scenario is described in <a href="test-stats.html">Section 2.5.1</a>
+</br>
+The <tt>Export Score</tt> button will export student scores to an Excel file for the selected test.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="question-stats.html">Question Statistics</a>
+ | <font color=black> Next: </font>[none]
+ | <font color=black> Up: </font><a href="statistics.html">Statistics</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

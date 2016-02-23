@@ -1,0 +1,22 @@
+You are graded on the following list for the elevator pitch:
+
+    Did you introduce yourself?
+    Are you credible?
+    Are you sincere?
+    Are you organized?
+    Are you confident?
+    Do you use the language well?
+    Are you respectful of others’ time (1-2 minute pitch)?
+    Did you close with your contact information shared with the audience (business card handed out)?
+
+
+Hi ___. I'm a 3rd year computer science major at Cal Poly and I have the passion and knoweldge of programming to make an impact at your company. 
+-started programming in high school
+-major in CS
+-worked at a local start up
+	-front end dev 
+-interning at Salesforce.
+	-worked on the industries team
+	-worked on packaging
+I demonstrate the quick learning ability throughout these experiences to pick up anything I need to do at your company.
+Can I give you my email or connect with you on linkedin to stay in touch for any future openings?

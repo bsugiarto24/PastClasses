@@ -1,0 +1,33 @@
+
+<html>
+<head>
+<title>
+2.5.  Viewing Statistics of Tests and Questions
+</title>
+</head>
+<body bgcolor = white>
+<a name="Viewing Statistics of Tests and Questions">
+<h3>
+2.5. Viewing Statistics of Tests and Questions
+</h3>
+</a>
+<p>
+<blockquote>
+<em>Editorial Remark: this and the remaining sections are just skeletons of
+what is to come.  The basic ideas of what the system will do have been laid
+out, but much detail remains to be filled in.</em>
+</blockquote>
+<p>
+The scenarios in this section show a user viewing statistics for:
+<a href="test-stats.html">
+tests
+</a>
+and
+<a href="question-stats.html">
+questions.
+</a>
+As well as the choosing to 
+<a href="test-export.html">
+export student test scores to an Excel file.
+</a>
+</html>

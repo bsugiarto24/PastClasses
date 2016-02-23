@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>
+2.3.1.  Creating Auto-Grader Type Questions
+</title>
+</head>
+<body bgcolor = white>
+<a name="Creating Auto-Grader Type Questions">
+<h4>
+2.3.1.  Creating Auto-Grader Type Questions
+</h4>
+</a>
+<p>
+After the adding a question and choosing the desired type (as covered in 
+<a href="question-management.html">Section 2.3</a>), the screen will change accordingly 
+depending on the chosen question type.
+
+<p> 
+This section covers questions that can be auto-graded, such as True/False and Multiple Choice 
+questions. 
+
+<p>
+---True/False---
+
+<p>
+Choosing <tt>True/False</tt> as the question type loads the following screen as shown in Figure 3-9.
+
+<br>
+<br>
+<hr>
+<a name="True/False Question">
+<p align=center>
+<img src="images/true-false.png">
+</p>
+<p align=center> Figure 3-9: True/False Question </p>
+<hr>
+</a>
+<br>
+
+<p>
+<tt>Question</tt>, <tt>Coures</tt>, <tt>Points</tt>, <tt>Subject</tt>, and <tt>Difficulty</tt> are discussed
+in <a href="question-management.html">Section 2.3</a>.
+
+<p>
+In a True/False Question, <tt>Answer</tt> is a drop-down menu. When the user clicks on it, 
+there is only 2 choices: True, False.
+
+<p>
+A completed True/False Question is shown in Figure 3-10.
+
+<br>
+<br>
+<hr>
+<a name="Completed True/False Question">
+<p align=center>
+<img src="images/true-false-full">
+</p>
+<p align=center> Figure 3-10: Completed True/False Question </p>
+<hr>
+</a>
+<br>
+
+<p>
+---Multiple Choice---
+
+<p>
+Choosing <tt>Multiple Choice</tt> as the question type loads the following screen as shown in Figure 3-11.
+
+<br>
+<br>
+<hr>
+<a name="Multiple Choice Question">
+<p align=center>
+<img src="images/multiple-choice.png">
+</p>
+<p align=center> Figure 3-11: Multiple Choice Question </p>
+<hr>
+</a>
+<br>
+
+<p>
+<tt>Question</tt>, <tt>Points</tt>, <tt>Subject</tt>, and <tt>Difficulty</tt> are discussed
+in <a href="question-management.html">Section 2.3</a>.
+
+<p> When the user clicks the <tt>Add Choice</tt> button, a new "Choice #" will appear, starting 
+from 1 and incrementing by 1 each time. This section requires user input through the keyboard.
+
+<p>
+In a Multiple Choice Question, <tt>Answer</tt> is a heading with a series of boxes underneath. 
+The user clicks the box to the right of every choice that is correct, a check appears in every box
+that is marked.
+<br> *note* If the user checks multiple boxes, then test takers will need to select all of these checked
+boxes for their answer to be considered correct.
+
+<p>
+A completed Multiple Choice Question is shown in Figure 3-12.
+
+<br>
+<br>
+<hr>
+<a name="Completed Multiple Choice Question">
+<p align=center>
+<img src="images/multiple-choice-full">
+</p>
+<p align=center> Figure 3-12: Completed Multiple Choice Question </p>
+<hr>
+</a>
+<br>
+
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="free-response.html">Free-Response</a>
+ | <font color=black> Up: </font><a href="question-management.html">Question Management</a>
+ | <font color=black> Top: </font><a href="index.html">Index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

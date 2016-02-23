@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.QuestionBank.QuesBankController">
+   <children>
+      <Text layoutX="305.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Bank">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="back" layoutX="28.0" layoutY="31.0" mnemonicParsing="false" onAction="#backButQuesBank" text="Back" />
+      <ScrollPane layoutX="28.0" layoutY="68.0" prefHeight="492.0" prefWidth="536.0" />
+      <Pane layoutX="578.0" layoutY="68.0" prefHeight="492.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+         <opaqueInsets>
+            <Insets top="1.0" />
+         </opaqueInsets>
+         <children>
+            <TextField fx:id="searchBox" layoutX="17.0" layoutY="22.0" onAction="#searchBoxValue" onKeyReleased="#searchBoxValue" text="Search" />
+            <TextField fx:id="diffNum" layoutX="81.0" layoutY="69.0" onAction="#diffValue" onKeyReleased="#diffValue" prefHeight="27.0" prefWidth="61.0" />
+            <TextField fx:id="quesLen" layoutX="20.0" layoutY="394.0" onAction="#quesLenValue" onKeyReleased="#quesLenValue" prefHeight="27.0" prefWidth="48.0" />
+            <Text layoutX="14.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty:" />
+            <Text layoutX="14.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:" />
+            <Text layoutX="15.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:" />
+            <Text layoutX="17.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type Of Question:" />
+            <Text layoutX="20.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Length:" />
+            <ComboBox fx:id="subjectDD" layoutX="17.0" layoutY="140.0" onAction="#subjValue" onMouseClicked="#subjValue" prefHeight="27.0" prefWidth="167.0" promptText="None">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="None" />
+                     <String fx:value="Computer Science" />
+                     <String fx:value="Biology" />
+                     <String fx:value="Chemistry" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <ComboBox fx:id="courseDD" layoutX="20.0" layoutY="211.0" onAction="#courseValue" onMouseClicked="#subjValue" prefHeight="27.0" prefWidth="105.0" promptText="None">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="CPE 101" />
+                     <String fx:value="CPE 102" />
+                     <String fx:value="CPE 103" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <ComboBox fx:id="quesType" layoutX="17.0" layoutY="297.0" onAction="#quesTypeValue" onMouseClicked="#quesTypeValue" prefHeight="27.0" prefWidth="167.0" promptText="None">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="True/False" />
+                     <String fx:value="Multiple Choice" />
+                     <String fx:value="Free Response" />
+                     <String fx:value="Coding" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <ComboBox fx:id="quesLenDD" layoutX="73.0" layoutY="394.0" onAction="#quesTypeValue" onMouseClicked="#quesLenUnitValue" prefHeight="27.0" prefWidth="112.0" promptText="None">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Seconds" />
+                     <String fx:value="Minutes" />
+                     <String fx:value="Hours" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+         </children>
+      </Pane>
+      <Button fx:id="back1" layoutX="29.0" layoutY="566.0" mnemonicParsing="false" onAction="#backButQuesBank" text="Add" />
+   </children>
+</AnchorPane>

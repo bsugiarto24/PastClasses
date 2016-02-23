@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>
+2.6.3  Test Toggles
+</title>
+</head>
+<body bgcolor = white>
+<a name="Test Toggles">
+<h3>
+2.6.3  Test Toggles
+</h3>
+</a>
+<p>This section covers how to toggle a pre-generated test.
+<p>This feature is only available for teachers only.
+	For more information on teacher's functions,
+	<a href="teach-func.html"> click here.</a>
+
+<p>Teachers have the authorization to turn on/off of a specific test to monitor the flow of the class and to futher prevent students from taking the wrong test.
+<br>
+<br>
+<hr>
+<a name="Figure Initial screen">
+<a name="Initial screen">
+<p align=center>
+<img src="images/toggle1_1.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 1.1:  Initial Screen With Menu Tab  </p>
+<br>
+
+<a name="Figure Initial screen">
+<a name="Initial screen">
+<p align=center>
+<img src="images/toggle1_3.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 1.2:  Initial Screen Without Menu Tab</p>
+
+</a>
+<br>
+<a name="Figure Initial screen">
+<a name="Initial screen">
+<p align=center>
+<img src="images/toggle1_2.png" height="70" width="500">
+</p>
+</a>
+<p align=center> Figure 1.2:  Access Drop Down Menu.  </p>
+<hr>
+<br>
+<p>The intial screen contains a list of user's(teacher) current classes they are teaching. Figure 1.1
+<p>User clicks on the <tt>drop down menu</tt> to access the <tt>toggles</tt> of all tests within a desired class. Figure 1.2
+<p>
+<br>
+<br>
+<hr>
+<a name="Click on dropdown ">
+<a name="Expanded menus tab">
+<p align=center>
+<img src="images/toggle2_1.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 2.1:  Turn Toggles On  </p>
+<hr>
+</a>
+<br>
+
+<p>After the user clicks on the <tt>drop down menu</tt>, a list of tests that is assigned to the class will display. Figure 2.1
+<p>The user selects a desired test to be turned on and the on/off toggle button is directly to the right of the desired test.
+<p>
+<br>
+<br>
+<hr>
+<a name="Click on dropdown ">
+<a name="Expanded menus tab">
+<p align=center>
+<img src="images/toggle2_2.png" height="100" width="200">
+</p>
+</a>
+<p align=center> Figure 2.2:  Toggle Button  </p>
+<hr>
+</a>
+<br>
+
+<p>Tests are preset as toggled off. User must click on the toggle button (the toggle will display as green) to turn on the test.
+<p>
+<br>
+<br>
+<hr>
+<a name="Click on dropdown ">
+<a name="Expanded menus tab">
+<p align=center>
+<img src="images/toggle3.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 3:  Save Changes  </p>
+<hr>
+</a>
+<br>
+<p>The user updates the toggle changes by clicking on the <tt>save</tt> button.
+<p>The test is now live for students to attempt and make progress upon.
+<p>After all the students took the test, teacher have the option to view statistics of class results as well as individual student's score in
+	<a href="statistics.html">Statistics.</a>
+
+<p>
+<p> 
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>><a href="student-previous-test.html">view student's previous tests</a>
+ | <font color=black> Next: </font><a href="test-taking.html">test taking</a>
+ | <font color=black> Up: </font><a href="functional.html">functional</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

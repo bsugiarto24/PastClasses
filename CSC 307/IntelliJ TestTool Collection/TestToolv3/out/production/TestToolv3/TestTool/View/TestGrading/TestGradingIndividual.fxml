@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestGrading.TestGradingIndividualController">
+   <children>
+      <Button layoutX="44.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+      <AnchorPane layoutX="14.0" layoutY="127.0" minHeight="0.0" minWidth="0.0" prefHeight="173.0" prefWidth="208.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 3;">
+         <children>
+            <Text layoutX="18.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name:" />
+            <TextField fx:id="studentNamePrompt" layoutX="18.0" layoutY="57.0" prefHeight="27.0" prefWidth="171.0" promptText="Enter Student Name" />
+            <Button layoutX="79.0" layoutY="111.0" mnemonicParsing="false" text="Filter" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="370.0" minHeight="0.0" minWidth="0.0" prefHeight="118.0" prefWidth="208.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 3;">
+         <children>
+            <Text layoutX="18.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overall Progress:" />
+            <ProgressBar fx:id="progressBar" layoutX="18.0" layoutY="61.0" prefHeight="20.0" prefWidth="171.0" progress="0.0" />
+            <StackPane fx:id="progressBarStackPane" layoutX="139.0" layoutY="26.0" prefHeight="39.0" prefWidth="50.0" />
+         </children>
+      </AnchorPane>
+      <TabPane layoutX="234.0" layoutY="79.0" prefHeight="443.0" prefWidth="332.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 2;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="IPtab" text="In Progress">
+               <content>
+                  <TableView fx:id="IPtable" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="IPstudentColumn" prefWidth="141.0" text="Student Name" />
+                      <TableColumn fx:id="IPprogressColumn" minWidth="0.0" prefWidth="150.0" text="Progress" />
+                        <TableColumn fx:id="IPprogressStringColumn" prefWidth="37.0" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+          <Tab fx:id="Ctab" text="Completed">
+               <content>
+                  <TableView fx:id="Ctable" prefHeight="200.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn fx:id="CstudentColumn" prefWidth="141.0" text="Student Name" />
+                        <TableColumn fx:id="CprogressColumn" minWidth="0.0" prefWidth="150.0" text="Progress" />
+                        <TableColumn fx:id="CprogressStringColumn" prefWidth="37.0" />
+                     </columns>
+                  </TableView>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+      <AnchorPane layoutX="579.0" layoutY="117.0" minHeight="0.0" minWidth="0.0" prefHeight="380.0" prefWidth="208.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 3;">
+         <children>
+            <Text layoutX="18.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Name:" />
+            <Text layoutX="18.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:" />
+            <Text layoutX="18.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:" />
+            <Text layoutX="21.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Taken:" />
+            <Text layoutX="18.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+            <TextField fx:id="testNameField" alignment="CENTER" editable="false" layoutX="21.0" layoutY="61.0" />
+            <TextField fx:id="courseField" alignment="CENTER" editable="false" layoutX="21.0" layoutY="117.0" />
+            <TextField fx:id="subjectField" alignment="CENTER" editable="false" layoutX="21.0" layoutY="187.0" />
+            <TextField fx:id="dateTakenField" alignment="CENTER" editable="false" layoutX="21.0" layoutY="253.0" />
+            <TextField fx:id="statusField" alignment="CENTER" editable="false" layoutX="21.0" layoutY="317.0" />
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="testNameStackPane" layoutX="198.0" layoutY="14.0" prefHeight="62.0" prefWidth="404.0" />
+      <Button layoutX="237.0" layoutY="545.0" mnemonicParsing="false" onAction="#handleSelect" text="Select" />
+   </children>
+</AnchorPane>

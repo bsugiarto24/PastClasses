@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+   <children>
+      <Text layoutX="245.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Tool">
+         <font>
+            <Font size="77.0" />
+         </font>
+      </Text>
+      <Text layoutX="283.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By SouthEast Asia">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

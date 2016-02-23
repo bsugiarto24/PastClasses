@@ -1,0 +1,38 @@
+
+package administrativeDetails;
+
+/**
+ * This class represents a list which is to be extended
+ * @author bsugiarto
+ *
+ */
+
+public abstract class ListView {
+
+	/**
+	 * Adds an object to the List
+	 * @param object to be added to the list
+	 */
+	public abstract void add(Object object);
+	
+	
+	/**
+	 * Deletes Object from list with specified index
+	 * @param index
+	 */
+	public abstract void delete(int index);
+	
+
+	/**
+	 * Gets an Object from the list at specified index
+	 * @param index Index of the Object to get.
+	 * @return Returns Object from the index in the list.
+	 */
+	public abstract Object get(int index);
+	
+	
+	/**
+	 * Displays the list in the window
+	 */
+	public abstract void display();
+}

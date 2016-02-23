@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>
+2.2.1.2. Generate an Advanced Random Test From Question Bank
+</title>
+</head>
+<body bgcolor = white>
+<a name="Generate an Advanced Random Test From Question Bank">
+<h4>
+2.2.1.2.  Generate an Advanced Random Test From Question Bank
+</h4>
+</a>
+
+<p> The User will come to this page as shown in <tt> Figure 2-8</tt>.
+
+
+
+<br>
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/Adv-Ran-Gen1.png">
+</p>
+<p align=center>Figure 2-8</p>
+<hr>
+</a>
+<br>
+
+
+To create an Advanced random test, the user will use the <tt>Test Length Drop Down Box</tt> and click on the units of time they want as shown in <tt>Figure 2-9</tt>.
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/Adv-Ran-Gen2.png">
+</p>
+<p align=center>Figure 2-9</p>
+<hr>
+</a>
+<br>
+
+The User will then Click on the <tt> Subject Drop Down Box</tt> and select the type of Subject they want in the test as shown in <tt> Figure 2-10</tt>.
+
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/Adv-Ran-Gen3.png">
+</p>
+<p align=center>Figure 2-10</p>
+<hr>
+</a>
+<br>
+
+After Selecting the Subject, the User will proceed to select the <tt> Course Drop Down Box </tt> of the course they want the questions from as shown in <tt>Figure 2-10</tt>.
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/Adv-Ran-Gen4.png">
+</p>
+<p align=center>Figure 2-11</p>
+<hr>
+</a>
+<br>
+
+The User will then fill in the <tt>Text Boxes</tt>: <br>
+<tt>Number Questions</tt> <br>
+<tt>Difficulty</tt> <br> 
+<tt>Test Length</tt>
+<br>
+
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/Adv-Ran-Gen5.png">
+</p>
+<p align=center>Figure 2-12</p>
+<hr>
+</a>
+<br>
+
+
+The User can also press the <tt>'Add'</tt> button to bring up more text boxes for options to.
+<br>
+Once a user presses the button <tt>'Generate'</tt>, it will bring the user to the Test Bank.
+
+<br>
+<br>
+<hr>
+<a name="Editing a Test">
+<p align=center>
+<img src="images/Adv-Ran-Gen6.png">
+</p>
+<p align=center>Figure 2-13</p>
+<hr>
+</a>
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="gen-test-new-questions.html"> Create a test with new questions</a>
+ | <font color=black> Up: </font><a href="browsing.html">browsing</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>
+

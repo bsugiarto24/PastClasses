@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>
+2.3.3.  Coding Type Questions
+</title>
+</head>
+<body bgcolor = white>
+<a name="Creating Coding Type Questions">
+<h4>
+2.3.3.  Creating Coding Type Questions
+</h4>
+</a>
+<p>
+After the adding a question and choosing the desired type (as covered in 
+<a href="question-management.html">Section 2.3</a>), the screen will change accordingly 
+depending on the chosen question type.
+
+<p> 
+This section covers Coding Questions. Coding Questions cannot be auto-graded
+and must be given a score in the the <tt>Teacher</tt> page.
+
+
+<p>
+Choosing <tt>Coding</tt> as the question type loads the following screen as shown in Figure 3-9.
+
+<br>
+<br>
+<hr>
+<a name="Coding Question">
+<p align=center>
+<img src="images/coding.png">
+</p>
+<p align=center> Figure 3-9: Coding Question </p>
+<hr>
+</a>
+<br>
+
+<p>
+<tt>Points</tt>, <tt>Subject</tt>, and <tt>Difficulty</tt> are discussed
+in <a href="question-management.html">Section 2.3</a>.
+
+<p>
+In a Coding Question, <tt>Question</tt> still acquires information
+the same way, but the box for displaying the input is larger to allow for longer
+questions and any necessary information needed to elaborate on the question.
+
+<p>
+A completed Coding Question is shown in Figure 3-10.
+
+<br>
+<br>
+<hr>
+<a name="Completed Coding Question">
+<p align=center>
+<img src="images/coding-full">
+</p>
+<p align=center> Figure 3-10: Completed Coding Question </p>
+<hr>
+</a>
+<br>
+
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="free-response.html">Free-Response</a>
+ | <font color=black> Next: </font><a href="fill-in-the-blank.html">Fill-In-The-Blank</a>
+ | <font color=black> Up: </font><a href="question-management.html">Question Management</a>
+ | <font color=black> Top: </font><a href="index.html">Index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

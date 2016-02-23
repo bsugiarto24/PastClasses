@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>
+2.6  Student Management
+</title>
+</head>
+<body bgcolor = white>
+<a name="User Interface Overview">
+<h3>
+2.6.1  Adding/Deleting Students
+</h3>
+</a>
+<p>
+When the user initially invokes the Test Tool, and clicks on the left menu the screen will be shown in Figure 1. 
+
+<br>
+	
+<a name="Figure Expanded menus tab">
+<a name="Expanded menus tab">
+<p align=center>
+<img src="images/initial-screen-2.png">
+</p>
+</a>
+<p align=center> Figure 1:  Initial screen.  </p>
+<hr>
+</a>
+<br>
+<br>
+The <tt>Teacher</tt> button (3rd button from the top) opens up the teacher section which is shown in Figure 2 below. To delete a student, the user would hit the <tt>minus</tt> button. To add a student, the user would hit the <tt>plus</tt> button on the left. The <tt>More Details</tt> button is represented by the three dots and when clicked, will show the test result details.
+
+<p>
+
+<a name="Display Students">
+<a name="Display Studetns">
+<p align=center>
+<img width = "800px" src="images/view-students.jpg">
+</p>
+</a>
+<p align=center> Figure 2:  Student View.  </p>
+<hr>
+</a>
+<br>
+
+When the user hits the <tt>plus</tt> button to add a student. The interface prompts the user to add a name to the new student.
+
+<p>
+
+<a name="Adding Students">
+<a name="Adding Studetns">
+<p align=center>
+<img width = "800px" src="images/add-student.jpg">
+</p>
+</a>
+<p align=center> Figure 3:  Adding a Student.  </p>
+<hr>
+</a>
+<br>
+
+<a name = "Sec2">
+<h3>
+2.6.2  Viewing Student's Test Scores
+</h3>
+
+
+<br>
+
+When the user clicks on a <tt>Student</tt> row, the student's test scores will become visible from below the user.
+
+<p>
+
+<a name="Display Students">
+<a name="Display Studetns">
+<p align=center>
+<img width = "800px" src="images/testResults.jpg">
+</p>
+</a>
+<p align=center> Figure 4:  Viewing a Student's test score.  </p>
+<hr>
+</a>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="test-toggles.html">Test Toggles</a>
+ | <font color=black> Up: </font><a href="teach-func.html">Teacher Functions</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

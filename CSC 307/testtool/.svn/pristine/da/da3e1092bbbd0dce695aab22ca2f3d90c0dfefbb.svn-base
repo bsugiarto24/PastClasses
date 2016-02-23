@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>
+2.6  Student Management
+</title>
+</head>
+<body bgcolor = white>
+<a name="User Interface Overview">
+<h3>
+2.6.2  Viewing Student's Test Scores
+</h3>
+<br>
+
+When the user clicks on a <tt>Student</tt> row, the student's test scores will become visible from below the user.
+
+<p>
+
+<a name="Display Students">
+<a name="Display Studetns">
+<p align=center>
+<img width = "800px" src="images/testResults.jpg">
+</p>
+</a>
+<p align=center> Figure 4:  Viewing a Student's test score.  </p>
+<hr>
+</a>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="student-management.html">Course Management</a>
+ | <font color=black> Next: </font><a href="test-toggles.html">Test Toggles</a>
+ | <font color=black> Up: </font><a href="teach-func.html">Teacher Functions</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

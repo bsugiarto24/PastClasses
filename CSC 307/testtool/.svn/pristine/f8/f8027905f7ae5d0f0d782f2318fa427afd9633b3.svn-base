@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>
+2.2.2.  Creating a Test With New Questions
+</title>
+</head>
+<body bgcolor = white>
+<a name="Creating a Test With New Questions">
+<h4>
+2.2.2.  Creating a Test With New Questions
+</h4>
+</a>
+<p>
+To create a test with new questions, the user selects <tt>Click to Add New Question</tt> as shown in Figure 2-4. Figure 2-4 also shows options available for the user to enter:
+<ul>
+<li>Test Name
+<li>Class Name
+<li>Time Limit
+<li>Difficulty
+<li>Grade Cutoffs
+</ul>
+The user can also select <tt>Save</tt> to save the test, or <tt>Back</tt> to return to the home screen.
+<hr>
+<a name="Edit Test Prompt">
+<p align=center>
+<img src="images/gen-test-empty-edit.png" style="height:50%">
+</p>
+<p align=center> Figure 2-4: Edit Test Prompt </p>
+<hr>
+</a>
+<br>
+<p>
+To specify creation of a new question (rather than choosing from the question bank), the user selects <tt>New Question</tt> as shown in Figure 2-5. To save the test, the user selects <tt>Save</tt> as shown in Figure 2-4.
+<br>
+<br>
+<hr>
+<a name="New Question or Bank">
+<p align=center>
+<img src="images/gen-test-question-options.png" style="height:10%">
+</p>
+<p align=center> Figure 2-5: New Question or Choose From Bank </p>
+<hr>
+</a>
+<br>
+
+
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="gen-test-ques-bank.html">generate from question bank</a>
+ | <font color=black> Next: </font><a href="gen-test-revise.html">revising tests and editing settings</a>
+ | <font color=black> Up: </font><a href="Section2.2.html">test creation</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

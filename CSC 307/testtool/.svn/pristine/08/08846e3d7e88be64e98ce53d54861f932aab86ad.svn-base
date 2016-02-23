@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>
+2.7  Test Taking UI
+</title>
+</head>
+<body bgcolor = white>
+<a name="Test Taking UI">
+<h3>
+2.7  Test Taking UI
+</h3>
+</a>
+<p>This section covers the UI that a student will see when they are attempting a given test.
+<p>The test UI contains different UI for <tt>Free Response Questions</tt> and <tt>Select to Answer</tt> question types. 
+<p><tt>Free Response Question</tt>, it includes both essay based and coding questions.</br> <tt>Select to Answer</tt> question types includes <tt>Multiple Choice</tt> and <tt>True/False</tt> questions.
+<p>If a test contains multiple questions (more than it can fit on a page), student must scroll using their mouse, <br>keyboard arrows, or scroll bar to advance on the test.
+<p>
+<br>
+<br>
+<hr>
+<a name="Figure Initial screen">
+<a name="Initial screen">
+<p align=center>
+<img src="images/testtaking1.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 1:  Initial screen.  </p>
+<hr>
+</a>
+<br>
+
+<p>When student login into the testtool, the student will see the UI of Figure 1. The student may select one of the assigned test(s)<br>by clicking on <tt>submit</tt> button.
+
+<p>This UI displays the class name, test name, and the time limit to provide basic information for students that are taking the test.
+
+<br>
+<br>
+<hr>
+<a name="FRQ">
+<a name="FRQ Initial">
+<p align=center>
+<img src="images/testtaking2_1.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 2.1:  <tt>Free Response Questions</tt> Display</p>
+</a>
+<br>
+
+<br>
+<br>
+<a name="FRQ">
+<a name="FRQ Filled Out">
+<p align=center>
+<img src="images/testtaking2_2.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 2.2:  Answering <tt>Free Response Questions</tt> </p>
+<hr>
+</a>
+<br>
+
+<p><tt>Free Response Questions</tt> contains a text inbox for sutdents to input their essay answers or code.
+<p>Coding questions include a output directly under the input text box. The output box will display the result<br>of the code when student clicks <tt>Compile and Run</tt>.
+<p>The essay free response questions contains the text inbox only without output box or <tt>Compile and Run</tt> button.
+
+
+<br>
+<br>
+<hr>
+<a name="Selects">
+<a name="Select MC and T/F">
+<p align=center>
+<img src="images/testtaking3.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 3:  <tt>Multiple Choice</tt> and <tt> True/False</tt> Question Display</p>
+<hr>
+</a>
+<br>
+
+<p>Student(s) must select the correct answer that is corresponding to the question in <tt>Select to Answer</tt> questions.
+<p>Both <tt>Multiple Choice</tt> and <tt>True/False</tt> questions function the same way. Student must check the checkbox that they think is correct for the question provided.
+
+<p>
+<br>
+<br>
+<hr>
+<a name="Submit">
+<a name="Submit Test">
+<p align=center>
+<img src="images/testtaking4.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 4:  Submitting the Test.  </p>
+<hr>
+</a>
+<br>
+<p>After student completes their test, a <tt>Submit</tt> button will display at the end of the test. Figure 4
+<p>Student will click this button to acknowledge that they are finished with the test and can not edit the submitted material later.
+
+<p>
+<br>
+<br>
+<hr>
+<a name="Submit">
+<a name="Submit Warning">
+<p align=center>
+<img src="images/testtaking5_1.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 5.1:  Submit Warning  </p>
+<br>
+<br>
+<a name="Submit">
+<a name="Submit Warning">
+<p align=center>
+<img src="images/testtaking5_2.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 5.2:  Unanswered Question Highlight  </p>
+<hr>
+</a>
+<br>
+
+
+<p>If a student tries to submit with questions not answered, a warning box will display to notify the student that they have not yet <br>completed the test (finish answering all the questions).
+
+<p>When the warning displays, a student can either acknowledge they left the question blank on purpose and submit (clicking <br><tt>Submit Anyway</tt> on the warning pop up) or they can finish up the test by selecting <tt>Okay</tt> on the pop up warning.
+
+<p>If a studen desires to complete the test (by clicking <tt>Okay</tt> on the warning popup), question(s) they have missed will be <br>highlited yellow to help students to locate the unanswered question(s).
+	Figure 5.2.
+<p>The student is able to submit their test when they have answered all of the questions that were on the test.
+
+<p>
+<br>
+<br>
+<hr>
+<a name="Submit">
+<a name="Submit Warning">
+<p align=center>
+<img src="images/testtaking6.png" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 6:  Final Page  </p>
+<hr>
+</a>
+<br>
+
+<p>Figure 6 UI will display when student finish submitting their finished test.
+<p>Click on <tt>Home Screen</tt> will lead the student back to the main screen displayed in the <a href="ui-overview.html">Home Screen</a>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>><a href="student-previous-test.html">view student's previous tests</a>
+ | <font color=black> Next: </font><a href="test-taking.html">test taking</a>
+ | <font color=black> Up: </font><a href="functional.html">functional</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

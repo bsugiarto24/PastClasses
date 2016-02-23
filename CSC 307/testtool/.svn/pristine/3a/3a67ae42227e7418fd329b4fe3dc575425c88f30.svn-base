@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>
+2.6  Teacher Functions
+</title>
+</head>
+<body bgcolor = white>
+<a name="Teacher Functions">
+<h2>
+2.  Teacher Functions
+</h2>
+</a>
+<p>
+This section goes over the functions that a teacher has such as adding or deleting a user, viewing a student's scores and statistics on previous tests, and the ability to open up the test for students to take or close the test to deny access for students.
+<br>
+
+
+<p>
+Details of system use are presented in the following scenarios:
+<ul>
+<li>
+<a href="Section2.6.1.html">
+Adding/Deleting a User
+</a>
+<li>
+<a href="Section2.6.2.html">
+View a certain student's previous tests
+</a>
+<li>
+<a href="Section 2.6.3.html">
+Test Toggles (on/off)
+</a>
+<li>
+<br>
+These scenarios cover all teacher functions for the system.
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="intro.html">intro</a>
+ | <font color=black> Next: </font>[none]
+ | <font color=black> Up: </font><a href="index.html">index</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>
+

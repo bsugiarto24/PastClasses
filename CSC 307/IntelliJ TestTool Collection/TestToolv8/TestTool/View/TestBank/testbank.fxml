@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestBank.TestBankController">
+   <children>
+      <Text layoutX="340.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Bank">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <HBox layoutX="10.0" layoutY="76.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="450.0" prefWidth="780.0">
+         <children>
+            <TableView fx:id="testTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="583.0" style="-fx-border-color: black; -fx-border-width: 2;" HBox.hgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="testNameColumn" prefWidth="110.0" text="Test Name" />
+                  <TableColumn fx:id="courseColumn" prefWidth="110.0" text="Course" />
+                  <TableColumn fx:id="subjectColumn" prefWidth="110.0" text="Subject" />
+                  <TableColumn fx:id="questionsColumn" prefWidth="75.0" text="Questions" />
+                  <TableColumn fx:id="difficultyColumn" prefWidth="75.0" text="Difficulty" />
+                <TableColumn fx:id="timeLengthColumn" prefWidth="75.0" text="Length" />
+              </columns>
+            </TableView>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: black; -fx-border-width: 2;" HBox.hgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets top="1.0" />
+               </opaqueInsets>
+               <children>
+                  <TextField fx:id="testNameTF" layoutX="19.0" layoutY="31.0" prefHeight="27.0" prefWidth="167.0" />
+                  <TextField fx:id="testLengthTF" layoutX="25.0" layoutY="225.0" prefHeight="27.0" prefWidth="48.0" />
+                  <Text layoutX="13.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Name:" />
+                  <Text layoutX="17.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:" />
+                  <Text layoutX="18.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:" />
+                  <Text layoutX="19.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Length (Minutes):" />
+                  <ComboBox fx:id="subjectCB" layoutX="65.0" layoutY="91.0" prefHeight="27.0" prefWidth="112.0" promptText="------">
+                  </ComboBox>
+                  <ComboBox fx:id="courseCB" layoutX="66.0" layoutY="150.0" prefHeight="27.0" prefWidth="112.0" promptText="------">
+                  </ComboBox>
+                  <TextField fx:id="avgDiffTF" layoutX="24.0" layoutY="287.0" prefHeight="27.0" prefWidth="48.0" />
+                  <Text layoutX="18.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty:" />
+                  <Button fx:id="filterButton" layoutX="122.0" layoutY="323.0" mnemonicParsing="false" onAction="#onFilter" text="Filter" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <ButtonBar layoutX="14.0" layoutY="537.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#onAdd" text="Add" />
+            <Button mnemonicParsing="false" onAction="#onDelete" text="Remove" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

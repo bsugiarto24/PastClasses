@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.TestCreation.AdvGenController">
+   <children>
+      <GridPane alignment="center" hgap="10" vgap="10">
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+      <Button id="back_Button" fx:id="back" layoutX="70.0" layoutY="38.0" mnemonicParsing="false" onAction="#backToRanMain" text="Back" />
+      <Text layoutX="132.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advanced Randomize Test Options" textOrigin="CENTER" wrappingWidth="535.21875">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="testLenVal" layoutX="521.0" layoutY="194.0" prefHeight="27.0" prefWidth="36.0" />
+      <Text layoutX="513.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Length:" />
+      <Text layoutX="515.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:" />
+      <ComboBox fx:id="testLenType" layoutX="578.0" layoutY="194.0" prefWidth="150.0" promptText="None">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Seconds" />
+               <String fx:value="Minutes" />
+               <String fx:value="Hours" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <ComboBox fx:id="course" layoutX="513.0" layoutY="287.0" prefHeight="27.0" prefWidth="217.0" promptText="None">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="CPE 101" />
+               <String fx:value="CPE 102" />
+               <String fx:value="CPE 103" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Button fx:id="generate" layoutX="565.0" layoutY="524.0" mnemonicParsing="false" onAction="#advHandleGen" prefHeight="44.0" prefWidth="204.0" text="Generate" />
+      <Text layoutX="46.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Name:" />
+      <TextField fx:id="testName" layoutX="124.0" layoutY="136.0" prefHeight="27.0" prefWidth="164.0" />
+      <Text layoutX="46.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Questions:" />
+      <Text layoutX="175.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty: " />
+      <Text layoutX="254.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Type:" />
+      <Text layoutX="371.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:" />
+      <Button id="back_Button" fx:id="back1" layoutX="41.0" layoutY="546.0" mnemonicParsing="false" onAction="#addRow" text="Add" />
+      <VBox fx:id="numQuesVBox" layoutX="44.0" layoutY="228.0" prefHeight="198.0" prefWidth="118.0">
+         <children>
+            <TextField fx:id="testLenVal1" prefHeight="27.0" prefWidth="112.0" />
+         </children>
+      </VBox>
+      <VBox fx:id="diffVBox" layoutX="175.0" layoutY="227.0" prefHeight="200.0" prefWidth="63.0">
+         <children>
+            <TextField fx:id="diffVal1" prefHeight="27.0" prefWidth="63.0" />
+         </children>
+      </VBox>
+      <VBox fx:id="subjVBox" layoutX="371.0" layoutY="226.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ComboBox fx:id="subject" prefWidth="150.0" promptText="None">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Object-Oriented" />
+                     <String fx:value="Recursion" />
+                     <String fx:value="Global Variables" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+         </children>
+      </VBox>
+      <VBox fx:id="quesTypeVBox" layoutX="251.0" layoutY="227.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ComboBox fx:id="quesType1" prefWidth="150.0" promptText="None">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="True/False" />
+                     <String fx:value="Multiple Choice" />
+                     <String fx:value="Fill In The Blank" />
+                     <String fx:value="Free Response" />
+                     <String fx:value="Coding" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+         </children>
+      </VBox>
+      <VBox fx:id="delVBox" layoutX="14.0" layoutY="227.0" prefHeight="200.0" prefWidth="27.0">
+         <children>
+            <Button fx:id="remove1" mnemonicParsing="false" onAction="#removeRow" prefHeight="27.0" prefWidth="11.0" text="X" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

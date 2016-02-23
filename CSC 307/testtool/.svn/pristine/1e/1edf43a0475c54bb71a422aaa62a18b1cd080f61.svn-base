@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>
+2.2.3.  Revising Tests
+</title>
+</head>
+<body bgcolor = white>
+<a name="Revising Tests">
+<h4>
+2.2.3.  Revising Tests and Editing Settings
+</h4>
+</a>
+<p>
+To revise a test, the user selects <tt>Edit</tt> as shown in Figure 2-6.
+<br>
+<br>
+<hr>
+<a name="Filled Test">
+<p align=center>
+<img src="images/gen-test-filled.png" style="height:50%">
+</p>
+<p align=center> Figure 2-6: Filled Test </p>
+<hr>
+</a>
+<br>
+
+<p>
+To edit or remove a question, the user selects ellipses <tt>...</tt> as shown in Figure 2-7, and then <tt>Edit</tt> or <tt>Remove</tt> as shown in Figure 2-8.
+<br>
+<br>
+<hr>
+<a name="Filled Test Mid Edit">
+<p align=center>
+<img src="images/gen-test-filled-edit.png" style="height:50%">
+</p>
+<p align=center> Figure 2-7: Filled Test Mid Edit</p>
+<hr>
+</a>
+<br>
+
+<br>
+<br>
+<hr>
+<a name="Edit or Remove">
+<p align=center>
+<img src="images/gen-test-edit-remove.png" style="height:10%">
+</p>
+<p align=center> Figure 2-8: Edit or Remove</p>
+<hr>
+</a>
+<br>
+
+<p>
+To save the test, the user selects <tt>Save</tt>. To go back to the home screen, the user selects <tt>Back</tt> as shown in Figure 2-7. A dialogue will pop up as shown in Figure 2-9, prompting the user to save before exiting. Options are <tt>Don't Save</tt>, <tt>Cancel</tt>, or <tt>Save</tt>.
+<br>
+<br>
+<hr>
+<a name="Exit Without Saving?">
+<p align=center>
+<img src="images/gen-test-exit-warning.png" style="height:20%">
+</p>
+<p align=center> Figure 2-9: Exit Without Saving?</p>
+<hr>
+</a>
+<br>
+
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="gen-test-new-questions.html">new questions</a>
+ | <font color=black> Next: </font>[none]
+ | <font color=black> Up: </font><a href="Section2.2.html">test creation</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>
+2.6.3  Test Toggles
+</title>
+</head>
+<body bgcolor = white>
+<a name="Test Toggles">
+<h3>
+2.6.3  Test Toggles
+</h3>
+</a>
+<p>
+When a teacher is ready to allow students to take a test,
+he/she can come to this option and turn the switch on
+for the desired test
+<br>
+<br>
+<hr>
+<a name="Figure Initial screen">
+<a name="Initial screen">
+<p align=center>
+<img src="images/toggle1.jpg" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 1:  Initial screen.  </p>
+<hr>
+</a>
+<br>
+
+The initial screen when clicked into the toggle page will contain a list of 
+classes you are teaching. This option allows us to separate tests by classes so 
+it will be more organized in the future.
+
+<p>
+Figure 2 shows turn the toggle on
+
+<br>
+<br>
+<hr>
+<a name="Figure Expanded menus tab">
+<a name="Expanded menus tab">
+<p align=center>
+<img src="images/toggle2.jpg" height="400" width="550">
+</p>
+</a>
+<p align=center> Figure 2:  Turn Toggles On  </p>
+<hr>
+</a>
+<br>
+
+<p> Click on the desired class that teacher would like to have test in.
+
+<p> Follows the click, there will be a drop down of created tests.
+<p> On the right hand side, there will be a switch. When bar is green, it means the test is live, if it is grey, the test is off.
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>><a href="student-previous-test.html">view student's previous tests</a>
+ | <font color=black> Next: </font><a href="test-taking.html">test taking</a>
+ | <font color=black> Up: </font><a href="functional.html">functional</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

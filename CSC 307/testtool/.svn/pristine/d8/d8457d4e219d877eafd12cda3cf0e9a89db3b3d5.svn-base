@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>
+2.1.  User Interface Overview
+</title>
+</head>
+<body bgcolor = white>
+<a name="User Interface Overview">
+<h3>
+2.1.  User Interface Overview
+</h3>
+</a>
+<p>
+When the user initially invokes the Test Tool, the screen appears as shown
+in Figure 1.
+
+<br>
+<br>
+<hr>
+<a name="Figure Initial screen">
+<a name="Initial screen">
+<p align=center>
+<img src="images/initial-screen.png">
+</p>
+</a>
+<p align=center> Figure 1:  Initial screen.  </p>
+<hr>
+</a>
+<br>
+
+The initial display consists of three buttons: Create New Test, Generate Test, 
+and Load previous test. Each button takes you to the same questionnaire-style page,
+but Generate Test and Load Previous Test will first prompt instructions for test generation
+and then fill in the editor accordingly, while Create New Test will have the page be blank.
+The slider on the right slide opens up a tab of menus to the other available sections as 
+shown in Figure 2.
+<p>
+Figure 2 shows the tab open.
+
+<br>
+<br>
+<hr>
+<a name="Figure Expanded menus tab">
+<a name="Expanded menus tab">
+<p align=center>
+<img src="images/initial-screen-2.png">
+</p>
+</a>
+<p align=center> Figure 2:  Expanded Menus Tab.  </p>
+<hr>
+</a>
+<br>
+
+<p> The Menu tab can be hidden again by clicking on the protruding tab.
+The current section that the user is in is highlighted in yellow.
+
+<p>
+The <tt>Editor</tt> section is where users create tests. The layout is similar to that of
+a questionnaire, with different spaces to fill in all the question information needed for 
+customization.
+<p>
+The <tt>Test Bank</tt> section contains the lists of questions stored, as well as previously created
+tests. The questions can be searched for by a range of categories, such as difficulty, subject, 
+and date created.
+<p>
+The <tt>Teacher</tt> section contains the teacher functions for tests. These functions include adding 
+and deleting users allowed to take the tests, grading non-automated-grader questions, publishing grades, 
+viewing student information, and toggling on/off whether a test is still active.
+<p>
+The <tt>Statistics</tt> section is where test information is held. This information includes test averages, 
+individual student scores, students' number of attempts, and which questions they missed.
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="test-creation.html">Test Creation</a>
+ | <font color=black> Up: </font><a href="functional.html">Functional</a>
+ | <font color=black> Top: </font><a href="index.html">Index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>
+2.8  Student Management
+</title>
+</head>
+<body bgcolor = white>
+<a name="User Interface Overview">
+<h3>
+2.8.1  Admininstrative Actions For Teachers
+</h3>
+</a>
+<p>
+In this section, the teacher can manage courses (2.8.1.1) or students (2.8.1.2).
+
+<br><br>
+
+<h3>
+2.8.1.1  Course Mangement For Teachers
+</h3>
+
+The <tt>Teacher</tt> button (3rd button from the top) opens up the teacher section which is shown in Figure 2 below. This view shows all of the courses the teacher teaches. To view the entry code for the course, the user must click on any course. This entry code is used for students to register for a course.
+To delete a section of class, the user will click the <tt>minus</tt> button on the appropriate row. The <tt>More Details</tt> button will go to the Students view of the section.
+<br>
+<hr>
+<a name="Course View">
+<a name="Course View">
+<p align=center>
+<img width = "800px" src="images/courses.png">
+</p>
+</a>
+<p align=center> Figure 2:  Courses Screen </p>
+<hr>
+</a>
+<br>
+<br>
+
+To add a section, the user would click on the <tt>Add Course</tt> button on the bottom of the screen. There will be two text field inputs to get the course name and the course code. Once the fields have sucessfully been inputted, the user can hit enter to save the new course. These actions are shown in Figure 3 below.
+<br><br>
+<hr>
+<a name="Add Course">
+<a name="Add Course">
+<p align=center>
+<img width = "800px" src="images/add-courses.png">
+<p align=center> Figure 3:  Add Course View.  </p>
+</p>
+<hr>
+
+<p align=center>
+An Invalid input in course or course code will result in this pop up below.
+</p>
+
+<hr>
+<a name="Invalid Input">
+<a name="Invalid Input">
+<p align=center>
+<img width = "400px" src="images/invalid-input.png">
+<p>
+<p>
+
+
+</p>
+</a>
+<p align=center> Figure 4:  Invalid Value Pop up.  </p>
+<hr>
+</a>
+<br>
+<br>
+<br>
+
+<h3>
+2.8.1.2  Student Management For Teachers
+</h3>
+The <tt>More Details</tt> button (the left button on the row) opens up the Student Management View. This view has rows which represent a section which the teacher teaches. The last row is a row to add a new section to the teacher. To delete a student, the user would hit the <tt>minus</tt> button. To add a student, the user would hit the <tt>plus</tt> button on the left. The <tt>More Details</tt> button is represented by the three dots and when clicked, will show the test result details which is found in seciton 2.5.
+
+<p>
+<p>
+
+<a name="Display Students">
+<a name="Display Studetns">
+<p align=center>
+<img width = "800px" src="images/student-management.png">
+</p>
+</a>
+<p align=center> Figure 5:  Student View.  </p>
+</a>
+<hr>
+<br>
+
+When the user hits the <tt>plus</tt> button to add a student, the interface prompts the user to add a name to the new student. To save the student, the user must use the <tt>enter</tt> button. An invalid input will result in the 
+
+<p>
+<hr>
+<a name="Adding Students">
+<a name="Adding Studetns">
+<p align=center>
+<img width = "800px" src="images/add-student.png">
+</p>
+</a>
+<p align=center> Figure 6:  Adding a Student.  </p>
+<hr>
+</a>
+
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="course-management.html">Administration for Students</a>
+ | <font color=black> Up: </font><a href="admin-details.html">Administration Details</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

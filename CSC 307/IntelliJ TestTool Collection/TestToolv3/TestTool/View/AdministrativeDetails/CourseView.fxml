@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #969696;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestTool.View.AdministrativeDetails.CourseController">
+   <children>
+      <Text layoutX="74.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Courses" wrappingWidth="280.3495979309082">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listBoxMain" editable="true" layoutX="56.0" layoutY="173.0" onMouseClicked="#popup" prefHeight="317.0" prefWidth="731.0" />
+      <Text layoutX="73.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course" wrappingWidth="188.3495979309082">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text fx:id="couseName" layoutX="104.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name" />
+      <Text layoutX="422.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Access Code" />
+      <TextField fx:id="name" layoutX="192.0" layoutY="525.0" />
+      <TextField fx:id="code" layoutX="516.0" layoutY="525.0" />
+      <Button layoutX="709.0" layoutY="525.0" mnemonicParsing="false" onAction="#addCourse" text="Add" />
+      <Pane fx:id="popup" layoutX="56.0" layoutY="382.0" prefHeight="131.0" prefWidth="644.0">
+         <children>
+            <Text fx:id="addSubject" layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Subject:" wrappingWidth="81.23679161071777" />
+            <Button fx:id="submit" layoutX="272.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#addSubjectToCourse" text="Submit" />
+            <TextField fx:id="subject" layoutX="95.0" layoutY="74.0" />
+            <Button layoutX="359.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#goToStudentView" text="Go To Course" />
+            <Button fx:id="delete" layoutX="136.0" layoutY="74.0" mnemonicParsing="false" onAction="#deleteCourse" text="Delete Course" />
+            <Button fx:id="delete1" layoutX="477.0" layoutY="74.0" mnemonicParsing="false" onAction="#deleteCourseTeacher" text="Delete Course" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

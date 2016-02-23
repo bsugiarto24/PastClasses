@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>
+Agenda for the X Team Meeting, dd Month yyyy
+</title>
+</head>
+<body bgcolor=white>
+<p align=center>
+<font size=+2>
+<strong>Agenda for the X Team Meeting
+<br>
+hh:mm - hh.mm {AM,PM}, dd Month yyyy</strong>
+</font>
+</p>
+<br>
+<br>
+<font color=red><strong><em>The following are instructions for using this
+template; delete these instructions after use.</em></strong></font>
+<p>
+<ol type=1>
+<br>
+<br>
+<p> <li>
+Record meeting agenda in a separate file for each meeting; name each file
+"ddmmmyy.html", e.g.,
+<blockquote>
+25sep15
+</blockquote>
+If more than one meeting is held on the same day, suffix each file name with
+"a", "b", "c", as necessary.  E.g., 25sep15a.html, 25sep15b.html.  Store these
+files in the project directory
+<blockquote>
+<tt>administration/agenda/</tt>
+</blockquote>
+<p> <li>
+Fill in your team name where "X" appears above.
+<br>
+<br>
+<p> <li>
+Fill in "hh:mm - hh:mm {AM,PM}, dd Month yyyy" with the time and date of the
+meeting, e.g.,
+<blockquote>
+1:40 - 2:00 PM, 25 September 2015
+</blockquote>
+<p> <li>
+Itemize a list of topics to be covered in the meeting.
+<br>
+<br>
+<p> <li>
+During the meeting, take notes and record the minutes as described in the
+<a href="../admin/meeting-minutes-template.html">
+meeting minutes template.
+</a>
+</ol>
+</body>
+</html>

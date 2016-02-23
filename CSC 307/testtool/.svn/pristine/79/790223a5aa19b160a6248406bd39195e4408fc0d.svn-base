@@ -1,0 +1,85 @@
+
+<html>
+<head>
+<title>
+2.7.4.1. Viewing and Exporting Test Statistics
+</title>
+</head>
+<body bgcolor = white>
+<a name="Test Statistics">
+<h4>
+2.7.4.1. Viewing and Exporting Test Statistics
+</h4>
+</a>
+<p>
+The user selects <tt>Statistics</tt> in the <tt>Menu</tt> tab and the <tt>Test</tt> tab, the system
+displays the dialog shown in Figure 2.7.4.1.
+<br>
+<br>
+<hr>
+<a name="Figure Test Statistic dialog">
+<p align=center>
+<img src="images/TestStatBlank.png">
+</p>
+<p align=center> Figure 2.7.4.1:  Test Statistic dialog.  </p>
+<hr>
+</a>
+<br>
+<p>
+The top half of the dialog is initially an empty rectangluar box.</br>
+The <tt>Select from Test Bank</tt> button opens up the Test Bank dialog. </br>
+The user clicks the <tt>Select from Test Bank</tt> and the Graded Test Bank dialog opens in front of the Test Statistic screen.
+<br>
+<hr>
+<a name="The Graded Test Bank dialog">
+<p align=center>
+<img src="images/CompletedTestBank.png">
+</p>
+<p align=center> Figure 2.7.4.2:  Graded Test Bank dialog.  </p>
+<hr>
+
+</br>
+   <p>
+      The Test Bank dialog opens and only field that is set is the <tt>Status</tt> which is set to "Completed". Only one test's statistics can be viewed at a time. The user choses one test by checking the box and the rest of the checkboxes will gray out indicating only one test can be chosen.  
+      When the user has chosen the correct test the user clicks the <tt>Select</tt> button. This transitions back to the Test Statistics dialog.
+   </p>
+</br>
+<hr>
+<a name="Filled Test Statistic dialog">
+<p align=center>
+<img src="images/TestStatPopulated.png">
+</p>
+<p align=center> Figure 2.7.4.3:  Test Statistic dialog with chart.  </p>
+</br>
+   <p>
+      The chart is populated with the data from the selected test. The chart shows the distribution of scores for the chosen test. The x axis represents the possible scores in terms of percentage and is broken into intervals of 20. The y axis represents the number of students. The user views the chart and can see how all of his or her students performed on the exam. 
+   </br>
+    </br>
+      To the right of the chart contains information about the chosen exam.
+      <ul>
+         <li><tt>Name</tt> - The name of the test.</li>
+         <li><tt>Course</tt> - The name of the course in which the test was given.</li>
+         <li><tt>Subject</tt> - The subject that the course belongs to.</li>
+         <li><tt>Number of Questions</tt> - The number of questions on the test.</li>    
+         <li><tt>Difficulty</tt> - The level of difficulty that is decided by the user.</li>
+         <li><tt>Date Taken</tt> - The date when the test was given.</li>
+         <li><tt>Status</tt> - The graded status of the test.</li>
+
+      </ul>
+
+      The <tt>Export Chart</tt> button takes the all of the data in the rectangular area (the chart and information about the test) and generates a pdf. Then opens the pdf in Adobe Acrobat Reader. 
+   </p>
+</br>
+
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font>[none]
+ | <font color=black> Next: </font><a href="question-stats.html">Question Statistics</a>
+ | <font color=black> Up: </font><a href="statistics.html">Statistics</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>

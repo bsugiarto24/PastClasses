@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>
+2.4.3.  Question Bank Sorting and Filtering
+</title>
+</head>
+<body bgcolor = white>
+<a name="Question Bank Search">
+<h4>
+2.4.3. Question Bank Sorting and Filtering
+</h4>
+</a>
+<p>
+
+To sort the questions, the user will use the fields located on the right side. 
+
+<hr>
+<a name="Empty Question Bank">
+<p align=center>
+<img src="images/ques-bank-sort1.png">
+</p>
+<p align=center>Figure 3-12</p>
+<hr>
+
+The User will select a subject.
+
+<hr>
+<a name="Empty Question Bank">
+<p align=center>
+<img src="images/ques-bank-sort2.png">
+</p>
+<p align=center>Figure 3-13</p>
+<hr>
+
+A course type.
+
+<hr>
+<a name="Empty Question Bank">
+<p align=center>
+<img src="images/ques-bank-sort3.png">
+</p>
+<p align=center>Figure 3-14</p>
+<hr>
+
+A Type of Question.
+
+<hr>
+<a name="Empty Question Bank">
+<p align=center>
+<img src="images/ques-bank-sort4.png">
+</p>
+<p align=center>Figure 3-15</p>
+<hr>
+
+And the question length unit.
+
+<hr>
+<a name="Empty Question Bank">
+<p align=center>
+<img src="images/ques-bank-sort5.png">
+</p>
+<p align=center>Figure 3-15</p>
+<hr>
+
+The User will then enter the numbers in the text boxes and the program will return the sort with the best match on top.
+
+<hr>
+<a name="Empty Question Bank">
+<p align=center>
+<img src="images/ques-bank-sort6.png">
+</p>
+<p align=center>Figure 3-15</p>
+<hr>
+
+<br>
+<br>
+
+</a>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+<hr width=80% size=3>
+<center>
+<font size=-1>
+<font color=black> Prev: </font><a href="fill-in-the-blank.html"</a>Fill in the blank</a>
+ | <font color=black> Next: </font>[None]
+ | <font color=black> Up: </font>[None]</a>
+ | <font color=black> Top: </font><a href="index.html">index</a></font>
+</center>
+<hr width=80% size=3>
+</body>
+</html>
+
