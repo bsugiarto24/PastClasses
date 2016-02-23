@@ -1,0 +1,10 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	Buffer                  3010
+//	CRCode                  300E
+//	Count                   300F
+//	ENCODE_AFTER            3048
+//	ENCODE_BEFORE           302E
+//	ExitLoop                300B
+//	Loop                    3003
+//	READLINE                3000

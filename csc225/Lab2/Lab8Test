@@ -1,0 +1,63 @@
+.ORIG x3000
+
+	LEA R6, StackEnd 	; creates stack
+	LD R1, B	
+
+	ADD R6, R6, #-1 	; Subtract 1 from SP
+	STR R1, R6, #0 		; Push R1 on the stack
+
+	JSR SHIFTR		; JSR function
+	ADD R6, R6, #2 		; Release parameters on Stack
+	HALT
+
+
+SHIFTR:			; SHIFTS Right for top bits in stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R1, R6, #0 	; Push R1 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R2, R6, #0 	; Push R2 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R3, R6, #0 	; Push R3 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R4, R6, #0 	; Push R4 on the stack
+
+	LDR   R1, R6, #4	; Load bits onto R1
+	AND   R2, R0, #0	; Zero R2
+	AND   R3, R0, #0	; Zero R3
+	ADD   R2, R2, #2	; Mask R2
+	ADD   R4, R4, #1	; Adding mask R4
+
+	SRLOOP
+		AND   R3 R1 R2 	; checks mask against bits and stores to R3
+
+
+		BRZ  ADDING
+			ADD R0 R4 R0 	; Adds adding mask to output
+		ADDING
+
+		ADD   R4 R4 R4	; shifts adding mask left
+		ADD   R2 R2 R2	; shifts mask left
+	BRNP   SRLOOP
+
+	
+	LDR   R4 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R3 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R2 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R1 R6 #0	; restores stuff
+	ADD   R6 R6 #1  ; restores stuff
+	RET
+
+
+
+
+
+A: .FILL #3
+B: .FILL #5
+Stack	.BLKW 100 
+StackEnd .FILL #0
+
+
+.END

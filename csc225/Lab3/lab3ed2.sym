@@ -1,0 +1,19 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	Buffer                  3038
+//	CLoop                   3008
+//	CLoop2                  3022
+//	CRCode                  3035
+//	Char                    3037
+//	Count                   3036
+//	Decode                  301E
+//	ENCODE_AFTER            3071
+//	ENCODE_BEFORE           3056
+//	Encode                  301B
+//	FindAddress             3007
+//	FindAddress2            3021
+//	READLINE                3000
+//	TLoop                   3016
+//	TLoop2                  3030
+//	Translate               3015
+//	Translate2              302F

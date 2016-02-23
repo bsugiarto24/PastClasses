@@ -1,0 +1,203 @@
+.ORIG x3000
+
+	LEA R6, StackEnd 	; creates stack
+	LD R1, B	
+
+	ADD R6, R6, #-1 	; Subtract 1 from SP
+	STR R1, R6, #0 		; Push R1 on the stack
+
+		
+	LD R1, A 
+	ADD R6, R6, #-1 	; Subtract 1 from SP
+	STR R1, R6, #0 		; Push R1 on the stack
+
+	JSR XOR 		; JSR function
+	ADD R6, R6, #2 		; Release parameters on Stack
+	HALT
+
+OR:				; OR FUNCTION for top 2 in stack
+	ADD R6, R6, #-1 	; Subtract 1 from SP
+	STR R1, R6, #0 		; Push R1 on the stack
+	LDR R0, R6, #1 		; Get A from Stack
+	NOT R0, R0 		; Invert A
+	LDR R1, R6, #2 		; Get B value from stack
+	NOT R1, R1 		; Invert B
+	AND R0, R0, R1 		; R0 <= R0 AND R1
+	NOT R0, R0 		; R0 <= NOT R0
+
+	LDR R1, R6, #0 		; Restore R1 (POP …)
+	ADD R6, R6, #1 		; Increment SP
+	RET 			; same as JMP R7 + 0
+	; Return value is in R0
+
+
+XOR:			; XOR FUNCTION for top 2 in stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R1, R6, #0 	; Push R1 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R2, R6, #0 	; Push R1 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R3, R6, #0 	; Push R1 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R4, R6, #0 	; Push R1 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R5, R6, #0 	; Push R1 on the stack
+
+	LDR R0, R6, #5 	; Get A from Stack into R0
+	NOT R4, R0 	; R3 is Inverted A
+	LDR R1, R6, #6 	; Get B value from stack into R1
+	NOT R5, R1 	; R4 is Inverted B
+	
+	AND R5, R0, R5 	; R5=A AND NOT(B)
+	AND R4, R1, R4	; R4=NOT(A) AND B
+	NOT R5, R5	; R5=NOT(A AND NOT(B))
+	NOT R4, R4	; R4=NOT(NOT(A) AND B)
+	AND R4, R4, R5	; R4=NOT(A AND NOT(B)) AND NOT(NOT(A) AND B)
+	NOT R0, R4	; R0=NOT(NOT(A AND NOT(B)) AND NOT(NOT(A) AND B)) = [A AND NOT(B)] OR [NOT(A) AND B]
+
+	
+	LDR   R5 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R4 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R3 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R2 R6 #0	; restores stuff
+	ADD   R6 R6 #1  ; restores stuff
+	LDR R1, R6, #0 	; Restore R1 (POP …)
+	ADD R6, R6, #1 	; Increment SP
+	RET 		; same as JMP R7 + 0
+	; Return value is in R0
+
+
+SHIFTR:			; SHIFTS Right for top bits in stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R1, R6, #0 	; Push R1 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R2, R6, #0 	; Push R2 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R3, R6, #0 	; Push R3 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R4, R6, #0 	; Push R4 on the stack
+
+	LDR   R1, R6, #4	; Load bits onto R1
+	AND   R2, R0, #0	; Zero R2
+	AND   R3, R0, #0	; Zero R3
+	ADD   R2, R2, #2	; Mask R2
+	ADD   R4, R4, #1	; Adding mask R4
+
+	SRLOOP
+		AND   R3 R1 R2 	; checks mask against bits and stores to R3
+
+
+		BRZ  ADDING
+			ADD R0 R4 R0 	; Adds adding mask to output
+		ADDING
+
+		ADD   R4 R4 R4	; shifts adding mask left
+		ADD   R2 R2 R2	; shifts mask left
+	BRNP   SRLOOP
+
+	
+	LDR   R4 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R3 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R2 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R1 R6 #0	; restores stuff
+	ADD   R6 R6 #1  ; restores stuff
+	RET
+
+SHIFTL: 		; Shifts bits one digit left on top of stack
+	LDR R0, R6, #0 	; Get A from Stack into R0
+	ADD R0, R0, R0	;
+	RET 		; same as JMP R7 + 0
+	; Return value is in R0
+
+
+
+SHIFTRV: 		; SHIFTS Bits right on top of the stack and # of times in next on stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R1, R6, #0 	; Push R1 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R2, R6, #0 	; Push R2 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R3, R6, #0 	; Push R3 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R4, R6, #0 	; Push R4 on the stack
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R5, R6, #0 	; Push R4 on the stack
+
+
+	LDR   R5, R6, #6	; Stores number of shifts in R1
+	LDR   R0, R6, #5	; Stores bits into R0
+	AND   R2, R0, #0	; Zero R2
+	AND   R3, R0, #0	; Zero R3
+	AND   R1, R0, #0	; Zero R1
+
+	DO_TOP2
+		ADD   R1, R0, #0	; Stores bits into R1
+		AND   R0, R0, #0	; Zero R0
+		ADD   R2, R2, #2	; Mask R2
+		ADD   R4, R4, #1	; Adding mask R4
+
+		SRLOOP2
+			AND  R3, R1, R2 ; checks mask against bits and stores to R3
+
+
+			BRZ  ADDING2
+				ADD R0, R4, R0 	; Adds adding mask to output
+			ADDING2
+
+			ADD   R4, R4, R4	; shifts adding mask left
+			ADD   R2, R2, R2	; shifts mask left
+		BRNP   SRLOOP2
+		
+		AND   R2, R0, #0	; Zero R2
+		AND   R3, R0, #0	; Zero R3
+		AND   R1, R0, #0	; Zero R1
+		AND   R4, R0, #0	; Zero R1
+		ADD   R5, R5, #-1	; increments counter
+	BRP   DO_TOP2 
+
+	LDR   R5 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R4 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R3 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R2 R6 #0	; restores stuff
+	ADD   R6 R6 #1	; restores stuff
+	LDR   R1 R6 #0	; restores stuff
+	ADD   R6 R6 #1  ; restores stuff
+
+	RET
+
+
+
+SHIFTLV:		; shifts bits left on top of the stack and # of times in next on stack
+	ADD   R6 R6 #-1	; moves stack pointer
+	STR   R1 R6 #0	; Stores R1
+
+	LDR   R1 R6 #2	; Stores number of shifts in R1
+	LDR   R0 R6 #1	; Stores bits into R0
+
+	DO_TOP
+		ADD   R0 R0 R0	; shifts left
+		ADD   R1 R1 #-1	; increments counter
+	BRP DO_TOP          
+		
+	LDR   R1 R6 #0	; Restores R1
+	ADD   R6 R6 #1	; Restores R1
+	RET
+
+
+
+A: .FILL #3
+B: .FILL #2
+Stack	.BLKW 100 
+StackEnd .FILL #0
+
+
+.END

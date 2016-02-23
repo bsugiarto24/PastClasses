@@ -1,0 +1,83 @@
+.ORIG x3000
+
+	LEA R6, StackEnd ; creates stack
+	LD R1, B	
+
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R1, R6, #0 ; Push R1 on the stack
+
+		
+	LD R1, A 
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R1, R6, #0 ; Push R1 on the stack
+
+	JSR XOR
+	ADD R6, R6, #2 ; Release parameters on Stack
+	HALT
+
+OR:
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R1, R6, #0 ; Push R1 on the stack
+	LDR R0, R6, #1 ; Get A from Stack
+	NOT R0, R0 ; Invert A
+	LDR R1, R6, #2 ; Get B value from stack
+	NOT R1, R1 ; Invert B
+	AND R0, R0, R1 ; R0 <= R0 AND R1
+	NOT R0, R0 ; R0 <= NOT R0
+
+	LDR R1, R6, #0 ; Restore R1 (POP …)
+	ADD R6, R6, #1 ; Increment SP
+	RET ; same as JMP R7 + 0
+	; Return value is in R0
+
+
+XOR:
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R1, R6, #0 ; Push R1 on the stack
+	LDR R0, R6, #1 ; Get A from Stack into R0
+	NOT R4, R0 ; R3 is Inverted A
+	LDR R1, R6, #2 ; Get B value from stack into R1
+	NOT R5, R1 ; R4 is Inverted B
+	
+	AND R5, R0, R5
+	AND R4, R1, R4
+	NOT R5, R5
+	NOT R4, R4	
+	AND R4, R4, R5
+	NOT R0, R4
+
+	LDR R1, R6, #0 ; Restore R1 (POP …)
+	ADD R6, R6, #1 ; Increment SP
+	RET ; same as JMP R7 + 0
+	; Return value is in R0
+
+SHIFTR:
+
+
+	RET
+
+SHIFTL: 
+	ADD R6, R6, #-1 ; Subtract 1 from SP
+	STR R1, R6, #0 ; Push R1 on the stack
+	LDR R0, R6, #1 ; Get A from Stack into R0
+	ADD R0, R0, R0;
+	LDR R1, R6, #0 ; Restore R1 (POP …)
+	ADD R6, R6, #1 ; Increment SP
+	RET ; same as JMP R7 + 0
+	; Return value is in R0
+
+SHIFTRV:
+
+	RET
+
+SHIFTLV:
+
+	RET
+
+A: .FILL #1
+B: .FILL #1
+Stack	.BLKW 100 
+StackEnd .FILL #0
+
+
+.END

@@ -1,0 +1,151 @@
+.ORIG x3000
+READLINE:		LEA R2, Buffer	; Loads the buffer address
+			LD R3, Count	; Loads the counter for the loop
+			LD R4, CRCode   ; Loads the end character
+			LD R0, Char
+
+
+			JSR FindAddress	; finds address
+			JSR Translate 	;
+			HALT
+			
+	FindAddress:	
+		LEA R6, ENCODE_BEFORE;	;loads pointer
+
+		CLoop
+			ADD R6, R6, #1 		; increments pointer
+			LDR R1, R6, #0		; loads character from array
+			NOT R1, R1		; nots char from arr
+			ADD R1, R1, #1		; find complement
+			ADD R1, R0, R1		; is 0 if char equals pointer 
+			BRp CLoop		; increment	
+			
+			AND R0, R0, #0		; clears R0
+			ADD R0, R6, R0 		; stores R6 to R0
+			LEA R6, ENCODE_BEFORE
+			NOT R6, R6
+			ADD R6, R6, #1
+			ADD R0, R6, R0
+			
+		RET
+
+	Translate:
+		LEA R6, ENCODE_AFTER	; loads pointer
+		
+		TLoop
+			ADD R6, R6, #1 		; increments pointer
+			ADD R0, R0, #-1		; decrement count 
+			BRnp TLoop			
+			
+			LDR R0, R6, #0
+			
+		RET
+		
+
+	Encode:
+		JSR FindAddress
+		JSR Translate
+		RET	
+	
+	Decode:
+		JSR FindAddress2
+		JSR Translate2
+		RET
+	
+	
+	FindAddress2:	
+		LEA R6, ENCODE_AFTER;	;loads pointer
+
+		CLoop2
+			ADD R6, R6, #1 		; increments pointer
+			LDR R1, R6, #0		; loads character from array
+			NOT R1, R1		; nots char from arr
+			ADD R1, R1, #1		; find complement
+			ADD R1, R0, R1		; is 0 if char equals pointer 
+			BRp CLoop2		; increment	
+			
+			AND R0, R0, #0		; clears R0
+			ADD R0, R6, R0 		; stores R6 to R0
+			LEA R6, ENCODE_BEFORE
+			NOT R6, R6
+			ADD R6, R6, #1
+			ADD R0, R6, R0
+			
+		RET
+
+	Translate2:
+		LEA R6, ENCODE_BEFORE	; loads pointer
+		
+		TLoop2
+			ADD R6, R6, #1 		; increments pointer
+			ADD R0, R0, #-1		; decrement count 
+			BRnp TLoop2			
+			
+			LDR R0, R6, #0
+			
+		RET		
+
+
+CRCode 			.FILL #-10
+Count 			.FILL #128
+Char 			.FILL 65
+Buffer 			.BLKW 30
+
+ENCODE_BEFORE: 		.FILL 0         ; beginning
+			.FILL 65 	; A 
+ 			.FILL 66 	; B 
+ 			.FILL 67 	; C
+			.FILL 68	; D
+ 			.FILL 69 	; E
+ 			.FILL 70 	; F
+ 			.FILL 71 	; G
+ 			.FILL 72 	; H
+ 			.FILL 73 	; I
+ 			.FILL 74 	; J
+ 			.FILL 75 	; K
+ 			.FILL 76 	; L
+ 			.FILL 77 	; M
+ 			.FILL 78 	; N
+ 			.FILL 79 	; O
+ 			.FILL 80 	; P
+ 			.FILL 81 	; Q
+ 			.FILL 82 	; R
+ 			.FILL 83 	; S
+ 			.FILL 84 	; T
+ 			.FILL 85 	; U
+ 			.FILL 86 	; V
+ 			.FILL 87 	; W
+ 			.FILL 88 	; X
+ 			.FILL 89 	; Y
+ 			.FILL 90 	; Z
+
+
+
+ENCODE_AFTER: 		.FILL 0         ; beginning
+			.FILL 90        ; Z 
+ 			.FILL 89        ; Y 
+ 			.FILL 88        ; X 
+ 			.FILL 87        ; W
+ 			.FILL 86        ; V
+ 			.FILL 85        ; U
+ 			.FILL 84        ; T
+ 			.FILL 83        ; S
+ 			.FILL 82        ; R
+ 			.FILL 81        ; Q
+ 			.FILL 80        ; P
+ 			.FILL 79        ; O
+ 			.FILL 78        ; N
+ 			.FILL 77        ; M
+ 			.FILL 76        ; L
+ 			.FILL 75        ; K
+ 			.FILL 74        ; J
+ 			.FILL 73        ; I
+ 			.FILL 72        ; H
+ 			.FILL 71        ; G
+ 			.FILL 70        ; F
+ 			.FILL 69        ; E
+ 			.FILL 68        ; D
+ 			.FILL 67        ; C
+ 			.FILL 66        ; B
+ 			.FILL 65        ; A
+.END

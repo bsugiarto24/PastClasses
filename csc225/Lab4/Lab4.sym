@@ -1,0 +1,25 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	BFRSIZE                 3023
+//	BUFFERCT                3024
+//	DEQUEUE                 31F5
+//	DQEND                   31FC
+//	ENQUEUE                 31EA
+//	Exit                    31E9
+//	FREEBUFFER              31FE
+//	GETBUFFER               31E4
+//	HEAD                    31ED
+//	INITPOOL                31D9
+//	POOLAREA                3099
+//	POOLPTR                 3098
+//	QHEAD                   3025
+//	QTAIL                   3026
+//	String1                 3064
+//	String2                 307C
+//	TAIL                    31EF
+//	for0                    31DC
+//	initprompt              3027
+//	initsuccess             304E
+//	isZero                  31FB
+//	notZero                 31F8
+//	update                  31F2

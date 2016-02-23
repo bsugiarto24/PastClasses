@@ -1,0 +1,171 @@
+;Bryan Sugiarto
+;Theodore Tan
+;Nov 05, 2014
+
+	.ORIG x3000
+		LD R5, QHEAD	; makes R5 QHead set at 0
+		LD R6, QTAIL	; makes R6 QTail set at 0
+		LD R3, BUFFERCT ; simple count for loop
+		LD R4, BFRSIZE  ; loads buffer size
+		LEA R2, POOLPTR ; load beginning address
+		
+		
+		LEA R0, initprompt
+		puts
+		AND R0, R0, #0 ; print new line
+		ADD R0, R0, #10
+		OUT
+		JSR INITPOOL ; jump to initpool sub
+		LEA R0, initsuccess
+		puts
+		AND R0, R0, #0 ; print new line
+		ADD R0, R0, #10
+		OUT
+		
+		
+		; simple buffer test
+		JSR GETBUFFER ; get buffer from pool
+		JSR ENQUEUE
+		JSR DEQUEUE
+		JSR FREEBUFFER ; put buffer back in free pool
+
+		; 2 buffer test + payload
+		JSR GETBUFFER
+		LD R0, String2 	; place string into buffer
+		STR R0, R2, #0 	;
+		JSR ENQUEUE
+		JSR GETBUFFER 	; get one more
+		LD R0, String1 	; payload #2
+		STR R0, R2, #0
+		JSR ENQUEUE
+		JSR DEQUEUE 	; dequeue removes and puts payload in R0
+		PUTS 			; print
+		JSR FREEBUFFER
+		JSR DEQUEUE
+		PUTS
+		JSR FREEBUFFER
+	HALT
+
+	BFRSIZE .FILL #16 ; buffer size
+	BUFFERCT .FILL #20 ; total count of buffers
+	QHEAD .FILL #0 ; head starts at 0
+	QTAIL .FILL #0 ; tail starts at 0
+	initprompt .STRINGZ "Initializing a pool of LC3 buffers ..."
+	initsuccess .STRINGZ "OK, pool initialized."
+	String1 .STRINGZ "One small step for man."
+	String2 .STRINGZ "One giant step for mankind."
+	POOLPTR .FILL 0 ; pointer to first free buffer in pool
+	POOLAREA .BLKW 320 ; free buffer space
+
+;INITPOOL (ADDRESS, SIZE, N)
+; Where ADDRESS is the address of a free space in memory (a .blkw) with enough
+; elements to contain N elements of SIZE words in length (each). This will setup each
+; element so it points to the next, with the link from the last element as zero.
+
+	INITPOOL:
+	ADD R2, R2, #1 ; R2 = itempointer, point to first
+	STR R2, R2, #0 ; set address
+	AND R1, R1, #0 ; clear R1
+
+	for0 ADD R1, R2, R4 ; R1 is nextpointer, nextpointer = itempointer+SIZE
+		STR R1, R1, #0 ; store nextpointer
+		AND R2, R2, #0 ; clear itempointer
+		ADD R2, R1, R2 ; advance pointer to next buffer (replace with nextpointer)
+		STR R1, R2, #0 ; advance to next in list, itempointer = nextpointer
+		ADD R3, R3, #-1 ; decrement counter
+	BRNP for0
+
+RET ; return to main
+
+
+
+;GETBUFFER (POOLADDRESS)
+; gets a buffer from the pool, returning its address.
+; If there are no buffers in the pool, returns zero.
+	
+	GETBUFFER:  		; assumes pointer is in poolptr is in R2
+		LDR R0, R2, #0  ; loads next pool
+		BRNP Exit 		; exits if zero
+
+		STR R0, R2, #0 ; stores poolptr to buffer
+		
+		ADD R2, R2, #8 	; increments pool pointer
+		ADD R2, R2, #8 	; to next word
+		
+		Exit RET ; return
+
+		
+		
+		
+;ENQUEUE(QUEUE, BUFFER)
+; add an element to a queue, where "queue" is the
+; address of a head/tail pointer pair.
+; Place the buffer whose address is "BUFFER" on the
+; end of the list (currently the last element of the list is pointed to by tail)
+; and update the tail pointer
+	
+	ENQUEUE: 		 ; assumes buffer address is in R0
+					 ; assumes R5 is the head of Queue
+					 ; assumes R6 is the tail of Queue
+					 
+		LDR R5,R0,#0 ; Check if head is zero
+		BRz HEAD	 ; if zero store buffer at the head
+		BRp TAIL	 ; uses tail location to store buffer
+		
+		HEAD
+		STR R0,R5,#0 ; stores buffer into head (at 0)
+		
+		BR update
+		
+		TAIL
+		LDR R2,R0,#0 ; Load old tail from R0
+		STR R1,R2,#0 ; Store buffer into old tail
+		STR R2,R0,#0 ; Update tail to new tail
+		
+		update
+		AND R2,R2,#0  ; clears R2
+		STR R2,R1,#0  ; Make the buffer 0
+
+	RET
+
+	
+	
+	
+;DEQUEUE (QUEUE)
+; remove an element from a queue, where QUEUE is the address
+; of a head/tail pointer pair.
+; Return the address of the first element on the list, or return
+; zero if there are none.
+
+	DEQUEUE: 		;assumes head is in R5
+					;assumes tail is in R6
+	
+	LDR R5,R0,#0 	;  Check if head is nonzero
+	BRp notZero	 	;  if zero store buffer at the head
+	BRp isZero		;  if queue is emtpy it returns 0
+	
+	notZero
+	LDR R0, R5, #0	; loads buffer from head onto R0
+	STR R0, R5, #0	; stores the new head to R5
+	BR DQEND
+	
+	isZero
+	AND R0, R0, #0	; sets R0 to 0
+	
+	DQEND
+	RET
+
+		
+	STR R0, R2, #16 ; qp->head = (LC3 *) *buffer
+	
+	
+;FREEBUFFER (POOLADDRESS, BUFFER)
+; release a buffer back to the buffer pool,
+; updating the list of buffers in the pool.
+
+	FREEBUFFER: 	; assume buffer address is in R0, pool ptr in R2
+	STR R2, R0, #0 	; store head of buffer as pool pointer
+	STR R0, R2, #0 	; store buffer as new head of free list
+	RET
+
+.END

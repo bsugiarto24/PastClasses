@@ -1,0 +1,18 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	A                       3087
+//	ADDING                  3044
+//	ADDING2                 3069
+//	B                       3088
+//	DO_TOP                  3081
+//	DO_TOP2                 3062
+//	OR                      300A
+//	SHIFTL                  3050
+//	SHIFTLV                 307D
+//	SHIFTR                  3034
+//	SHIFTRV                 3053
+//	SRLOOP                  3041
+//	SRLOOP2                 3066
+//	Stack                   3089
+//	StackEnd                30ED
+//	XOR                     3015
